@@ -38,7 +38,7 @@ def get_parser():
     )
     gen = subparsers.add_parser("run", help="run compiler with flags")
     gen.add_argument("flags", help="flags")
-    gen.add_argument("--num-iter", help="number iterations", default=100, type=int)
+    gen.add_argument("--num-iter", help="number iterations", default=20, type=int)
     return parser
 
 
@@ -110,6 +110,7 @@ class TabuSearch:
         Yields:
           A tuple (neighbor, value)
         """
+        # TODO multiprocessing
         flip_indices_iter = itertools.combinations(range(self._dim), max_flip)
         for flip_indices in flip_indices_iter:
             flip = np.zeros(self._dim, dtype=int)
@@ -216,10 +217,7 @@ def main():
     x_init = np.zeros(len(data["opts"]))
     func = make_func(data, extra)
     ts = TabuSearch(func, x_init)
-    losses = ts.tabu_search()
-    import IPython
-
-    IPython.embed()
+    losses = ts.tabu_search(num_iter=args.num_iter)
     plt.plot(losses)
 
     results_dir = os.path.join("data", "results", "tabu")
