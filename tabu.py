@@ -12,6 +12,8 @@ import functools
 import tempfile
 import shutil
 
+import multiprocessing
+import signal
 import argparse
 import os
 import sys
@@ -24,6 +26,10 @@ import time
 
 # keep global results
 results = []
+
+global data
+global func
+global extra
 
 
 def get_parser():
@@ -79,6 +85,87 @@ def argmax(iterable):
     return max(enumerate(iterable), key=lambda x: x[1])[0]
 
 
+class Workers(object):
+    def __init__(self, workers=9, show_progress=False):
+        self.workers = workers
+
+    def start(self):
+        self.start_time = time.time()
+
+    def end(self):
+        self.end_time = time.time()
+        self.runtime = self.runtime = self.end_time - self.start_time
+
+    def run(self, funcs, tasks):
+        """run will send a list of tasks, a tuple with arguments, through a function.
+        the arguments should be ordered correctly.
+
+        Parameters
+        ==========
+        funcs: the functions to run with multiprocessing.pool, a dictionary
+               with lookup by the task name
+        tasks: a dict of tasks, each task name (key) with a
+               tuple of arguments to process
+        """
+        # Number of tasks must == number of functions
+        assert len(funcs) == len(tasks)
+
+        # Keep track of some progress for the user
+        total = len(tasks)
+
+        # if we don't have tasks, don't run
+        if not tasks:
+            return
+
+        # results will also have the same key to look up
+        finished = []
+        results = []
+
+        try:
+            pool = multiprocessing.Pool(self.workers, init_worker)
+            self.start()
+            for key, params in tasks.items():
+                func = funcs[key]
+                result = pool.apply_async(multi_wrapper, multi_package(func, [params]))
+
+                # Store the key with the result
+                results.append((key, result))
+
+            while len(results) > 0:
+                pair = results.pop()
+                key, result = pair
+                result.wait()
+                finished.append((key, result.get()))
+
+            self.end()
+            pool.close()
+            pool.join()
+
+        except (KeyboardInterrupt, SystemExit):
+            pool.terminate()
+            sys.exit(1)
+
+        except:
+            sys.exit("Error running task.")
+
+        return finished
+
+
+# Supporting functions for MultiProcess Worker
+def init_worker():
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+
+
+def multi_wrapper(func_args):
+    function, kwargs = func_args
+    return function(**kwargs)
+
+
+def multi_package(func, kwargs):
+    zipped = zip(itertools.repeat(func), kwargs)
+    return zipped
+
+
 class TabuSearch:
     def __init__(self, func, x_init, cache_size=10000, tabu_size=1000):
         """
@@ -110,14 +197,21 @@ class TabuSearch:
         Yields:
           A tuple (neighbor, value)
         """
-        # TODO multiprocessing
+        # prepare tasks and functions
+        funcs = {}
+        tasks = {}
+
+        workers = Workers()
         flip_indices_iter = itertools.combinations(range(self._dim), max_flip)
         for flip_indices in flip_indices_iter:
             flip = np.zeros(self._dim, dtype=int)
             flip[flip_indices] = 1
             x = np.logical_xor(self._x_current, flip).astype(int)
             if tuple(x) not in self._tabu_set:
-                yield x, self._func(x)
+                funcs[tuple(x)] = func
+                tasks[tuple(x)] = {"idx": x}
+
+        return workers.run(funcs, tasks)
 
     def tabu_step(self, max_flip=1):
         neighbors = self.get_neighbors(max_flip=max_flip)
@@ -136,61 +230,63 @@ class TabuSearch:
 
 
 # Function to randomly select flags and return runtime
-def make_func(data, extra):
-    def func(idx):
-        """
-        Take in full array of 0/1 to select flags
-        """
-        # Work in a temporary directory
-        tmpdir = tempfile.mkdtemp()
-        here = os.getcwd()
+def func(idx):
+    """
+    Take in full array of 0/1 to select flags
+    """
+    # Work in a temporary directory
+    tmpdir = tempfile.mkdtemp()
+    here = os.getcwd()
 
-        def clean_up():
-            os.chdir(here)
-            shutil.rmtree(tmpdir)
+    def clean_up():
+        os.chdir(here)
+        shutil.rmtree(tmpdir)
 
-        for filename in extra:
-            shutil.copyfile(filename, os.path.join(tmpdir, filename))
+    for filename in extra:
+        shutil.copyfile(filename, os.path.join(tmpdir, filename))
 
-        flags = [data["opts"][i] for i, x in enumerate(idx) if x == 1]
-        cmd = data["executable"] + " " + " ".join(flags) + " " + " ".join(extra)
-        print(cmd)
-        os.chdir(tmpdir)
-        out, err, _ = run_command(cmd)
+    flags = [data["opts"][i] for i, x in enumerate(idx) if x == 1]
+    cmd = data["executable"] + " " + " ".join(flags) + " " + " ".join(extra)
+    print(cmd)
+    os.chdir(tmpdir)
+    out, err, _ = run_command(cmd)
 
-        # Case 1: build fails off the bat
-        if err != 0:
-            results.append(["Build failure", np.inf, flags])
-            clean_up()
-            return np.inf
-
-        # Case 2: Output not generated
-        if not os.path.exists("a.out"):
-            results.append(["Build failure", np.inf, flags])
-            clean_up()
-            return np.inf
-        res = run_command("./a.out")
-
-        # Case 3: Does not run
-        if res[1] != 0:
-            results.append(["Runtime error", np.inf, flags])
-            clean_up()
-            return np.inf
-
-        runtime = res[-1]
-        results.append(["Run success", runtime, flags])
-
-        # Clean up for next run
-        if os.path.exists("a.out"):
-            os.remove("a.out")
+    # Case 1: build fails off the bat
+    if err != 0:
+        results.append(["Build failure", np.inf, flags])
         clean_up()
-        return runtime
+        return np.inf
 
-    return func
+    # Case 2: Output not generated
+    if not os.path.exists("a.out"):
+        results.append(["Build failure", np.inf, flags])
+        clean_up()
+        return np.inf
+    res = run_command("./a.out")
+
+    # Case 3: Does not run
+    if res[1] != 0:
+        results.append(["Runtime error", np.inf, flags])
+        clean_up()
+        return np.inf
+
+    runtime = res[-1]
+    results.append(["Run success", runtime, flags])
+
+    # Clean up for next run
+    if os.path.exists("a.out"):
+        os.remove("a.out")
+    clean_up()
+    return runtime
 
 
 def main():
     parser = get_parser()
+
+    # baaad practice
+    global data
+    global func
+    global extra
 
     def help(return_code=0):
         parser.print_help()
@@ -215,10 +311,8 @@ def main():
 
     # Initialize x to all zero (start with no flags)
     x_init = np.zeros(len(data["opts"]))
-    func = make_func(data, extra)
     ts = TabuSearch(func, x_init)
     losses = ts.tabu_search(num_iter=args.num_iter)
-    plt.plot(losses)
 
     results_dir = os.path.join("data", "results", "tabu")
     if not os.path.exists(results_dir):
@@ -246,7 +340,10 @@ def main():
     ) as fd:
         fd.write(json.dumps(final, indent=4))
 
-    plt.plot(losses)
+
+    items = [x[1] for x in final['results']]
+    items.reverse()
+    plt.plot(items)
     plt.savefig(
         os.path.join(
             results_dir, os.path.basename(args.flags.replace(".json", "_results.png"))

@@ -8,7 +8,7 @@ int main() {
     auto start = std::chrono::high_resolution_clock::now();
     int totalI = 0;
     int totalJ = 0;
-    for (int i = 1; i <= 10; ++i) {
+    for (int i = 1; i <= 1000; ++i) {
         for (int j = 1; j <= 10; ++j) {
             totalI += i;
             totalJ += j; 
