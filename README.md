@@ -54,12 +54,37 @@ $ python montecarlo.py run data/gpp_flags.json --num-iter 1000 main.cpp
 The results will be in:
 
 ```bash
-tree data/results/montecarlo
+$ tree data/results/montecarlo
+data/results/montecarlo
+├── 0
+│   ├── gpp_flags_results.json
+│   └── gpp_flags_results.png
+└── 1
+    ├── gpp_flags_results.json
+    └── gpp_flags_results.png
+
+2 directories, 4 files
 ```
 
+You'll notice a new numbered directory is always created for a new result. 
 And as an example, here we see the times getting faster very quickly over N=1000 iterations.
 
 ![data/results/montecarlo/1/gpp_flags_results.png](data/results/montecarlo/1/gpp_flags_results.png)
 
 Of course this is pretty random - the algorithm only has one step of memory, and it's hugely influenced by what
 we happen to try. I think next I'm going to try a different algorithm called Tabu that can better search the space.
+
+
+#### Tabu Search
+
+[Tabu Search](https://en.wikipedia.org/wiki/Tabu_search) is going to better sample the space, because for each step we consider all neighbors, and then choose the best one. I also refactored this one to do work in /tmp so we don't create extra files here. We could probably paralleize it to run it faster, i desired.
+
+```bash
+$ python tabu.py run data/gpp_flags.json main.cpp
+```
+
+The results will be in:
+
+```bash
+$ tree data/results/tabu
+```
