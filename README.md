@@ -88,3 +88,7 @@ The results will be in:
 ```bash
 $ tree data/results/tabu
 ```
+
+And with 100 iterations we find some good combinations!
+
+![data/results/tabu/2/gpp_flags_results.png](data/results/tabu/2/gpp_flags_results.png)
