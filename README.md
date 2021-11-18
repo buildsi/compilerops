@@ -14,6 +14,8 @@ For the last point, the easiest thing to do is have the script time itself.
 
 ## Usage
 
+Basic examples are provided below. A more extensive analysis is in [association-analysis](association-analysis)
+
 ### Dependencies
 
 ```bash
@@ -30,6 +32,8 @@ $ python compilerops.py gen g++
 
 Will generate filtered [data/gpp_flags.json](data/gpp_flags.json)
 
+**important** the first two times I ran monte carlo and the tabu search I included warnings, and later removed these.
+The original data (suffix _warnings.json) is included in the data folder.
 
 ### Running Models
 
@@ -92,3 +96,4 @@ $ tree data/results/tabu
 And with 100 iterations we find some good combinations!
 
 ![data/results/tabu/2/gpp_flags_results.png](data/results/tabu/2/gpp_flags_results.png)
+

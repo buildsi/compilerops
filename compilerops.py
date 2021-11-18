@@ -86,6 +86,9 @@ def filter_opts(data):
         # Skip those we can't predict
         if flag.endswith("="):
             continue
+        # Skip warnings
+        if flag.startswith("-W"):
+            continue
         if flag.endswith("<number>"):
             for num in range(0, 4):
                 flags.add(flag.replace("<number>", str(num)))
