@@ -21,6 +21,12 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
+And then clone examples:
+
+```bash
+$ git clone https://github.com/sinairv/Cpp-Tutorial-Samples examples
+```
+
 ### Generate Flags
 
 The flags should already have been generated one folder up in [data](../data). Note that we are using
@@ -47,7 +53,13 @@ And then to run using parallel (`apt-get install -y parallel`)
 $ find ./examples -name "*Prog.cpp" | parallel -I% --max-args 1 python montecarlo-parallel.py run ../data/gpp_flags.json "%" --outdir-num 1 --num-iter 2000
 ```
 
-There is a [run.sh](run.sh) script that I used, and ultimately ran between a range of 0 and 29 (to generate 30 runs of the same predictions for 100 iterations each).
+There is a [run.sh](run.sh) script that I used, and ultimately ran between a range of 0 and 29 (to generate 30 runs of the same predictions for 100 iterations each). Finally, to run on a SLURM cluster:
+
+```bash
+for iter in {11..30}; do
+   sbatch run_slurm.sh $iter
+done
+```
 
 ### Find common flags
 

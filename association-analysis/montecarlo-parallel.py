@@ -198,6 +198,13 @@ class MonteCarloOptimizer:
         plt.close()
 
 
+def mkdirp(dirname):
+    try:
+        os.makedirs(dirname)
+    except:
+        pass
+
+
 def func(filename, data, num_iter, results_dir):
     x_init = np.zeros(len(data["opts"]))
     mc = MonteCarloOptimizer(filename, x_init, data, results_dir)
@@ -230,12 +237,12 @@ def main():
 
     results_dir = os.path.join("data", "results", "montecarlo-association-analysis")
     if not os.path.exists(results_dir):
-        os.makedirs(results_dir)
+        mkdirp(results_dir)
 
     # If we don't have any output folders:
     results_dir = os.path.join(results_dir, str(args.outdir_num))
     if not os.path.exists(results_dir):
-        os.makedirs(results_dir)
+        mkdirp(results_dir)
 
     # prepare tasks and functions for workers
     funcs = {}

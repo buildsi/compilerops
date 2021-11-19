@@ -36,7 +36,9 @@ def get_parser():
         dest="command",
     )
     assess = subparsers.add_parser("assess", help="run flag popularity")
-    assess.add_argument("results_dir", help="root of results directory with numbered subfolders")
+    assess.add_argument(
+        "results_dir", help="root of results directory with numbered subfolders"
+    )
     return parser
 
 
@@ -54,10 +56,12 @@ def run_command(cmd):
     t = output.communicate()[0]
     return "", output.returncode, end - start
 
+
 def read_json(filename):
-    with open(filename, 'r') as fd:
+    with open(filename, "r") as fd:
         content = json.loads(fd.read())
     return content
+
 
 def assess_popularity(results_dirs):
     """
@@ -69,22 +73,22 @@ def assess_popularity(results_dirs):
     for result_dir in results_dirs:
         results = glob("%s/*.json" % result_dir)
         for result in results:
-            result_id = os.path.basename(result).split('.')[0]
+            result_id = os.path.basename(result).split(".")[0]
             if result_id not in flags:
                 flags[result_id] = {}
             result = read_json(result)
             # Last result is fastest
-            fastest = result['results'][-1]
+            fastest = result["results"][-1]
             if fastest[0] != "Run success":
-                fails[result_id] = result['filename']
+                fails[result_id] = result["filename"]
                 continue
             for flag in fastest[2]:
                 if flag not in flags[result_id]:
                     flags[result_id][flag] = 0
                 else:
-                   print("Duplicate flag %s found for %s" % (flag, result_id))
-                flags[result_id][flag] += 1 
-                            
+                    print("Duplicate flag %s found for %s" % (flag, result_id))
+                flags[result_id][flag] += 1
+
 
 def main():
     parser = get_parser()
@@ -103,7 +107,7 @@ def main():
 
     results_dirs = sorted([int(x) for x in os.listdir(args.results_dir)])
     results_dirs = [os.path.join(args.results_dir, str(x)) for x in results_dirs]
-    print("Found %s runs!" % len(results_dirs))    
+    print("Found %s runs!" % len(results_dirs))
     df = assess_popularity(results_dirs)
 
 
