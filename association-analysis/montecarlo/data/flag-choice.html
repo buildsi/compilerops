@@ -1,0 +1,366 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.label {
+  fill: #fff;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+text {
+  fill : #777;
+}
+
+.domain, line {
+  stroke: #777;
+}
+
+.focusLine {
+  shape-rendering: crispEdges;
+  stroke: #777;
+  stroke-width: 1.1;
+  stroke-linecap: butt;
+}
+</style>
+
+<body>
+<div class="container-wide">
+<div class="row">
+    <div class="col-md-8">
+        Cpp Token Similarity
+    </div>
+    <div class="col-md-4">
+<div style="float:right; padding-right:200px"><p id="package-name" class="alert alert-info">package name will go here</p></div>
+    </div>
+</div>
+<div id="plot"></div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script>
+
+/**
+ * A D3 Scatter Plot chart with interactive nodes, 
+ * crosshair and custom axis grid.
+ * https://codepen.io/stopyransky/pen/KWomoK
+ */
+
+var totalWidth = window.innerWidth - 100;
+var totalHeight = window.innerHeight - 200;
+
+var margin = {
+  top: 20,
+  left: 25,
+  bottom: 30,
+  right: 30
+}
+
+var width = totalWidth - margin.left - margin.right;
+var height = totalHeight - margin.top - margin.bottom;
+
+var formatDecimal = d3.format(',.0f');
+
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+d3.json("flag-choice-embedding.json", function(theData) {
+
+console.log(theData)
+
+var data = []
+
+for(var i = 0; i < theData.length; i++){
+   if (theData[i].cx != null){
+       data.push(theData[i]);
+   }
+}
+
+theData = data;
+
+// X SCALE
+var xDomain = d3.extent(theData, function(d) {
+  return d.cx;
+});
+console.log(xDomain)
+var xRange = [0, width];
+var xScale = d3.scaleLinear().domain(xDomain).range(xRange).nice(5);
+var xPadding = d3.mean(theData, function(d) {
+  return d.cx
+});
+
+function setCrosshair(x, y) {
+
+  d3.select('#focusLineX')
+    .attr('x1', x)
+    .attr('y1', 0)
+    .attr('x2', x)
+    .attr('y2', height + 6);
+
+  d3.select('#focusLineY')
+    .attr('x1', -6)
+    .attr('y1', y)
+    .attr('x2', width)
+    .attr('y2', y);
+
+  d3.select("#focusLineXLabel")
+    .attr("x", x)
+    .attr("y", height + 12)
+    .text(formatDecimal(xScale.invert(x)));
+  d3.select("#focusLineXLabelBackground")
+    .attr("transform", "translate( " + (x - crosshairSettings.labelWidth * 0.5) + " , " + (height + 5) + " )")
+    .text(formatDecimal(xScale.invert(x)));
+
+  d3.select("#focusLineYLabel")
+    .attr("transform", "translate( -9, " + y + ")")
+    .text(formatDecimal(yScale.invert(y)));
+  d3.select("#focusLineYLabelBackground")
+    .attr("transform", "translate( " + -crosshairSettings.labelWidth + ", " + (y - 8) + ")")
+
+}
+
+// Y SCALE 
+var yDomain = d3.extent(theData, function(d) {
+  return d.cy;
+});
+var yRange = [height, 0];
+var yScale = d3.scaleLinear().domain(yDomain).range(yRange).nice(5);
+
+    // SIZE SCALE
+    var sizeDomain = d3.extent(theData, function(d) {
+      return 10;
+    });
+
+    var sizeRange = [16, 16];
+    var sizeScale = d3.scaleLinear().domain(sizeDomain).range(sizeRange);
+
+
+// COLOR SCALE 
+var colorDomain = d3.extent(theData, function(d) {
+  return d.name
+});
+
+const colorScale = d3.scaleOrdinal()
+        .range(["#000000","#c0c0c0","#808080","#ffffff","#800000","#ff0000","#800080","#ff00ff","#008000","#00ff00","#808000","#ffff00","#000080","#0000ff","#008080","#00ffff","#ffa500","#f0f8ff","#faebd7","#7fffd4","#f0ffff","#f5f5dc","#ffe4c4","#ffebcd","#8a2be2","#a52a2a","#deb887","#5f9ea0","#7fff00","#d2691e","#ff7f50","#6495ed","#fff8dc","#dc143c","#00ffff","#00008b","#008b8b","#b8860b","#a9a9a9","#006400","#a9a9a9","#bdb76b","#8b008b","#556b2f","#ff8c00","#9932cc","#8b0000","#e9967a","#8fbc8f","#483d8b","#2f4f4f","#2f4f4f","#00ced1","#9400d3","#ff1493","#00bfff","#696969","#696969","#1e90ff","#b22222","#fffaf0","#228b22","#dcdcdc","#f8f8ff","#ffd700","#daa520","#adff2f","#808080","#f0fff0","#ff69b4","#cd5c5c","#4b0082","#fffff0","#f0e68c","#e6e6fa","#fff0f5","#7cfc00","#fffacd","#add8e6","#f08080","#e0ffff","#fafad2","#d3d3d3","#90ee90","#d3d3d3","#ffb6c1","#ffa07a","#20b2aa","#87cefa","#778899","#778899","#b0c4de","#ffffe0","#32cd32","#faf0e6","#ff00ff","#66cdaa","#0000cd","#ba55d3","#9370db","#3cb371","#7b68ee","#00fa9a","#48d1cc","#c71585","#191970","#f5fffa","#ffe4e1","#ffe4b5","#ffdead"])
+ 
+         
+//        d3.schemeCategory10);
+
+var xAxis = d3.axisBottom(xScale)
+  //.ticks(10)
+  .tickSize(6)
+  .tickSizeInner(-height)
+  //.tickSizeOuter(7);
+
+var yAxis = d3.axisLeft(yScale).ticks(5)
+  .tickSizeInner(-width)
+  //.tickSizeOuter(7);
+
+// SVG GROUP HIERARCHY 
+
+var svg = d3.select('#plot').append('svg')
+  .attr("id", "scatterplot")
+  .attr("width", totalWidth)
+  .attr("height", totalHeight)
+  //.style( "background-color", "hsl(0, 0%, 100%)" )
+  //.style( "border", "dashed 1px gray" );
+
+var mainGroup = svg.append("g")
+  .attr("id", "mainGroup")
+  .attr("transform", "translate( " + margin.left + ", " + margin.top + ")");
+
+var xAxisGroup = mainGroup.append("g")
+  .attr("id", "xaxis")
+  .attr("class", "axis")
+  .attr("transform", "translate( 0," + height + ")")
+  .call(function customXAxis(g) {
+    g.call(xAxis);
+    //g.select(".domain").remove();
+    //g.selectAll(".tick:not(:first-of-type) line"). // selects all tick lines except first
+    g.selectAll(".tick:not(:first-of-type) line")
+      .attr("stroke", "#777")
+      .attr("stroke-dasharray", "3,2");
+
+    g.selectAll(".tick text")
+      .attr("y", 9);
+  });
+
+var yAxisGroup = mainGroup.append("g")
+  .attr("id", "yaxis")
+  .attr("class", "axis")
+  .call(function customYAxis(g) {
+    g.call(yAxis);
+    //g.select(".domain").remove();
+    g.selectAll(".tick:not(:first-of-type) line")
+      .attr("stroke", "#777")
+      .attr("stroke-dasharray", "3,2");
+    g.selectAll(".tick text")
+      .attr("x", -9);
+  });
+
+var eventGroup = mainGroup.append("g")
+  .attr('id', 'event-overlay');
+
+var crosshair = eventGroup.append("g")
+  .attr("id", "crosshair");
+
+var eventRect = eventGroup.append('rect');
+
+var canvasGroup = eventGroup.append("g")
+  .attr("id", "circleGroup");
+
+// CHART ASSEMBLY
+
+var crosshairSettings = {
+
+  xLabelTextOffset: height + 12,
+  yLabelTextOffset: -9,
+  labelWidth: 38,
+  labelHeight: 14,
+  labelColor: "#aaa",
+  labelStrokeColor: "none",
+  labelStrokeWidth: "0.5px"
+
+}
+
+crosshair.append("line")
+  .attrs({
+    "id": "focusLineX",
+    "class": "focusLine",
+    //"stroke" : "black",
+    //"stroke-width" : 1,
+    //"stroke-linecap" : "butt"
+  });
+crosshair.append("line")
+  .attrs({
+    "id": "focusLineY",
+    "class": "focusLine",
+    //"stroke" : "black",
+    //"stroke-width" : 1,
+    //"stroke-linecap" : "butt"
+  })
+
+crosshair.append("rect") // x label bg
+  .attrs({
+    "id": "focusLineXLabelBackground",
+    "class": "focusLineLabelBackground",
+    "fill": crosshairSettings.labelColor,
+    "stroke": crosshairSettings.labelStrokeColor,
+    "stroke-width": crosshairSettings.labelStrokeWidth,
+    "width": crosshairSettings.labelWidth, // should be a size of corresponding txt!
+    "height": crosshairSettings.labelHeight,
+  });
+
+crosshair.append("text")
+  .attrs({
+    "id": "focusLineXLabel",
+    "class": "label",
+    "text-anchor": "middle",
+    "alignment-baseline": "central"
+  });
+
+var ylabel = crosshair.append("g").attr("id", "yLabelGroup");
+ylabel.append("rect") // y label bg
+  .attrs({
+    "id": "focusLineYLabelBackground",
+    "class": "focusLineLabelBackground",
+    "fill": crosshairSettings.labelColor,
+    "stroke": crosshairSettings.labelStrokeColor,
+    "stroke-width": crosshairSettings.labelStrokeWidth,
+    "width": crosshairSettings.labelWidth,
+    "height": crosshairSettings.labelHeight,
+  });
+ylabel.append("text")
+  .attrs({
+    "id": "focusLineYLabel",
+    "class": "label",
+    "text-anchor": "end",
+    "alignment-baseline": "central"
+  });
+
+canvasGroup.selectAll("circle")
+  .data(theData)
+  .enter()
+  .append('circle')
+  .attr("cx", function(d) {
+    return xScale(d.cx)
+  })
+  .attr("cy", function(d) {
+    return yScale(d.cy)
+  })
+  .attr("r", function(d) {
+    return sizeScale(sizeDomain[0]);
+  })
+  .style("fill", function(d) {
+    // TODO calculate based on folder?
+    return colorScale(d.name);
+  })
+  .style("opacity", 1)
+  .on("mouseover", function(d, i) {
+    $("#package-name").text(d.name);
+  })
+  .on("mouseout", function(d, i) {
+
+    d3.select(this).attrs({
+        "stroke": "none"
+      })
+      .style("fill", function(d) {
+        console.log(d.group)
+        return colorScale(d.name);
+      });
+  })
+  //      if enabled will not snap to element
+  //            .on('mousemove', function() {
+
+//              var mouse = d3.mouse(this);
+//              setCrosshair( mouse[0] ,  mouse[1] );
+//            })
+.transition()
+  .attr("r", function(d) {
+    return sizeScale(16);
+  });
+
+eventRect.attrs({
+    'width': width,
+    'height': height
+  })
+  .styles({
+    'opacity': 0.0,
+    'display': null // not eligible for events
+  })
+  .on('mouseover', function() {
+    // crosshair.attr("cursor", "crosshair");
+    crosshair.style('display', null);
+
+  })
+  .on('mouseout', function() {
+    crosshair.style('display', 'none');
+
+  })
+  .on('mousemove', function handleMouseMove() {
+
+    var mouse = d3.mouse(this); // this == eventrect
+
+    var x = mouse[0];
+    var y = mouse[1];
+
+    setCrosshair(x, y);
+
+  });
+
+});
+});
+</script>
+</body>
+</html>

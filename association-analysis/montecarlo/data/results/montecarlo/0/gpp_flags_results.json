@@ -1,0 +1,778 @@
+{
+    "results": [
+        [
+            "/home/vanessa/Desktop/Code/compilerop/association-analysis/examples/Function Pointers/Function Pointers/Prog.cpp",
+            [
+                [
+                    "Run success",
+                    0.002260923385620117,
+                    [
+                        "-Wunused-but-set-parameter"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019164085388183594,
+                    []
+                ],
+                [
+                    "Run success",
+                    0.0022127628326416016,
+                    [
+                        "-Wfree-nonheap-object"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021393299102783203,
+                    [
+                        "-fprofile-correction"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021820068359375,
+                    [
+                        "-Wold-style-cast"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019259452819824219,
+                    [
+                        "-Wabi"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "--include-with-prefix-before"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020868778228759766,
+                    [
+                        "-Wnoexcept"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019774436950683594,
+                    [
+                        "-fsingle-precision-constant"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019690990447998047,
+                    [
+                        "-Wunsafe-loop-optimizations"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020618438720703125,
+                    [
+                        "-fvar-tracking"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019643306732177734,
+                    [
+                        "-Wno-alloc-size-larger-than"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019614696502685547,
+                    [
+                        "-m96bit-long-double"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0025238990783691406,
+                    [
+                        "-mhard-float"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-ftemplate-depth=3"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-finline-limit-"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0025229454040527344,
+                    [
+                        "-O1"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002039194107055664,
+                    [
+                        "-ftree-sra"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019278526306152344,
+                    [
+                        "-Wtrigraphs"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001918792724609375,
+                    [
+                        "-fkeep-static-consts"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019600391387939453,
+                    [
+                        "-fstack-protector-explicit"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019173622131347656,
+                    [
+                        "-Wnamespaces"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002006053924560547,
+                    [
+                        "-finit-real=nan"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-include"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002104043960571289,
+                    [
+                        "-finit-logical=false"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021991729736328125,
+                    [
+                        "-fgcse-las"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002515554428100586,
+                    [
+                        "-mabm"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002029895782470703,
+                    [
+                        "-flive-patching=inline-clone"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002402782440185547,
+                    [
+                        "-Wimplicit"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019474029541015625,
+                    [
+                        "-fira-verbose=0"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002133607864379883,
+                    [
+                        "-fcf-protection=check"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-I"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019176006317138672,
+                    [
+                        "-fdefer-pop"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0022003650665283203,
+                    [
+                        "-flto-report-wpa"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "--output"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-fvisibility=package"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002008676528930664,
+                    [
+                        "-ftest-coverage"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0018470287322998047,
+                    [
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001924753189086914,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fvect-cost-model=cheap"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001985788345336914,
+                    [
+                        "-fname-mangling-version-",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0022721290588378906,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fschedule-insns"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019061565399169922,
+                    [
+                        "-mmanual-endbr",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020475387573242188,
+                    [
+                        "-mrtm",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020110607147216797,
+                    [
+                        "-fselective-scheduling2",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019371509552001953,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-mno-push-args"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020477771759033203,
+                    [
+                        "-mmpx",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020029544830322266,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-mpc64"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002095937728881836,
+                    [
+                        "-fbuilding-libgcc",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019664764404296875,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Winherited-variadic-ctor"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002091646194458008,
+                    [
+                        "-mavx512ifma",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001978158950805664,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fipa-icf-functions"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020325183868408203,
+                    [
+                        "-Wsync-nand",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001951456069946289,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wempty-body"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002084970474243164,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-gstrict-dwarf"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021326541900634766,
+                    [
+                        "-Wnarrowing",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019192695617675781,
+                    [
+                        "-Wvirtual-inheritance",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002101421356201172,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fsched-verbose=0"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002526998519897461,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wmemset-elt-size"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002092123031616211,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-mcx16"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002012014389038086,
+                    [
+                        "-Wcast-result",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "--imacros"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0024917125701904297,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wchkp"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002012491226196289,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-std=gnu++1z"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001973390579223633,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-mxsaves"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002191305160522461,
+                    [
+                        "-Wzero-as-null-pointer-constant",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002604961395263672,
+                    [
+                        "-ftree-parallelize-loops=1",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001993417739868164,
+                    [
+                        "-fipa-pure-const",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0027170181274414062,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wintrinsics-std"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002048969268798828,
+                    [
+                        "-Wunused-local-typedefs",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002071857452392578,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wdeprecated-declarations"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020453929901123047,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wzerotrip"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001982450485229492,
+                    [
+                        "-Wunderflow",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002298593521118164,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "--optimize"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021474361419677734,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wreal-q-constant"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021860599517822266,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fira-region=all"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019354820251464844,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wmissing-format-attribute"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.001981973648071289,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fira-verbose=2"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002402782440185547,
+                    [
+                        "-finline-limit=0",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002102375030517578,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fvisibility=hidden"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0023758411407470703,
+                    [
+                        "-Wshadow-local",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002418041229248047,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fcode-hoisting"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020225048065185547,
+                    [
+                        "-Wsync-nand",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020394325256347656,
+                    [
+                        "-fsched-verbose=3",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0023839473724365234,
+                    [
+                        "-fipa-profile",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020189285278320312,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "--extra-warnings"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002313852310180664,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fsso-struct=big-endian"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002024412155151367,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fprofile-abs-path"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020813941955566406,
+                    [
+                        "-fpost-ipa-mem-report",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021288394927978516,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fgcse-sm"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021631717681884766,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-m3dnow"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0019769668579101562,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wsequence-point"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002200603485107422,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-minline-all-stringops"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020101070404052734,
+                    [
+                        "-fipa-sra",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020399093627929688,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wdeprecated-copy"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020351409912109375,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fsched-spec-load"
+                    ]
+                ],
+                [
+                    "Build failure",
+                    Infinity,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-fauto-profile"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.002057790756225586,
+                    [
+                        "-Wunderflow",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0021674633026123047,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wif-not-aligned"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.003122091293334961,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-Wexpansion-to-defined"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020406246185302734,
+                    [
+                        "-fprefetch-loop-arrays",
+                        "-mclflushopt"
+                    ]
+                ],
+                [
+                    "Run success",
+                    0.0020503997802734375,
+                    [
+                        "-fwrapv",
+                        "-fprefetch-loop-arrays"
+                    ]
+                ]
+            ]
+        ]
+    ],
+    "iters": 100
+}
