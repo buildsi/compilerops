@@ -24,12 +24,12 @@ the set without warnings (high 700s).
 Provide a path to the flags, and the root directory defaults to pwd, and give the filename to look for to compile:
 
 ```bash
-$ python hill-climb.py run ../../data/gpp_flags.json Prog.cpp
+$ python hill-climb.py run ../../data/gpp_flags_filtered.json Prog.cpp
 ```
 for a specific example:
 
 ```bash
-$ python hill-climb.py run ../../data/gpp_flags.json ../examples/Aliases/Prog.cpp
+$ python hill-climb.py run ../../data/gpp_flags_filtered.json ../examples/Aliases/Prog.cpp
 ```
 
 In practice, I found that using parallel made more sense (no workers in Python).

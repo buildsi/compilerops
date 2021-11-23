@@ -21,10 +21,22 @@ $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-And then clone examples:
+And then clone code examples:
 
 ```bash
-$ git clone https://github.com/sinairv/Cpp-Tutorial-Samples examples
+$ git clone https://github.com/sinairv/Cpp-Tutorial-Samples code
+$ rm -rf code/.git
+# preserve links
+$ ln -s code examples
+```
+
+Note that two of the scripts have an interactive prompt, and you'll want to delete (or just
+use the files stored here)
+
+```bash
+$ grep -R ENTER
+Aliases/Prog.cpp:	cout << "\n\nPress ENTER to exit.\n";
+Arrays/Array in Functions/Prog.cpp:	cout <<"\n\nPress ENTER to exit.\n";
 ```
 
 And then proceed with [montecarlo](montecarlo) or [hill-climb](hill-climb).

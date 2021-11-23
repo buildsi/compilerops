@@ -6,6 +6,7 @@
 # 3. Save to file
 
 import numpy as np
+import statistics
 import matplotlib.pyplot as plt
 
 import multiprocessing
@@ -110,34 +111,41 @@ class HillClimber:
         # Case 1: build fails off the bat
         if err != 0:
             self.results.append(["Build failure", np.inf, flags])
-            return np.inf
+            return
 
         # Case 2: Output not generated
         if not os.path.exists("a.out"):
             self.results.append(["Build failure", np.inf, flags])
-            return np.inf
+            return
 
         # Run 10 times
         results = []
-        for iter in range(10):
+        for _ in range(100):
             res = run_command("./a.out")
 
             # Case 3: Does not run
             if res[1] != 0:
-                results.append(np.inf)
-                self.results.append(["Runtime error", results, flags])
+                self.results.append(["Runtime error", np.inf, flags])
+                return
 
             runtime = res[-1]
-            results.append([runtime])
+            results.append(runtime)
 
         # If we get here, all success!
-        self.results.append(["Run success", results, flags])
+        # Calculate mean and sd
+        self.results.append(
+            [
+                "Run success",
+                [statistics.mean(results), statistics.stdev(results)],
+                flags,
+            ]
+        )
 
         # Clean up for next run
         if os.path.exists("a.out"):
             os.remove("a.out")
         clean_up()
-        return runtime
+        return
 
     def climb(self):
         """
