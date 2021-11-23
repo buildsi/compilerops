@@ -1,0 +1,6925 @@
+{
+    "filename": "/usr/WS2/sochat1/compilerops/association-analysis/code/setw/Prog.cpp",
+    "results": [
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-include"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005812468528747558,
+                0.0012609159842845677
+            ],
+            [
+                "-fmodulo-sched"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006083228588104248,
+                0.0011843533185846096
+            ],
+            [
+                "-fomit-frame-pointer"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-loop-limit=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005983550548553467,
+                0.0013457801182698043
+            ],
+            [
+                "-mlarge-data-threshold=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mshstk"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057274079322814945,
+                0.0013264070331586873
+            ],
+            [
+                "-pedantic-errors"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fasan-shadow-offset=3"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftemplate-depth-"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftree-loop-vectorize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006091444492340088,
+                0.0013002808269977383
+            ],
+            [
+                "-fuse-ld=bfd"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-freport-bug"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006055200099945068,
+                0.0011181625701985635
+            ],
+            [
+                "-mprfchw"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-iwithprefixbefore"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00572443962097168,
+                0.0012654200569459902
+            ],
+            [
+                "-fprofile-report"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005991640090942382,
+                0.001134982226560615
+            ],
+            [
+                "-maccumulate-outgoing-args"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005977227687835694,
+                0.0010862743532554587
+            ],
+            [
+                "-mno-push-args"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmpx"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005802738666534424,
+                0.0012613950032188499
+            ],
+            [
+                "-fweb"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006020970344543457,
+                0.0011817560974837996
+            ],
+            [
+                "-mms-bitfields"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005860438346862793,
+                0.0011884003117733856
+            ],
+            [
+                "-fsplit-stack"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512vpopcntdq"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006111736297607422,
+                0.0016540882562174114
+            ],
+            [
+                "-fstack-clash-protection"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fbounds-check=off"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-aux-info"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058481073379516605,
+                0.0014030371631031807
+            ],
+            [
+                "-ftree-phiprop"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005695490837097168,
+                0.001322170543610846
+            ],
+            [
+                "-fshrink-wrap"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006014082431793213,
+                0.0014379939719915704
+            ],
+            [
+                "-fmove-loop-invariants"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-m3dnowa"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005650286674499512,
+                0.0012188745480291004
+            ],
+            [
+                "-fgcse-after-reload"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059320926666259766,
+                0.0012295969729978263
+            ],
+            [
+                "-fconstexpr-depth=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512f"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fenable-"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005906250476837158,
+                0.0014889425595886368
+            ],
+            [
+                "-fmerge-constants"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gas-loc-support"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006132161617279053,
+                0.0012874587967263598
+            ],
+            [
+                "-funwind-tables"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006146025657653808,
+                0.0015442625318361004
+            ],
+            [
+                "-fcx-limited-range"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005856857299804687,
+                0.001481409804895337
+            ],
+            [
+                "-fsched-last-insn-heuristic"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsimd-cost-model=dynamic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058526611328125,
+                0.001233847418213688
+            ],
+            [
+                "-freschedule-modulo-scheduled-loops"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00594935417175293,
+                0.0011777611364309321
+            ],
+            [
+                "-mhle"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057449030876159666,
+                0.0013220826591860593
+            ],
+            [
+                "-finstrument-functions"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fbounds-check=on"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006074783802032471,
+                0.0011187504029964615
+            ],
+            [
+                "-ftree-tail-merge"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059201717376708984,
+                0.00116195250754279
+            ],
+            [
+                "-fsched-interblock"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005767092704772949,
+                0.0013919345892760748
+            ],
+            [
+                "-mrtd"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005996575355529785,
+                0.0012826000282259032
+            ],
+            [
+                "-fsched2-use-superblocks"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005706133842468261,
+                0.0011041459981084504
+            ],
+            [
+                "-msoft-float"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006132302284240723,
+                0.0013112392461312769
+            ],
+            [
+                "-ftree-vectorize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005959939956665039,
+                0.0013950185807735385
+            ],
+            [
+                "-fira-algorithm=CB"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057586288452148434,
+                0.0012694617330617065
+            ],
+            [
+                "-mfentry"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fprofile-update=atomic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005866801738739014,
+                0.0013908269188751732
+            ],
+            [
+                "-mcld"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--undefine-macro"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058238768577575685,
+                0.0013347575764435433
+            ],
+            [
+                "-ftabstop=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005805928707122803,
+                0.0009560579118740268
+            ],
+            [
+                "-fprofile-generate"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006044895648956299,
+                0.0011533330322312857
+            ],
+            [
+                "-fstack-protector-strong"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005748605728149414,
+                0.0016707052994030898
+            ],
+            [
+                "-fargument-noalias-global"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005608334541320801,
+                0.0013448700037194958
+            ],
+            [
+                "-fexceptions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005852854251861573,
+                0.0013378528455832523
+            ],
+            [
+                "-fzee"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005854151248931885,
+                0.0012168921571923783
+            ],
+            [
+                "-ftime-report"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005676319599151611,
+                0.0011562006523946622
+            ],
+            [
+                "-fhoist-adjacent-loads"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005764565467834473,
+                0.0012609922425430445
+            ],
+            [
+                "-fno-threadsafe-statics"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005881118774414063,
+                0.001205193100585467
+            ],
+            [
+                "-ftree-slp-vectorize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005752401351928711,
+                0.0011866680737635995
+            ],
+            [
+                "-m128bit-long-double"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005743587017059326,
+                0.0011692409156112867
+            ],
+            [
+                "-fstack-check=no"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005659010410308838,
+                0.00121151708441176
+            ],
+            [
+                "-fshow-column"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005717716217041016,
+                0.0010658690866146452
+            ],
+            [
+                "-fwrapv"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcode-hoisting"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005743176937103272,
+                0.0011218207949993237
+            ],
+            [
+                "-fpie"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005836570262908935,
+                0.0010010918621841099
+            ],
+            [
+                "-mcrc32"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005910303592681885,
+                0.0011228380043290626
+            ],
+            [
+                "-fcompare-debug-second"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005670740604400635,
+                0.0011813252554065165
+            ],
+            [
+                "-ftls-model=initial-exec"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mcet-switch"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-miamcu"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005927155017852783,
+                0.001258309498307006
+            ],
+            [
+                "-falign-labels"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00553415298461914,
+                0.0011981530337981322
+            ],
+            [
+                "-mlarge-data-threshold=1"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-isystem"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005854227542877197,
+                0.0012504785982784513
+            ],
+            [
+                "-std=gnu++0x"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005824592113494873,
+                0.001147738428674513
+            ],
+            [
+                "-fstack-protector"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005833868980407715,
+                0.0013683415348764287
+            ],
+            [
+                "-mrdseed"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005936620235443116,
+                0.001481880722201813
+            ],
+            [
+                "-momit-leaf-frame-pointer"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-ops-limit=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005612471103668213,
+                0.0014492126946845305
+            ],
+            [
+                "-fuse-linker-plugin"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005863289833068847,
+                0.0012939007433678247
+            ],
+            [
+                "-fdump-go-spec=filename"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fversion-loops-for-strides"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006008219718933105,
+                0.0010743541035109967
+            ],
+            [
+                "-fsplit-ivs-in-unroller"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005647342205047607,
+                0.000874530442034058
+            ],
+            [
+                "-ggdb"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005991137027740479,
+                0.0012921329857867308
+            ],
+            [
+                "-freorder-blocks"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058004665374755855,
+                0.0012608948388444497
+            ],
+            [
+                "-fsel-sched-pipelining-outer-loops"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fpack-struct=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005820872783660888,
+                0.0013243560662296715
+            ],
+            [
+                "-fstack-reuse=named_vars"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005810027122497559,
+                0.001512906021476972
+            ],
+            [
+                "-fname-mangling-version-"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005673913955688476,
+                0.001231835204135593
+            ],
+            [
+                "-frequire-return-statement"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005765562057495117,
+                0.0012467784952275936
+            ],
+            [
+                "-ftls-model=local-dynamic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005949907302856446,
+                0.0013264585343882652
+            ],
+            [
+                "-ftree-loop-im"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005887343883514405,
+                0.0013171477189844482
+            ],
+            [
+                "-malign-stringops"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsso-struct=big-endian"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvtv-debug"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005971910953521728,
+                0.0012384221784432334
+            ],
+            [
+                "-fipa-profile"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdiagnostics-show-labels"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcf-protection"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcf-protection=full"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005857219696044922,
+                0.00113529686503014
+            ],
+            [
+                "-frounding-math"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005877034664154053,
+                0.0013479986887516206
+            ],
+            [
+                "-fforward-propagate"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0056223273277282715,
+                0.0012744862576857029
+            ],
+            [
+                "--optimize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005788917541503906,
+                0.001248974252525252
+            ],
+            [
+                "-finline-functions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005752875804901123,
+                0.0012923180093886877
+            ],
+            [
+                "-fmath-errno"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005753715038299561,
+                0.001407918699188963
+            ],
+            [
+                "-fpre-ipa-mem-report"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mnop-mcount"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005711321830749512,
+                0.0012574807740641735
+            ],
+            [
+                "-fmem-report"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005849108695983886,
+                0.0012615066036368813
+            ],
+            [
+                "-fsched-verbose=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005869162082672119,
+                0.0011528952251836757
+            ],
+            [
+                "-msse2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005676577091217041,
+                0.0010034455918037368
+            ],
+            [
+                "-freg-struct-return"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvisibility=private"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--dumpbase"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-Xf"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-ops-limit=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005996706485748291,
+                0.0011883021770362039
+            ],
+            [
+                "-fshort-wchar"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gcoff1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005814681053161621,
+                0.0012886026549975241
+            ],
+            [
+                "-ftree-copyrename"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00564363956451416,
+                0.00138588353490902
+            ],
+            [
+                "-fvar-tracking-uninit"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005795872211456299,
+                0.0010538383572200687
+            ],
+            [
+                "-floop-parallelize-all"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvect-cost-model=cheap"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gant"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcf-protection=check"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdevirtualize-at-ltrans"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005830874443054199,
+                0.0011602559082864979
+            ],
+            [
+                "-ftree-forwprop"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005680286884307861,
+                0.0011773324165862712
+            ],
+            [
+                "-fvar-tracking-assignments"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058086633682250975,
+                0.0012844112369804549
+            ],
+            [
+                "-ftree-switch-conversion"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flto-compression-level=<number>\tUse"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mx32"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512ifma"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmovdiri"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0056676030158996586,
+                0.0014706238108221075
+            ],
+            [
+                "-grecord-gcc-switches"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-quiet"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005619320869445801,
+                0.001261968664376773
+            ],
+            [
+                "-feliminate-dwarf2-dups"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005901286602020264,
+                0.0011522260945389445
+            ],
+            [
+                "-fvariable-expansion-in-unroller"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005897598266601562,
+                0.0015502486074277632
+            ],
+            [
+                "-ftoplevel-reorder"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005757992267608643,
+                0.0012609156214662906
+            ],
+            [
+                "-frerun-cse-after-loop"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005952169895172119,
+                0.0012974303978419536
+            ],
+            [
+                "-fhandle-exceptions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005836217403411865,
+                0.0012837031692369484
+            ],
+            [
+                "-fcompare-elim"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005948021411895752,
+                0.001366648568223433
+            ],
+            [
+                "-fstrict-volatile-bitfields"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--assert"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006040899753570556,
+                0.0012717894559907779
+            ],
+            [
+                "-fsched-stalled-insns=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005877845287322998,
+                0.001564927882997039
+            ],
+            [
+                "-fsched-stalled-insns=3"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-std=gnu++1z"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-floop-unroll-and-jam"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fpermitted-flt-eval-methods=ts-18661"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fstack-limit"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005983514785766602,
+                0.001379646019349404
+            ],
+            [
+                "-fif-conversion"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006063148975372314,
+                0.00117050051627505
+            ],
+            [
+                "-ftree-pta"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fstack-protector-explicit"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsso-struct=little-endian"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00571589469909668,
+                0.0013678314159983032
+            ],
+            [
+                "-fdwarf2-cfi-asm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-m16"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005917158126831055,
+                0.001436711173951301
+            ],
+            [
+                "-ffunction-cse"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005957865715026855,
+                0.0014151021999170652
+            ],
+            [
+                "-falign-loops"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcf-protection=return"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005615718364715576,
+                0.0012148280118313946
+            ],
+            [
+                "-gstabs+"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00589470624923706,
+                0.0012992958307731326
+            ],
+            [
+                "-fmem-report-wpa"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005907073020935059,
+                0.0011574079865956594
+            ],
+            [
+                "-funsafe-math-optimizations"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005995182991027832,
+                0.0011515309615609695
+            ],
+            [
+                "-m80387"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006009788513183594,
+                0.0015268403763116227
+            ],
+            [
+                "-fdata-sections"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005860483646392823,
+                0.0014915781075412816
+            ],
+            [
+                "-mfused-madd"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005652632713317871,
+                0.001432479232316849
+            ],
+            [
+                "-msse2avx"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059427452087402344,
+                0.0013983419557602483
+            ],
+            [
+                "-fgraphite"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006004242897033691,
+                0.0014397004982912175
+            ],
+            [
+                "-finit-logical=true"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005735623836517334,
+                0.0013864889938941989
+            ],
+            [
+                "-fsched-stalled-insns=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005892372131347657,
+                0.0016707963186616346
+            ],
+            [
+                "-ftree-pre"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006163311004638672,
+                0.0014075488737973483
+            ],
+            [
+                "-funroll-all-loops"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-iwithprefix"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fprofile-abs-path"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00596850872039795,
+                0.0013028589234238626
+            ],
+            [
+                "-fipa-cp-clone"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058162641525268555,
+                0.0013426159386995653
+            ],
+            [
+                "-g"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005752255916595459,
+                0.0011894170834794366
+            ],
+            [
+                "-ftree-cselim"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005844581127166748,
+                0.001393547737532468
+            ],
+            [
+                "-mrdrnd"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fgnat-encodings=all"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mgeneral-regs-only"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mprefetchwt1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005704042911529541,
+                0.001240294359438952
+            ],
+            [
+                "-floop-interchange"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdevirtualize-speculatively"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0061790370941162106,
+                0.0013057807449671256
+            ],
+            [
+                "-fira-verbose=1"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsimd-cost-model=cheap"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057950615882873535,
+                0.0013623506459049636
+            ],
+            [
+                "-fdiagnostics-color=always"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftemplate-depth=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005858616828918457,
+                0.001189646359691659
+            ],
+            [
+                "-fsigned-zeros"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-x"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005883910655975342,
+                0.0014259629139147078
+            ],
+            [
+                "-mvect8-ret-in-mem"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-MT"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvtv-counts"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fbuilding-libphobos-tests"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005966165065765381,
+                0.001344184140241654
+            ],
+            [
+                "-fPIC"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005800907611846924,
+                0.001379028024373626
+            ],
+            [
+                "-ftabstop=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005977435111999512,
+                0.0014447165511011096
+            ],
+            [
+                "-fsee"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058861708641052245,
+                0.0016296555539831678
+            ],
+            [
+                "-mxop"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--define-macro"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0056553339958190915,
+                0.0013445306690535257
+            ],
+            [
+                "-mpclmul"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005975966453552246,
+                0.0012540660992355053
+            ],
+            [
+                "--pedantic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005787479877471924,
+                0.001338337008060154
+            ],
+            [
+                "-ftree-coalesce-vars"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005848274230957031,
+                0.0012436196318909006
+            ],
+            [
+                "-fwhole-program"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005920708179473877,
+                0.0013866040786619368
+            ],
+            [
+                "-fzero-initialized-in-bss"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fgo-debug-escape"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005897939205169678,
+                0.0016741681958642213
+            ],
+            [
+                "-ffinite-math-only"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005893244743347168,
+                0.0012630820789060596
+            ],
+            [
+                "-fmerge-all-constants"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-finline-limit-"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdebug=ident"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005882694721221924,
+                0.0013857364563861143
+            ],
+            [
+                "-fsched-verbose=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005897800922393798,
+                0.0013075008697991982
+            ],
+            [
+                "-ftree-loop-linear"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005860261917114258,
+                0.0011237893859625243
+            ],
+            [
+                "-fsched-spec-load"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gvariable-location-views"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gnatO"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-icf-variables"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005757339000701904,
+                0.0010499122055454202
+            ],
+            [
+                "-mintel-syntax"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsplit-loops"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005948038101196289,
+                0.0013831980698722054
+            ],
+            [
+                "-fstack-check"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006075224876403809,
+                0.001514225480895047
+            ],
+            [
+                "-ftree-sink"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005916399955749512,
+                0.0012764939331618356
+            ],
+            [
+                "-freorder-functions"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-cp-alignment"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059620094299316405,
+                0.00136519123967802
+            ],
+            [
+                "-mabm"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005832521915435791,
+                0.0013327191614095298
+            ],
+            [
+                "-fjump-tables"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005981047153472901,
+                0.001311098605789348
+            ],
+            [
+                "-finline-limit=1"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-imultiarch"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsemantic-interposition"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006298720836639404,
+                0.0011738240320375436
+            ],
+            [
+                "-fsched-critical-path-heuristic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005816316604614258,
+                0.00136179813022044
+            ],
+            [
+                "--verbose"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057954716682434085,
+                0.0012690170966984174
+            ],
+            [
+                "-fmessage-length=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005776371955871582,
+                0.0013615448672472466
+            ],
+            [
+                "-fvisibility=hidden"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005736055374145507,
+                0.0013901899581420755
+            ],
+            [
+                "-fipa-sra"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00598228931427002,
+                0.0012192292410442567
+            ],
+            [
+                "-m64"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057991456985473635,
+                0.0009997145137517986
+            ],
+            [
+                "-ftree-ch"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fkeep-gc-roots-live"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include-prefix"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005974359512329101,
+                0.0011165232843838994
+            ],
+            [
+                "-finline"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058152079582214355,
+                0.0013141959780404284
+            ],
+            [
+                "-mpc80"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005987014770507813,
+                0.001589791311389486
+            ],
+            [
+                "-m96bit-long-double"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fversion=ident"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fbuiltin-"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006139504909515381,
+                0.0011912528933544588
+            ],
+            [
+                "-mlzcnt"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006127302646636963,
+                0.0014800638304722522
+            ],
+            [
+                "-ftree-loop-optimize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005976932048797607,
+                0.0015607234953817866
+            ],
+            [
+                "-floop-strip-mine"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mandroid"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006059837341308594,
+                0.0016167715910405279
+            ],
+            [
+                "-gstrict-dwarf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005770671367645264,
+                0.0011417001845950034
+            ],
+            [
+                "-funswitch-loops"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005947692394256592,
+                0.0011541921740000644
+            ],
+            [
+                "-mglibc"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005911903381347656,
+                0.001150309668670693
+            ],
+            [
+                "-mieee-fp"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005944044589996338,
+                0.001216790391430503
+            ],
+            [
+                "-fverbose-asm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-frandom-seed"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005833327770233154,
+                0.001326535615805017
+            ],
+            [
+                "-gpubnames"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005847032070159912,
+                0.0011974676224070968
+            ],
+            [
+                "-msse5"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mptwrite"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdebug=level"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006015384197235107,
+                0.001352256766054957
+            ],
+            [
+                "-fira-region=one"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005887351036071777,
+                0.0015560848263367639
+            ],
+            [
+                "-mstackrealign"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005791683197021485,
+                0.001213155081908929
+            ],
+            [
+                "-femit-class-debug-always"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057215547561645505,
+                0.0014782205624157092
+            ],
+            [
+                "-fdbg-cnt-list"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gas-locview-support"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005903692245483399,
+                0.0012765121519708854
+            ],
+            [
+                "-ffast-math"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005954999923706055,
+                0.0014549288641657245
+            ],
+            [
+                "-fsched-stalled-insns-dep=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fversion"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mrdpid"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005858073234558106,
+                0.001195649104443231
+            ],
+            [
+                "-msse4"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006095893383026123,
+                0.001461657357987979
+            ],
+            [
+                "-fbranch-count-reg"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mpcommit"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00574723482131958,
+                0.0013388301328537179
+            ],
+            [
+                "-fconstexpr-depth=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005986440181732178,
+                0.0012209930208785349
+            ],
+            [
+                "-fkeep-static-consts"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005559864044189453,
+                0.001099217875948068
+            ],
+            [
+                "-fcombine-stack-adjustments"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005770683288574219,
+                0.0012479329831353795
+            ],
+            [
+                "-fvar-tracking"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmanual-endbr"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmusl"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--dumpdir"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058599901199340824,
+                0.0010660706670975906
+            ],
+            [
+                "-fdiagnostics-show-caret"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fplt"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060278701782226565,
+                0.0014236968903306763
+            ],
+            [
+                "-std=gnu++1y"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005843651294708252,
+                0.0014194119432312576
+            ],
+            [
+                "-fdump-final-insns=filename"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005921292304992676,
+                0.0014794147447051715
+            ],
+            [
+                "-fstrict-overflow"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005902714729309082,
+                0.0013838910653841004
+            ],
+            [
+                "-mrtm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flra-remat"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005771939754486084,
+                0.0013412078296813996
+            ],
+            [
+                "-minline-all-stringops"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057415771484375,
+                0.0011236620981023248
+            ],
+            [
+                "-fstack-protector-all"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006101722717285156,
+                0.0013334606933586418
+            ],
+            [
+                "-mforce-drap"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005862948894500733,
+                0.0013965099693915132
+            ],
+            [
+                "-msse4.2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006033985614776611,
+                0.0012092909279315086
+            ],
+            [
+                "-ftree-builtin-call-dce"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftemplate-depth=0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mno-default"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fstdarg-opt"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060461854934692385,
+                0.0013076365022959325
+            ],
+            [
+                "-ftree-loop-distribute-patterns"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005787796974182129,
+                0.0011460386629974391
+            ],
+            [
+                "-ftree-ter"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005900404453277588,
+                0.0012036256477705556
+            ],
+            [
+                "-fcoarray=none"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006021096706390381,
+                0.0013561299432840676
+            ],
+            [
+                "-fpost-ipa-mem-report"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006009945869445801,
+                0.0014096112615519345
+            ],
+            [
+                "-fargument-noalias-anything"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005992140769958496,
+                0.00132733653968096
+            ],
+            [
+                "-fguess-branch-probability"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060338425636291505,
+                0.0014380045730737446
+            ],
+            [
+                "-v"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mstack-arg-probe"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005811290740966797,
+                0.0011492763084574534
+            ],
+            [
+                "-fasynchronous-unwind-tables"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006147415637969971,
+                0.0014142367024697054
+            ],
+            [
+                "-mpush-args"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006136059761047363,
+                0.001539422822851978
+            ],
+            [
+                "-fexpensive-optimizations"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fpack-struct=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005947995185852051,
+                0.0013386309056437665
+            ],
+            [
+                "-fstack-check=generic"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fasan-shadow-offset=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005796816349029541,
+                0.0011596655445831312
+            ],
+            [
+                "-fgcse-sm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-iprefix"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006073870658874512,
+                0.0013090778657282806
+            ],
+            [
+                "-funroll-loops"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mvaes"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mxsaves"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006044304370880127,
+                0.0017797603790708327
+            ],
+            [
+                "-fcprop-registers"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059428238868713375,
+                0.0015695162583604187
+            ],
+            [
+                "-fdiagnostics-show-location=once"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057166552543640135,
+                0.0014445811471828754
+            ],
+            [
+                "-fdump-passes"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005785491466522217,
+                0.001221024062146156
+            ],
+            [
+                "-ftree-coalesce-inlined-vars"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fassume-phsa"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ginline-points"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005839664936065674,
+                0.0011080918738763795
+            ],
+            [
+                "-mindirect-branch-register"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006136398315429687,
+                0.0017848018961179248
+            ],
+            [
+                "-mavx2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0055603766441345214,
+                0.0015529797147196542
+            ],
+            [
+                "-fstrength-reduce"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005880749225616455,
+                0.0012075405920691127
+            ],
+            [
+                "-fsync-libcalls"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsave-optimization-record"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006047246456146241,
+                0.001313219952207328
+            ],
+            [
+                "-mpc32"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006020607948303222,
+                0.0015435863340913783
+            ],
+            [
+                "-ftree-scev-cprop"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058068656921386715,
+                0.001259559024149059
+            ],
+            [
+                "-fcoarray=lib"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include-with-prefix"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005760424137115479,
+                0.0014413552169294259
+            ],
+            [
+                "-findirect-inlining"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005971698760986328,
+                0.0012886135885379789
+            ],
+            [
+                "-freorder-blocks-and-partition"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mvpclmulqdq"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512vbmi2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059705829620361325,
+                0.0017256636848606518
+            ],
+            [
+                "-funsafe-loop-optimizations"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060273027420043946,
+                0.0014660084543019198
+            ],
+            [
+                "-ftree-loop-ivcanon"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005795586109161377,
+                0.0014517224492332523
+            ],
+            [
+                "-frerun-loop-opt"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005945827960968018,
+                0.0012745356839296749
+            ],
+            [
+                "-fshort-enums"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcf-protection=branch"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvisibility=package"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005917751789093017,
+                0.001233633380813599
+            ],
+            [
+                "-madx"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsso-struct=native"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fprintf-return-value"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flto-report-wpa"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060487031936645504,
+                0.0013730548033341898
+            ],
+            [
+                "-ftree-sra"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512er"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fprofile-update=single"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005737521648406982,
+                0.0014004074186506766
+            ],
+            [
+                "-mlarge-data-threshold=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005958809852600098,
+                0.001343018322570074
+            ],
+            [
+                "-p"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00570526123046875,
+                0.0015156154597904307
+            ],
+            [
+                "--pedantic-errors"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fprofile-update=prefer-atomic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005932047367095948,
+                0.0011934461756986493
+            ],
+            [
+                "-mlong-double-80"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005944309234619141,
+                0.0014943541876475427
+            ],
+            [
+                "-fpic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005726585388183594,
+                0.0014648052010950005
+            ],
+            [
+                "-fsel-sched-reschedule-pipelined"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005864219665527344,
+                0.0013256998541623269
+            ],
+            [
+                "-ftree-dse"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005974481105804444,
+                0.0012847276048187015
+            ],
+            [
+                "-mno-red-zone"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005871884822845459,
+                0.0015575050254594122
+            ],
+            [
+                "-ffp-contract=on"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005756218433380127,
+                0.0013319906841686433
+            ],
+            [
+                "-mpopcnt"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx5124vnniw"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005808584690093994,
+                0.0011966084784438475
+            ],
+            [
+                "-finline-small-functions"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsanitize-undefined-trap-on-error"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmitigate-rop"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005795648097991943,
+                0.0013895685277115954
+            ],
+            [
+                "-pedantic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005839993953704834,
+                0.0010332798540818315
+            ],
+            [
+                "-ftabstop=3"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftrampolines"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057267284393310545,
+                0.0012247590799541583
+            ],
+            [
+                "-fbranch-target-load-optimize2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005938045978546143,
+                0.001285292624875105
+            ],
+            [
+                "--no-warnings"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060554718971252445,
+                0.0016112128935055034
+            ],
+            [
+                "-fira-hoist-pressure"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005720686912536621,
+                0.001496024789650111
+            ],
+            [
+                "-floop-optimize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005911877155303955,
+                0.0012425217692116908
+            ],
+            [
+                "-finline-limit=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006030373573303223,
+                0.00151063291356059
+            ],
+            [
+                "-fira-verbose=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006075565814971924,
+                0.0015504182347364631
+            ],
+            [
+                "-fstrict-aliasing"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-version"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mclwb"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006034293174743652,
+                0.0014663681849390233
+            ],
+            [
+                "-mlwp"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005864028930664063,
+                0.0013494893464709205
+            ],
+            [
+                "-fira-verbose=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005817368030548096,
+                0.0010356417783708115
+            ],
+            [
+                "-fpcc-struct-return"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006050374507904053,
+                0.0011545790470966716
+            ],
+            [
+                "-mlarge-data-threshold=0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512pf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005948326587677002,
+                0.0011291759919652032
+            ],
+            [
+                "-fthread-jumps"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005991730690002441,
+                0.001220930226179092
+            ],
+            [
+                "-mfancy-math-387"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-std=c++1z"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005876970291137695,
+                0.0015057808048709509
+            ],
+            [
+                "-fpeel-loops"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060074257850646975,
+                0.0013082185852302357
+            ],
+            [
+                "-mprefer-avx128"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005932848453521728,
+                0.0013332355009914314
+            ],
+            [
+                "-fira-algorithm=priority"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-ops-limit=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mcall-ms2sysv-xlogues"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fexcess-precision=standard"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00592848539352417,
+                0.001131529924102145
+            ],
+            [
+                "-fprofile-correction"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006231601238250732,
+                0.0015514435879927387
+            ],
+            [
+                "-fprefetch-loop-arrays"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005880031585693359,
+                0.0014803825539006215
+            ],
+            [
+                "-gtoggle"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005986900329589844,
+                0.001396662414401217
+            ],
+            [
+                "-fdiagnostics-show-option"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059672737121582034,
+                0.0012415420648502523
+            ],
+            [
+                "-fsched-stalled-insns-dep=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006031467914581299,
+                0.0012065371238550453
+            ],
+            [
+                "-gno-pubnames"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mlong-double-128"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-ra"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005959959030151367,
+                0.0013005248780085742
+            ],
+            [
+                "-mpc64"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvect-cost-model=dynamic"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-freorder-blocks-algorithm=simple"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcilkplus"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005989775657653808,
+                0.0012136373056357598
+            ],
+            [
+                "-mavx256-split-unaligned-load"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006070830821990967,
+                0.0011754168526312732
+            ],
+            [
+                "--profile"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006000359058380127,
+                0.0012603354518806965
+            ],
+            [
+                "-ftracer"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00592240571975708,
+                0.001082266161032777
+            ],
+            [
+                "-fira-share-spill-slots"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flive-patching"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005914387702941895,
+                0.001239594108860019
+            ],
+            [
+                "-fvect-cost-model"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006151363849639892,
+                0.0013034004153146769
+            ],
+            [
+                "-fprofile-arcs"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvect-cost-model=unlimited"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005776526927947998,
+                0.0012371977174862351
+            ],
+            [
+                "-fdiagnostics-show-location=every-line"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-Hd"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005771234035491944,
+                0.0013083151812648178
+            ],
+            [
+                "-ftree-vrp"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060305953025817875,
+                0.001325720746648108
+            ],
+            [
+                "-ftree-loop-if-convert"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006076459884643555,
+                0.0015604447910271143
+            ],
+            [
+                "-fdelayed-branch"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005939197540283203,
+                0.001330413162160605
+            ],
+            [
+                "-fident"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gno-"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005877177715301513,
+                0.00134658954572325
+            ],
+            [
+                "-fmax-errors=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005977797508239746,
+                0.0013874881010489024
+            ],
+            [
+                "-foptimize-strlen"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005857620239257812,
+                0.0011573814325481974
+            ],
+            [
+                "-fgcse-las"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flive-patching=inline-clone"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005882599353790283,
+                0.0010727645683265101
+            ],
+            [
+                "-falign-functions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006038177013397217,
+                0.0012733854037375596
+            ],
+            [
+                "-fira-region=all"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00582561731338501,
+                0.0014481305160940266
+            ],
+            [
+                "-mvzeroupper"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fprofile-reorder-functions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005833740234375,
+                0.0014145536397543474
+            ],
+            [
+                "-flto"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-loop-limit=0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include-directory-after"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006014518737792969,
+                0.0014428994683722196
+            ],
+            [
+                "-fsel-sched-pipelining"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005681838989257813,
+                0.001253312481273851
+            ],
+            [
+                "-fsched2-use-traces"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fversion=level"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005871672630310059,
+                0.0014342736598445787
+            ],
+            [
+                "-fdump-noaddr"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059778690338134766,
+                0.0011913521758063546
+            ],
+            [
+                "-O2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005822539329528809,
+                0.0012916445804914193
+            ],
+            [
+                "-ffp-contract=fast"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006157464981079101,
+                0.0014375718750499378
+            ],
+            [
+                "-fassociative-math"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005983476638793945,
+                0.0014667105154905977
+            ],
+            [
+                "-ftree-dce"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gcolumn-info"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--output"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512vbmi"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005749857425689698,
+                0.0015220009436091406
+            ],
+            [
+                "-fstack-usage"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005942611694335937,
+                0.0015420365534705523
+            ],
+            [
+                "-fpeephole2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006044948101043701,
+                0.001092981227920049
+            ],
+            [
+                "-ftree-parallelize-loops=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005987660884857178,
+                0.0013837314433102843
+            ],
+            [
+                "-ftrack-macro-expansion"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005957779884338379,
+                0.0012717816576939707
+            ],
+            [
+                "-ftree-loop-distribution"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512vnni"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-lang-asm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fleading-underscore"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gstatement-frontiers"
+            ]
+        ],
+        [
+            "Runtime error",
+            Infinity,
+            [
+                "-muclibc"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fstore-merging"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005943458080291748,
+                0.0011372823551823155
+            ],
+            [
+                "-fprofile-values"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gvariable-location-views=incompat5"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005875082015991211,
+                0.00129257971851608
+            ],
+            [
+                "-mhard-float"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005978651046752929,
+                0.0013415325922587
+            ],
+            [
+                "--debug"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fpack-struct"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005747652053833008,
+                0.0009872784248994913
+            ],
+            [
+                "-mavx"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005906052589416504,
+                0.0011052153530980843
+            ],
+            [
+                "-fcommon"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005874125957489013,
+                0.0010771113197247631
+            ],
+            [
+                "-O3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059820437431335445,
+                0.001279721339369564
+            ],
+            [
+                "-finit-real=nan"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-icf-functions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005948996543884278,
+                0.0012372877665331032
+            ],
+            [
+                "-finhibit-size-directive"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005873079299926758,
+                0.001210566290583653
+            ],
+            [
+                "-fipa-struct-reorg"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006233413219451905,
+                0.0014771166707456267
+            ],
+            [
+                "-fallow-leading-underscore"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005863502025604248,
+                0.0012456006839217553
+            ],
+            [
+                "-ftrapv"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00612497091293335,
+                0.0013760377497628944
+            ],
+            [
+                "-ftree-parallelize-loops=3"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512cd"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mstv"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005833945274353027,
+                0.001487628809515008
+            ],
+            [
+                "-mpku"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005962631702423096,
+                0.001472432222932571
+            ],
+            [
+                "-free"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flto-odr-type-merging"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mwbnoinvd"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-I"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057321381568908696,
+                0.001325196736492162
+            ],
+            [
+                "--all-warnings"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005972480773925782,
+                0.0010720627450970445
+            ],
+            [
+                "-msse3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006141948699951172,
+                0.0014302808442425354
+            ],
+            [
+                "-ffunction-sections"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005806114673614502,
+                0.0012590722936745861
+            ],
+            [
+                "-ftree-copy-prop"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-freorder-blocks-algorithm=stc"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006220130920410156,
+                0.0017169368000851135
+            ],
+            [
+                "-fsched-spec-load-dangerous"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512dq"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdiagnostics-show-line-numbers"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flimit-function-alignment"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-ops-limit=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00591616153717041,
+                0.0014524269589076336
+            ],
+            [
+                "-ftree-fre"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005866842269897461,
+                0.001426983290619937
+            ],
+            [
+                "-fcaller-saves"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00582334041595459,
+                0.0012437941914428873
+            ],
+            [
+                "-fstack-check=specific"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fbuiltin-printf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060162973403930665,
+                0.0013857376901808512
+            ],
+            [
+                "-ffat-lto-objects"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005931470394134521,
+                0.0011806898247271743
+            ],
+            [
+                "-fconstexpr-depth=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005913996696472168,
+                0.001324183724116452
+            ],
+            [
+                "-fopt-info"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-dumpbase"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005984303951263428,
+                0.0011417142882624548
+            ],
+            [
+                "-flto-report"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gcoff2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00607365608215332,
+                0.0013214346938664934
+            ],
+            [
+                "-fnothrow-opt"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include-with-prefix-before"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fuse-ld=lld"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058843445777893065,
+                0.0011973193893597045
+            ],
+            [
+                "-mfp-ret-in-387"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005761961936950683,
+                0.0014098528025046578
+            ],
+            [
+                "-mxsave"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005781064033508301,
+                0.0013378125941834853
+            ],
+            [
+                "-msseregparm"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005999600887298584,
+                0.0013363190221713703
+            ],
+            [
+                "-MD"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftime-report-details"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fkeep-static-functions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005900447368621826,
+                0.001146833551743223
+            ],
+            [
+                "-fschedule-insns2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057330942153930664,
+                0.0012249976691557675
+            ],
+            [
+                "-mfma4"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005838358402252197,
+                0.001153315465156548
+            ],
+            [
+                "-fdelete-dead-exceptions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006041743755340576,
+                0.0013656893983445063
+            ],
+            [
+                "-mavx256-split-unaligned-store"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx5124fmaps"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005985114574432373,
+                0.0013747880882141418
+            ],
+            [
+                "-finit-real=snan"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gxcoff"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fgnat-encodings=gdb"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005896425247192383,
+                0.0012708292046179992
+            ],
+            [
+                "-fbranch-target-load-optimize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006065058708190918,
+                0.0013734300842065115
+            ],
+            [
+                "-feliminate-unused-debug-types"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006040322780609131,
+                0.0013022235870052442
+            ],
+            [
+                "-ftls-model=global-dynamic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005853614807128906,
+                0.001329911306272115
+            ],
+            [
+                "-ftree-bit-ccp"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005991606712341308,
+                0.0010646550129514395
+            ],
+            [
+                "-fstack-reuse=all"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058885979652404784,
+                0.001085844196055941
+            ],
+            [
+                "-fargument-noalias"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00593679428100586,
+                0.001270879076948686
+            ],
+            [
+                "-fmax-errors=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00598773717880249,
+                0.001165080109842435
+            ],
+            [
+                "-fmodulo-sched-allow-regmoves"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fcf-protection=none"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00596228837966919,
+                0.0011132427302885657
+            ],
+            [
+                "-msse4a"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gcoff3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0056835818290710445,
+                0.0008496077469209057
+            ],
+            [
+                "-fgraphite-identity"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--dump"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006155169010162354,
+                0.000975859164250978
+            ],
+            [
+                "-fsplit-wide-types"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005893988609313965,
+                0.00135167658051022
+            ],
+            [
+                "-frtti"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005785222053527832,
+                0.0011299887024750078
+            ],
+            [
+                "-fkeep-inline-functions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005994772911071778,
+                0.001087042904791906
+            ],
+            [
+                "-finit-real=inf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005981001853942871,
+                0.0012814590014412473
+            ],
+            [
+                "-fira-share-save-slots"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsanitize-address-use-after-scope"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005940439701080322,
+                0.0011066633878856562
+            ],
+            [
+                "-fprofile-use"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006094083786010742,
+                0.0012736648737737822
+            ],
+            [
+                "-finit-logical=false"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mrecord-mcount"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006054930686950684,
+                0.0012711041836371533
+            ],
+            [
+                "-fmessage-length=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005868375301361084,
+                0.0013229604011142837
+            ],
+            [
+                "-fpredictive-commoning"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gdwarf-"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fisolate-erroneous-paths-dereference"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006111509799957275,
+                0.0013816713451895312
+            ],
+            [
+                "-fvpt"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005800068378448486,
+                0.0013112619993635149
+            ],
+            [
+                "-fbuilding-libgcc"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gvms"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ggnu-pubnames"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gcoff"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fbounds-check=safeonly"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006142730712890625,
+                0.0012879378220909915
+            ],
+            [
+                "-ftree-loop-if-convert-stores"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005937826633453369,
+                0.0014988541202241813
+            ],
+            [
+                "-fmax-errors=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005744798183441162,
+                0.0012517953476002446
+            ],
+            [
+                "-finline-atomics"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005786886215209961,
+                0.001213550824029451
+            ],
+            [
+                "-funit-at-a-time"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005944027900695801,
+                0.001203464841958418
+            ],
+            [
+                "-fconserve-stack"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fssa-phiopt"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512bitalg"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gz"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005946214199066162,
+                0.0012091975134147742
+            ],
+            [
+                "-fcoarray=single"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006042537689208985,
+                0.0013529353495716518
+            ],
+            [
+                "-fconstexpr-depth=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005923459529876709,
+                0.0013560989482747
+            ],
+            [
+                "-fdse"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058912158012390135,
+                0.0013141028502122744
+            ],
+            [
+                "-ftree-parallelize-loops=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006056592464447021,
+                0.0012795562666363745
+            ],
+            [
+                "-fsection-anchors"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00581444501876831,
+                0.0011850822403104719
+            ],
+            [
+                "-mfsgsbase"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005803983211517334,
+                0.0014292520532790734
+            ],
+            [
+                "-fdelete-null-pointer-checks"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005902049541473389,
+                0.001509831748784607
+            ],
+            [
+                "-MMD"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-imacros"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005669031143188476,
+                0.0012413527046508215
+            ],
+            [
+                "-fforce-addr"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-auxbase-strip"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058695125579833985,
+                0.0010590413863871965
+            ],
+            [
+                "-fcse-follow-jumps"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005935752391815185,
+                0.0012053692849702412
+            ],
+            [
+                "-fselective-scheduling2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005729727745056153,
+                0.0014243177795921324
+            ],
+            [
+                "-std=c++1y"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fwrapv-pointer"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-E"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-bit-cp"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005728867053985596,
+                0.0011737958114255108
+            ],
+            [
+                "-fipa-pta"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gdwarf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005875701904296875,
+                0.001388458991917779
+            ],
+            [
+                "-mbmi"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fschedule-fusion"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005675420761108398,
+                0.0009569872009437607
+            ],
+            [
+                "-fsched-stalled-insns"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005891323089599609,
+                0.001117484637551144
+            ],
+            [
+                "-mbmi2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005882632732391357,
+                0.0010431651005365335
+            ],
+            [
+                "-ftemplate-depth=3"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gxcoff+"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006000025272369385,
+                0.0010966550172675713
+            ],
+            [
+                "--extra-warnings"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-vrp"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005913419723510742,
+                0.001051222094770731
+            ],
+            [
+                "-ftrapping-math"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005964255332946778,
+                0.0013304927665618348
+            ],
+            [
+                "-fexcess-precision=fast"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005800600051879883,
+                0.0015503280173415192
+            ],
+            [
+                "-gsplit-dwarf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005720999240875244,
+                0.0013629555173011985
+            ],
+            [
+                "-fauto-inc-dec"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--version"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--param"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006021432876586914,
+                0.0012806122835880617
+            ],
+            [
+                "-maes"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005986123085021972,
+                0.0013138976742920337
+            ],
+            [
+                "-finit-real=-inf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006008422374725342,
+                0.001323930461375711
+            ],
+            [
+                "-mtbm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flifetime-dse"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00599534273147583,
+                0.00117108985116624
+            ],
+            [
+                "-fselective-scheduling"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include-directory"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mskip-rax-setup"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fisolate-erroneous-paths-attribute"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0056569576263427734,
+                0.0011075516138062196
+            ],
+            [
+                "-mf16c"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mxsavec"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005993165969848633,
+                0.0011310083406127003
+            ],
+            [
+                "-fPIE"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fvisibility=public"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005808899402618408,
+                0.0011628701202417919
+            ],
+            [
+                "-fsched-pressure"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005930552482604981,
+                0.0012164415781147585
+            ],
+            [
+                "-mno-fancy-math-387"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdiagnostics-parseable-fixits"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005928056240081787,
+                0.000995420174502627
+            ],
+            [
+                "-fsched-stalled-insns=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-imultilib"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005861201286315918,
+                0.0011505153797082626
+            ],
+            [
+                "-fsched-stalled-insns-dep=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005804603099822998,
+                0.0010656979992227594
+            ],
+            [
+                "-fivopts"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005951545238494873,
+                0.0011235215100320597
+            ],
+            [
+                "-fdevirtualize"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mpconfig"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006144852638244629,
+                0.0013118574635837888
+            ],
+            [
+                "-floop-flatten"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-reference-addressable"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058360624313354495,
+                0.0012910189406667928
+            ],
+            [
+                "-Og"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005950970649719238,
+                0.001364194956653142
+            ],
+            [
+                "-mxsaveopt"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006021194458007813,
+                0.0013410208411957503
+            ],
+            [
+                "-fnon-call-exceptions"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0061626601219177245,
+                0.001201156249594198
+            ],
+            [
+                "-fsched-dep-count-heuristic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006036262512207031,
+                0.0011246769910335161
+            ],
+            [
+                "-finit-real=zero"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fchecking"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005811252593994141,
+                0.0012864881522877457
+            ],
+            [
+                "-fmerge-debug-strings"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00591355562210083,
+                0.001170547455327627
+            ],
+            [
+                "-fsched-verbose=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006187543869018554,
+                0.0014197240595248206
+            ],
+            [
+                "-fsignaling-nans"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005804438591003418,
+                0.0012721053987678173
+            ],
+            [
+                "-msse4.1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059833693504333495,
+                0.0012025822545982236
+            ],
+            [
+                "-fuse-ld=gold"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006098072528839111,
+                0.0013620211398857975
+            ],
+            [
+                "-mno-align-stringops"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005947442054748535,
+                0.0015868070772037824
+            ],
+            [
+                "-mcx16"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ffp-int-builtin-inexact"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005802271366119385,
+                0.0013635995305355496
+            ],
+            [
+                "-fira-region=mixed"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005949766635894776,
+                0.0013988752011690597
+            ],
+            [
+                "-ftree-slsr"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005797936916351319,
+                0.0011269417657994618
+            ],
+            [
+                "-mdispatch-scheduler"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005859713554382324,
+                0.0012254436883465175
+            ],
+            [
+                "--write-dependencies"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006235871315002441,
+                0.0015414112054914957
+            ],
+            [
+                "-fsched-verbose=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005705771446228028,
+                0.0015282457819478774
+            ],
+            [
+                "-msse"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005997786521911621,
+                0.0011595150402627697
+            ],
+            [
+                "-ftree-dominator-opts"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flive-patching=inline-only-static"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005726046562194824,
+                0.001325373255472633
+            ],
+            [
+                "-fsched-spec"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mwaitpkg"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006144795417785644,
+                0.0013541890622551897
+            ],
+            [
+                "-falign-jumps"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fstrong-eval-order"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005715842247009277,
+                0.0012474963490098486
+            ],
+            [
+                "-fipa-pure-const"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00619837760925293,
+                0.0016073171700049728
+            ],
+            [
+                "-mrecip"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-Hf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005659420490264893,
+                0.0012812373966085502
+            ],
+            [
+                "-fsched-group-heuristic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006025416851043701,
+                0.0011652248120075186
+            ],
+            [
+                "-ftls-model=local-exec"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-MQ"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mclzero"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006241602897644043,
+                0.0016452421528232093
+            ],
+            [
+                "-fdiagnostics-color"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005779070854187012,
+                0.0013764476870183858
+            ],
+            [
+                "-fipa-cp"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-funconstrained-commons"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mforce-indirect-call"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005764913558959961,
+                0.0013033924684163678
+            ],
+            [
+                "-ftree-store-copy-prop"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005945808887481689,
+                0.001259555707498335
+            ],
+            [
+                "-fearly-inlining"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005813291072845459,
+                0.0013279786202324282
+            ],
+            [
+                "-floop-block"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005982403755187988,
+                0.0015541882296631077
+            ],
+            [
+                "-O0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-auxbase"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006080970764160156,
+                0.001400841291193133
+            ],
+            [
+                "-fvar-tracking-assignments-toggle"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005882358551025391,
+                0.0014089243254202547
+            ],
+            [
+                "-ftree-ccp"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-loop-limit=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00593085765838623,
+                0.0012976247701173961
+            ],
+            [
+                "-fpartial-inlining"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-m32"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005912802219390869,
+                0.0013401829982284486
+            ],
+            [
+                "-fipa-reference"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005898475646972656,
+                0.0012312156737278774
+            ],
+            [
+                "-mfxsr"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005999648571014404,
+                0.0013495506361947426
+            ],
+            [
+                "-freciprocal-math"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-MF"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-o"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005703122615814209,
+                0.0011257697819995567
+            ],
+            [
+                "-floop-nest-optimize"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005881364345550537,
+                0.0013207104460039698
+            ],
+            [
+                "-malign-double"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006150882244110107,
+                0.0015305647736778346
+            ],
+            [
+                "-fgcse"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-msgx"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fpermitted-flt-eval-methods=c11"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-idirafter"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005960977077484131,
+                0.0015249384936844147
+            ],
+            [
+                "-foptimize-sibling-calls"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ginternal-reset-location-views"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006047718524932862,
+                0.0014546209938214268
+            ],
+            [
+                "-fcheck-data-deps"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058975529670715334,
+                0.001134412860341306
+            ],
+            [
+                "-mred-zone"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006085047721862793,
+                0.0015151059104750527
+            ],
+            [
+                "-w"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006100637912750244,
+                0.0014375371187214272
+            ],
+            [
+                "-finline-functions-called-once"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-flive-range-shrinkage"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mcldemote"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006129529476165772,
+                0.0011913038854799898
+            ],
+            [
+                "-Ofast"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005842537879943848,
+                0.0013714780018789583
+            ],
+            [
+                "-fdump-unnumbered"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006100544929504395,
+                0.001433233193135798
+            ],
+            [
+                "-fmessage-length=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005780322551727295,
+                0.0012029601366297102
+            ],
+            [
+                "-fira-loop-pressure"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006150796413421631,
+                0.0011056625391233973
+            ],
+            [
+                "-foptimize-register-move"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005988097190856934,
+                0.0011723637238805378
+            ],
+            [
+                "-fdiagnostics-color=auto"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057784104347229,
+                0.001347501814739961
+            ],
+            [
+                "--write-user-dependencies"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006106562614440918,
+                0.0016512117325432698
+            ],
+            [
+                "-ftree-vect-loop-version"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005736331939697265,
+                0.0016214475934903329
+            ],
+            [
+                "-fvisibility=internal"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006013717651367188,
+                0.0013752852957100272
+            ],
+            [
+                "-fstrict-enums"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005974218845367431,
+                0.001356814913768799
+            ],
+            [
+                "-fgnu-unique"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006069333553314209,
+                0.0014291407007877297
+            ],
+            [
+                "-faggressive-loop-optimizations"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00607950210571289,
+                0.001583114369357736
+            ],
+            [
+                "-fmax-errors=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fshrink-wrap-separate"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005865471363067627,
+                0.0012518648602978433
+            ],
+            [
+                "-ffp-contract=off"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059312057495117185,
+                0.0012995854360761732
+            ],
+            [
+                "-fschedule-insns"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005942602157592774,
+                0.001247698913799734
+            ],
+            [
+                "-Os"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006018097400665283,
+                0.0012330376914697703
+            ],
+            [
+                "-fcse-skip-blocks"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006049585342407226,
+                0.001360602462639559
+            ],
+            [
+                "-fcx-fortran-rules"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdump-internal-locations"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005799911022186279,
+                0.0012582644877041041
+            ],
+            [
+                "-fdebug-types-section"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--include-with-prefix-after"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512vl"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060579442977905275,
+                0.0013080015007044042
+            ],
+            [
+                "-mssse3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059950947761535645,
+                0.0014654866688738174
+            ],
+            [
+                "-minline-stringops-dynamically"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005843710899353027,
+                0.0012656819725152466
+            ],
+            [
+                "-O1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005912528038024902,
+                0.0012299476007181355
+            ],
+            [
+                "-fpack-struct=1"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fintrinsic-modules-path"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mclflushopt"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fconstexpr-loop-limit=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005996339321136475,
+                0.001289720459092344
+            ],
+            [
+                "-std=c++0x"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006127548217773437,
+                0.0014137065793638657
+            ],
+            [
+                "-fsched-stalled-insns-dep=0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--preprocess"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0058766984939575195,
+                0.0013873448024030754
+            ],
+            [
+                "-fdce"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060292410850524905,
+                0.0011308828853772489
+            ],
+            [
+                "-fargument-alias"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-ftemplate-depth=1"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fasan-shadow-offset=1"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005912089347839355,
+                0.001129482665750512
+            ],
+            [
+                "-frename-registers"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006047139167785645,
+                0.0012955323863339174
+            ],
+            [
+                "-finline-limit=3"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-icf"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdiagnostics-generate-patch"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006012849807739258,
+                0.0012758815236333671
+            ],
+            [
+                "-fsched-stalled-insns-dep"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006131799221038819,
+                0.0013322702445228306
+            ],
+            [
+                "-mfma"
+            ]
+        ],
+        [
+            "Runtime error",
+            Infinity,
+            [
+                "-mbionic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005734519958496094,
+                0.0012666340144760163
+            ],
+            [
+                "-fprofile"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fgnat-encodings=minimal"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005845093727111816,
+                0.0012666541655189266
+            ],
+            [
+                "-fvisibility=default"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006021950244903564,
+                0.0012466352594131221
+            ],
+            [
+                "-ftest-coverage"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fdisable-"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006114766597747802,
+                0.0012961986640561867
+            ],
+            [
+                "-fcheck-new"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005872406959533691,
+                0.0012757544074860148
+            ],
+            [
+                "-frecord-gcc-switches"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005951871871948242,
+                0.0015112065816503993
+            ],
+            [
+                "-fstack-reuse=none"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mavx512bw"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006025424003601074,
+                0.0015660773834993702
+            ],
+            [
+                "-fregmove"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006195170879364014,
+                0.0014013825007793807
+            ],
+            [
+                "-mmmx"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "--imacros"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00605489730834961,
+                0.0013446987641979606
+            ],
+            [
+                "-ffloat-store"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005891084671020508,
+                0.001636459914105282
+            ],
+            [
+                "-fsingle-precision-constant"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0057505440711975095,
+                0.0014621726853269882
+            ],
+            [
+                "-mmovbe"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005826518535614013,
+                0.0015405780023582008
+            ],
+            [
+                "-feliminate-unused-debug-symbols"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006005580425262451,
+                0.0013140784107397365
+            ],
+            [
+                "-gstabs"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006172175407409668,
+                0.0013767899154010245
+            ],
+            [
+                "-finline-limit=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060471916198730465,
+                0.0013339905444900854
+            ],
+            [
+                "-mno-sse4"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005841658115386963,
+                0.0013956068951380724
+            ],
+            [
+                "-ftree-lrs"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005939447879791259,
+                0.0014756021048067734
+            ],
+            [
+                "-m3dnow"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mdump-tune-features"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00570068359375,
+                0.0015184018811342005
+            ],
+            [
+                "-mtls-direct-seg-refs"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-isysroot"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006006872653961182,
+                0.0012724505408526726
+            ],
+            [
+                "-fdiagnostics-color=never"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005965151786804199,
+                0.0009645036299088766
+            ],
+            [
+                "-fbranch-probabilities"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fasan-shadow-offset=2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005946335792541504,
+                0.001106077320966184
+            ],
+            [
+                "-fif-conversion2"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005791442394256592,
+                0.0009941363090878433
+            ],
+            [
+                "-fpeephole"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmovdir64b"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006012821197509765,
+                0.0011878312262346732
+            ],
+            [
+                "-ftree-store-ccp"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-dumpdir"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005958409309387207,
+                0.0012310864150067065
+            ],
+            [
+                "-m8bit-idiv"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-F"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005928146839141846,
+                0.0012170519923267167
+            ],
+            [
+                "-fbounds-check"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005858819484710693,
+                0.0011048588456983239
+            ],
+            [
+                "-fvisibility=protected"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005968232154846192,
+                0.0008952649999249988
+            ],
+            [
+                "-msahf"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005865130424499512,
+                0.001076367115381914
+            ],
+            [
+                "-fira-verbose=3"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0056833338737487795,
+                0.001012647855339807
+            ],
+            [
+                "-fbtr-bb-exclusive"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00591756820678711,
+                0.0011233949564296707
+            ],
+            [
+                "-fdefer-pop"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fipa-stack-alignment"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005951547622680664,
+                0.001304808123309025
+            ],
+            [
+                "-fsched-spec-insn-heuristic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059460759162902836,
+                0.0012302222225120433
+            ],
+            [
+                "-ftree-salias"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006010365486145019,
+                0.0011754629978324572
+            ],
+            [
+                "-fipa-matrix-reorg"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mmwaitx"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006058423519134521,
+                0.001578271094169504
+            ],
+            [
+                "-fmessage-length=0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsyntax-only"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mgfni"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-gdescribe-dies"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-mrecord-return"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsimd-cost-model=unlimited"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-msha"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0059576892852783205,
+                0.0012856176872753859
+            ],
+            [
+                "-fgcse-lm"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006243858337402344,
+                0.0012055676297963495
+            ],
+            [
+                "-fgnu-tm"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsanitize-recover"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.006070852279663086,
+                0.0013455830358515004
+            ],
+            [
+                "-ftree-reassoc"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.00604755163192749,
+                0.0010247801420624077
+            ],
+            [
+                "-fsched-rank-heuristic"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005813901424407959,
+                0.0013581085562350214
+            ],
+            [
+                "-ftabstop=0"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fauto-profile"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005825846195220947,
+                0.0013991059996986766
+            ],
+            [
+                "-fpack-struct=2"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fsplit-paths"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005930831432342529,
+                0.0011345875123579233
+            ],
+            [
+                "-ftree-parallelize-loops=0"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.0060743212699890135,
+                0.0011941282315449202
+            ],
+            [
+                "-fdump-unnumbered-links"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-L"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005843160152435303,
+                0.0012961190480160873
+            ],
+            [
+                "-mlong-double-64"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-fssa-backprop"
+            ]
+        ],
+        [
+            "Build failure",
+            Infinity,
+            [
+                "-iquote"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005834908485412598,
+                0.0011817323612961718
+            ],
+            [
+                "-ftree-partial-pre"
+            ]
+        ],
+        [
+            "Run success",
+            [
+                0.005743331909179687,
+                0.0011121067457125293
+            ],
+            [
+                "-fcrossjumping"
+            ]
+        ]
+    ]
+}

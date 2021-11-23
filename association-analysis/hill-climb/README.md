@@ -1,7 +1,7 @@
 # Hill Climbing
 
 For this analysis, we want to be able to understand the contribution of each flag,
-so we are going to stupidly loop through them and measure it, and also collect 10 samples of runtimes 
+so we are going to stupidly loop through them and measure it, and also collect 10 samples of runtimes
 to know the variance. This process can be called [hill climbing](https://web.cs.hacettepe.edu.tr/~ilyas/Courses/VBM688/lec05_localsearch.pdf).
 
 ## Usage
@@ -48,7 +48,7 @@ $ find ../code -name "*Prog.cpp" | parallel -I% --max-args 1 python hill-climb.p
 There is a [run.sh](run.sh) script that I used, and ultimately ran between a range of 0 and 29 (to generate 30 runs of the same predictions for 100 iterations each). Finally, to run on a SLURM cluster:
 
 ```bash
-for iter in {0..1}; do
+for iter in {1..29}; do
    sbatch run_slurm.sh $iter
 done
 ```
@@ -66,7 +66,7 @@ This is the plan! This will require using the [tokens](../tokens). This is also 
 
 ## One token and one flag
 
-This is the simpleset approach, but there will likely be spurious correlations found. 
+This is the simpleset approach, but there will likely be spurious correlations found.
 
 ```
 For each flag:
@@ -86,7 +86,7 @@ Instead of looping through the tokens (second loop) do multiple regression where
 ```
 For each experiment (i.e. 5000-steps), find the union of all flags across all steps. Store it as a set S.
 
-Make a dictionary D mapping tuples of sorted flag names to values (i.e. runtimes). 
+Make a dictionary D mapping tuples of sorted flag names to values (i.e. runtimes).
 
 Make another dictionary D_deltas whose keys are (single) flags. Each value will be a list of 2-tuples representing the elements of D before and after adding the flag. Or, optionally, if we just want the average runtime at the end, it could just be a list of times.
 
