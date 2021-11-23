@@ -77,12 +77,13 @@ class HillClimber:
         self.results = []
         self.results_dir = results_dir
 
-    def step(self, idx):
+    def step(self, idx=None):
         """
         Test a specific flag
         """
         x_init = np.zeros(len(self._data["opts"]))
-        x_init[idx] = 1
+        if idx is not None:
+            x_init[idx] = 1
         self._func(x_init)
 
     # Function to randomly select flags and return runtime
@@ -156,6 +157,9 @@ class HillClimber:
         Returns:
           A list with the function values at each step taken.
         """
+        # Run a base case (no flags)
+        self.step()
+
         # Test each flag! These are the indices
         for idx in range(len(self._data["opts"])):
             self.step(idx)

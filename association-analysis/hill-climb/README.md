@@ -48,7 +48,8 @@ $ find ../code -name "*Prog.cpp" | parallel -I% --max-args 1 python hill-climb.p
 There is a [run.sh](run.sh) script that I used, and ultimately ran between a range of 0 and 29 (to generate 30 runs of the same predictions for 100 iterations each). Finally, to run on a SLURM cluster:
 
 ```bash
-for iter in {1..29}; do
+# We only need one run!
+for iter in {0..0}; do
    sbatch run_slurm.sh $iter
 done
 ```
@@ -60,6 +61,9 @@ flag. I also wanted to run the binary multiple times to get a sense of the varia
 
 ## Post Analysis
 
+### Clustering
+
+First, let's just read in the data and look for clusters (similar
 This is the plan! This will require using the [tokens](../tokens). This is also subject to change!
 
 **Preparation**: Take the union of all the tokens. Encode the token counts in each dimension.
