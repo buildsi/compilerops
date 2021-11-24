@@ -89,12 +89,23 @@ by doing:
 ### Linear Regression
 
 The goal here would be to predict the importance of a flag based on tokens, or breaking the code up into tiny pieces.
-This will require using the [tokens](../tokens).
+This will require using the [tokens](../tokens). Note that I tried this (script not preserved) and there was serious overfitting,
+but I did notice in the PDF that some flags have HUGE performance improvements, so it might make sense to just look at them.
+
+### Manhattan
+
+What I quickly saw with linear regression was overfitting up the wazoo (like, a perfectly straight line, nope!) So I decided to look at the flags pdf and filter out some set of flags that had a huge increase in performance, and then I'd look at the assembly before and after. But first I thought I'd try a visualization that is usually used for showing significant gene p-values - the manhatten plot! For compiler flags!
 
 ```bash
-$ python linear_regression.py data/flags-delta-times.csv ../tokens/data/
+$ python manhattan.py run data/flags-delta-times.csv ../tokens/data/
 ```
 
-TODO:
+This generates a manhatten plot for all the flags, and then a filtered one with values > 1.3. As a reminder, a value of 1 is the baseline time for the program, so anything above 1 is faster. I like this visualization because it shows a nice little row of flags that are clearly better! But I wanted to filter it a bit more to better look at the actual flags, and that's the second pdf.
 
-this is overfitting up the wazoo! Let's look at the flags pdf and find the few flags that do a LOT better and try to understand why.
+### Assembly
+
+Okay - now we can filter down to a set of flags and scripts that have a bit better performance. What I want to do is to look at the assemly of the program with and without the flag, and try to understand what is being optimized.
+
+```bash
+$ python explore_assembly.py run data/flags-times-flat.csv
+```
