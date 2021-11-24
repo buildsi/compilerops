@@ -6,5 +6,5 @@ the CPP code, and keep track of counts for the number of things that we find (e.
 To do that:
 
 ```bash
-$ python create_token_features.py ../examples Prog.cpp
+$ python create_token_features.py ../code Prog.cpp
 ```

@@ -61,39 +61,40 @@ flag. I also wanted to run the binary multiple times to get a sense of the varia
 
 ## Post Analysis
 
-### Clustering
+### Data Preparation
 
-First, let's just read in the data and look for clusters (similar
-This is the plan! This will require using the [tokens](../tokens). This is also subject to change!
+First let's read in the data, and prepare a matrix of percent changes. E.g., if we have a mean runtime for a compiled program
+(N=100 times run) we can subtract the runtime without any flags (also N=100) to get an percent change.
 
-**Preparation**: Take the union of all the tokens. Encode the token counts in each dimension.
-
-## One token and one flag
-
-This is the simpleset approach, but there will likely be spurious correlations found.
-
-```
-For each flag:
-  If the flag doesn't appear more than a threshold number of times for any program, skip it
-  For each token:
-    Split the programs into sets depending on the frequency of the token. If there is only one category, skip it.
-    Determine value of flag for each program (e.g., counts of the flag in optimal solutions, or expected improvement in program runtime when adding the flag)
-    Find the correlation of <X, Y>  = <token count, flag value>.
+```bash
+$ python flag_clustering.py run data/results/hill-climb-analysis/0
 ```
 
-We could also do this with a binary value (0/1) to say if the flag was chosen or not.
+This generates the pdf in [data](data) to show a basic clustering of flags, where the mapping of times is the following:
 
-## Multiple tokens and one flag
-
-Instead of looping through the tokens (second loop) do multiple regression where X is all the token counts. In other words, try to predict the 'flag values' from the tokens. This gives us the recovering impact of adding each flag, without having to re-run (without sorting, or keeping track of iteration):
+```bash
+failure -> 0
+no change -> 1
+slower -> between 0 and 1
+faster -> greater than 1
+time = 0 -> infinitely large
+```
+E.g., given a baseline time (running without any flags) and a runtime with one flag, we calculate the value
+by doing:
 
 ```
-For each experiment (i.e. 5000-steps), find the union of all flags across all steps. Store it as a set S.
+1 + (baseline - runtime) / runtime
+```
 
-Make a dictionary D mapping tuples of sorted flag names to values (i.e. runtimes).
+### Linear Regression
 
-Make another dictionary D_deltas whose keys are (single) flags. Each value will be a list of 2-tuples representing the elements of D before and after adding the flag. Or, optionally, if we just want the average runtime at the end, it could just be a list of times.
+The goal here would be to predict the importance of a flag based on tokens, or breaking the code up into tiny pieces.
+This will require using the [tokens](../tokens).
 
-Iterate through D:
-  Iterate through S:
-    try to add (or remove if present) value in S from each element of D. If the result is again in D, update D_deltas
+```bash
+$ python linear_regression.py data/flags-delta-times.csv ../tokens/data/
+```
+
+TODO:
+
+this is overfitting up the wazoo! Let's look at the flags pdf and find the few flags that do a LOT better and try to understand why.

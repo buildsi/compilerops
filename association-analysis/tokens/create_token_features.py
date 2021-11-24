@@ -64,7 +64,7 @@ def main():
     
     # Clean up column names
     df.index = [x.replace(here, "").strip(os.sep) for x in list(df.index)]
-    #df.to_csv(os.path.join(here, "data/cpp-tokens.csv")
+    df.to_csv(os.path.join(here, "data/cpp-tokens.csv"))
 
     # How to do a transform to visualize
     mds = MDS(n_components=2, metric=True, n_init=4, max_iter=300, verbose=0, eps=0.001, n_jobs=1, random_state=None, dissimilarity='euclidean')
