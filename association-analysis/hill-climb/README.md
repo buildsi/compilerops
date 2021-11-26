@@ -97,7 +97,7 @@ but I did notice in the PDF that some flags have HUGE performance improvements, 
 What I quickly saw with linear regression was overfitting up the wazoo (like, a perfectly straight line, nope!) So I decided to look at the flags pdf and filter out some set of flags that had a huge increase in performance, and then I'd look at the assembly before and after. But first I thought I'd try a visualization that is usually used for showing significant gene p-values - the manhatten plot! For compiler flags!
 
 ```bash
-$ python manhattan.py run data/flags-delta-times.csv ../tokens/data/
+$ python manhattan.py run data/flags-delta-times.csv ../tokens/data/cpp-tokens.csv
 ```
 
 This generates a manhatten plot for all the flags, and then a filtered one with values > 1.3. As a reminder, a value of 1 is the baseline time for the program, so anything above 1 is faster. I like this visualization because it shows a nice little row of flags that are clearly better! But I wanted to filter it a bit more to better look at the actual flags, and that's the second pdf.
@@ -109,3 +109,10 @@ Okay - now we can filter down to a set of flags and scripts that have a bit bett
 ```bash
 $ python explore_assembly.py run data/flags-times-flat.csv
 ```
+
+Once I did this I realized there was a cool opportunity here - we not only might be interested in how the assembly differs with/without a flag (and how that maps to performance) but also which flags might have similar influence, or no influence at all. E.g.,
+
+ - Generate assembly for the main program without flags, and then across flags
+ - For each, break into tokens (features) with counts
+ - Compare differences in tokens with/witout flags
+ - be able to say "this flag changes the program in this way"

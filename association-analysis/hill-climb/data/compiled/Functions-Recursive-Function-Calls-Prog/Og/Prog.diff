@@ -1,0 +1,235 @@
+3,9c3,52
+< 	.section	.rodata
+< 	.type	_ZStL19piecewise_construct, @object
+< 	.size	_ZStL19piecewise_construct, 1
+< _ZStL19piecewise_construct:
+< 	.zero	1
+< 	.local	_ZStL8__ioinit
+< 	.comm	_ZStL8__ioinit,1,1
+---
+> 	.type	_Z41__static_initialization_and_destruction_0ii, @function
+> _Z41__static_initialization_and_destruction_0ii:
+> .LFB2082:
+> 	.cfi_startproc
+> 	cmpl	$1, %edi
+> 	je	.L7
+> .L4:
+> 	ret
+> .L7:
+> 	cmpl	$65535, %esi
+> 	jne	.L4
+> 	subq	$8, %rsp
+> 	.cfi_def_cfa_offset 16
+> 	leaq	_ZStL8__ioinit(%rip), %rdi
+> 	call	_ZNSt8ios_base4InitC1Ev@PLT
+> 	leaq	__dso_handle(%rip), %rdx
+> 	leaq	_ZStL8__ioinit(%rip), %rsi
+> 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rdi
+> 	call	__cxa_atexit@PLT
+> 	addq	$8, %rsp
+> 	.cfi_def_cfa_offset 8
+> 	ret
+> 	.cfi_endproc
+> .LFE2082:
+> 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
+> 	.globl	_Z9factorialj
+> 	.type	_Z9factorialj, @function
+> _Z9factorialj:
+> .LFB1591:
+> 	.cfi_startproc
+> 	endbr64
+> 	testl	%edi, %edi
+> 	jne	.L15
+> 	movl	$1, %eax
+> 	ret
+> .L15:
+> 	pushq	%rbx
+> 	.cfi_def_cfa_offset 16
+> 	.cfi_offset 3, -16
+> 	movl	%edi, %ebx
+> 	leal	-1(%rdi), %edi
+> 	call	_Z9factorialj
+> 	imull	%ebx, %eax
+> 	popq	%rbx
+> 	.cfi_def_cfa_offset 8
+> 	ret
+> 	.cfi_endproc
+> .LFE1591:
+> 	.size	_Z9factorialj, .-_Z9factorialj
+> 	.section	.rodata.str1.8,"aMS",@progbits,1
+12a56
+> 	.section	.rodata.str1.1,"aMS",@progbits,1
+19c63
+< .LFB1522:
+---
+> .LFB1590:
+25,26d68
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+28c70
+< 	subq	$24, %rsp
+---
+> 	.cfi_def_cfa_offset 24
+30,31c72,76
+< 	movq	%fs:40, %rax
+< 	movq	%rax, -24(%rbp)
+---
+> 	subq	$24, %rsp
+> 	.cfi_def_cfa_offset 48
+> 	movl	$40, %ebp
+> 	movq	%fs:0(%rbp), %rax
+> 	movq	%rax, 8(%rsp)
+36,37c81
+< 	leaq	-32(%rbp), %rax
+< 	movq	%rax, %rsi
+---
+> 	movq	%rsp, %rsi
+39,41c83,84
+< 	call	_ZNSirsERm@PLT
+< 	movq	-32(%rbp), %rax
+< 	movq	%rax, %rsi
+---
+> 	call	_ZNSi10_M_extractImEERSiRT_@PLT
+> 	movq	(%rsp), %rsi
+43c86,88
+< 	call	_ZNSolsEm@PLT
+---
+> 	call	_ZNSo9_M_insertImEERSoT_@PLT
+> 	movq	%rax, %rbx
+> 	movl	$4, %edx
+46,49c91,92
+< 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+< 	movq	%rax, %rbx
+< 	movq	-32(%rbp), %rax
+< 	movl	%eax, %edi
+---
+> 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@PLT
+> 	movl	(%rsp), %edi
+53,58c96,101
+< 	call	_ZNSolsEj@PLT
+< 	movq	%rax, %rdx
+< 	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rax
+< 	movq	%rax, %rsi
+< 	movq	%rdx, %rdi
+< 	call	_ZNSolsEPFRSoS_E@PLT
+---
+> 	call	_ZNSo9_M_insertImEERSoT_@PLT
+> 	movq	%rax, %rdi
+> 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
+> 	movq	8(%rsp), %rax
+> 	xorq	%fs:0(%rbp), %rax
+> 	jne	.L19
+60,64d102
+< 	movq	-24(%rbp), %rcx
+< 	xorq	%fs:40, %rcx
+< 	je	.L3
+< 	call	__stack_chk_fail@PLT
+< .L3:
+65a104,105
+> 	.cfi_remember_state
+> 	.cfi_def_cfa_offset 24
+66a107
+> 	.cfi_def_cfa_offset 16
+68c109
+< 	.cfi_def_cfa 7, 8
+---
+> 	.cfi_def_cfa_offset 8
+69a111,113
+> .L19:
+> 	.cfi_restore_state
+> 	call	__stack_chk_fail@PLT
+71c115
+< .LFE1522:
+---
+> .LFE1590:
+73,137d116
+< 	.globl	_Z9factorialj
+< 	.type	_Z9factorialj, @function
+< _Z9factorialj:
+< .LFB1523:
+< 	.cfi_startproc
+< 	endbr64
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$32, %rsp
+< 	movl	%edi, -20(%rbp)
+< 	movl	$1, -4(%rbp)
+< 	cmpl	$0, -20(%rbp)
+< 	jne	.L5
+< 	movl	$1, -4(%rbp)
+< 	jmp	.L6
+< .L5:
+< 	movl	-20(%rbp), %eax
+< 	subl	$1, %eax
+< 	movl	%eax, %edi
+< 	call	_Z9factorialj
+< 	imull	-20(%rbp), %eax
+< 	movl	%eax, -4(%rbp)
+< .L6:
+< 	movl	-4(%rbp), %eax
+< 	leave
+< 	.cfi_def_cfa 7, 8
+< 	ret
+< 	.cfi_endproc
+< .LFE1523:
+< 	.size	_Z9factorialj, .-_Z9factorialj
+< 	.type	_Z41__static_initialization_and_destruction_0ii, @function
+< _Z41__static_initialization_and_destruction_0ii:
+< .LFB2015:
+< 	.cfi_startproc
+< 	endbr64
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$16, %rsp
+< 	movl	%edi, -4(%rbp)
+< 	movl	%esi, -8(%rbp)
+< 	cmpl	$1, -4(%rbp)
+< 	jne	.L10
+< 	cmpl	$65535, -8(%rbp)
+< 	jne	.L10
+< 	leaq	_ZStL8__ioinit(%rip), %rdi
+< 	call	_ZNSt8ios_base4InitC1Ev@PLT
+< 	leaq	__dso_handle(%rip), %rdx
+< 	leaq	_ZStL8__ioinit(%rip), %rsi
+< 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
+< 	movq	%rax, %rdi
+< 	call	__cxa_atexit@PLT
+< .L10:
+< 	nop
+< 	leave
+< 	.cfi_def_cfa 7, 8
+< 	ret
+< 	.cfi_endproc
+< .LFE2015:
+< 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
+140c119
+< .LFB2016:
+---
+> .LFB2083:
+143c122
+< 	pushq	%rbp
+---
+> 	subq	$8, %rsp
+145,147d123
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+151,152c127,128
+< 	popq	%rbp
+< 	.cfi_def_cfa 7, 8
+---
+> 	addq	$8, %rsp
+> 	.cfi_def_cfa_offset 8
+155c131
+< .LFE2016:
+---
+> .LFE2083:
+159a136,137
+> 	.local	_ZStL8__ioinit
+> 	.comm	_ZStL8__ioinit,1,1

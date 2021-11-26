@@ -1,0 +1,122 @@
+22,26d21
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+28,29c23,26
+< 	subq	$24, %rsp
+< 	.cfi_offset 3, -24
+---
+> 	.cfi_def_cfa_offset 16
+> 	.cfi_offset 3, -16
+> 	subq	$16, %rsp
+> 	.cfi_def_cfa_offset 32
+31c28
+< 	movq	%rax, -24(%rbp)
+---
+> 	movq	%rax, 8(%rsp)
+36c33
+< 	leaq	-32(%rbp), %rax
+---
+> 	movq	%rsp, %rax
+40c37
+< 	movq	-32(%rbp), %rax
+---
+> 	movq	(%rsp), %rax
+48c45
+< 	movq	-32(%rbp), %rax
+---
+> 	movq	(%rsp), %rax
+60c57
+< 	movq	-24(%rbp), %rcx
+---
+> 	movq	8(%rsp), %rcx
+65c62,63
+< 	addq	$24, %rsp
+---
+> 	addq	$16, %rsp
+> 	.cfi_def_cfa_offset 16
+67,68c65
+< 	popq	%rbp
+< 	.cfi_def_cfa 7, 8
+---
+> 	.cfi_def_cfa_offset 8
+79,87c76,80
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$32, %rsp
+< 	movl	%edi, -20(%rbp)
+< 	movl	$1, -4(%rbp)
+< 	cmpl	$0, -20(%rbp)
+---
+> 	subq	$40, %rsp
+> 	.cfi_def_cfa_offset 48
+> 	movl	%edi, 12(%rsp)
+> 	movl	$1, 28(%rsp)
+> 	cmpl	$0, 12(%rsp)
+89c82
+< 	movl	$1, -4(%rbp)
+---
+> 	movl	$1, 28(%rsp)
+92c85
+< 	movl	-20(%rbp), %eax
+---
+> 	movl	12(%rsp), %eax
+96,97c89,90
+< 	imull	-20(%rbp), %eax
+< 	movl	%eax, -4(%rbp)
+---
+> 	imull	12(%rsp), %eax
+> 	movl	%eax, 28(%rsp)
+99,101c92,94
+< 	movl	-4(%rbp), %eax
+< 	leave
+< 	.cfi_def_cfa 7, 8
+---
+> 	movl	28(%rsp), %eax
+> 	addq	$40, %rsp
+> 	.cfi_def_cfa_offset 8
+111,119c104,108
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$16, %rsp
+< 	movl	%edi, -4(%rbp)
+< 	movl	%esi, -8(%rbp)
+< 	cmpl	$1, -4(%rbp)
+---
+> 	subq	$24, %rsp
+> 	.cfi_def_cfa_offset 32
+> 	movl	%edi, 12(%rsp)
+> 	movl	%esi, 8(%rsp)
+> 	cmpl	$1, 12(%rsp)
+121c110
+< 	cmpl	$65535, -8(%rbp)
+---
+> 	cmpl	$65535, 8(%rsp)
+132,133c121,122
+< 	leave
+< 	.cfi_def_cfa 7, 8
+---
+> 	addq	$24, %rsp
+> 	.cfi_def_cfa_offset 8
+143c132
+< 	pushq	%rbp
+---
+> 	subq	$8, %rsp
+145,147d133
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+151,152c137,138
+< 	popq	%rbp
+< 	.cfi_def_cfa 7, 8
+---
+> 	addq	$8, %rsp
+> 	.cfi_def_cfa_offset 8

@@ -1,0 +1,209 @@
+3,10c3,21
+< 	.section	.rodata
+< 	.type	_ZStL19piecewise_construct, @object
+< 	.size	_ZStL19piecewise_construct, 1
+< _ZStL19piecewise_construct:
+< 	.zero	1
+< 	.local	_ZStL8__ioinit
+< 	.comm	_ZStL8__ioinit,1,1
+< 	.align 8
+---
+> 	.globl	_Z9factorialj
+> 	.type	_Z9factorialj, @function
+> _Z9factorialj:
+> .LFB1571:
+> 	.cfi_startproc
+> 	endbr64
+> 	movl	$1, %eax
+> .L3:
+> 	testl	%edi, %edi
+> 	je	.L1
+> 	imull	%edi, %eax
+> 	decl	%edi
+> 	jmp	.L3
+> .L1:
+> 	ret
+> 	.cfi_endproc
+> .LFE1571:
+> 	.size	_Z9factorialj, .-_Z9factorialj
+> 	.section	.rodata.str1.1,"aMS",@progbits,1
+15c26
+< 	.text
+---
+> 	.section	.text.startup,"ax",@progbits
+19c30
+< .LFB1522:
+---
+> .LFB1570:
+22,27d32
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	pushq	%rbx
+29,32c34
+< 	.cfi_offset 3, -24
+< 	movq	%fs:40, %rax
+< 	movq	%rax, -24(%rbp)
+< 	xorl	%eax, %eax
+---
+> 	.cfi_def_cfa_offset 32
+34a37,39
+> 	movq	%fs:40, %rax
+> 	movq	%rax, 8(%rsp)
+> 	xorl	%eax, %eax
+36,37c41
+< 	leaq	-32(%rbp), %rax
+< 	movq	%rax, %rsi
+---
+> 	movq	%rsp, %rsi
+40,41c44
+< 	movq	-32(%rbp), %rax
+< 	movq	%rax, %rsi
+---
+> 	movq	(%rsp), %rsi
+43c46
+< 	call	_ZNSolsEm@PLT
+---
+> 	call	_ZNSo9_M_insertImEERSoT_@PLT
+47,49c50,51
+< 	movq	%rax, %rbx
+< 	movq	-32(%rbp), %rax
+< 	movl	%eax, %edi
+---
+> 	movl	(%rsp), %edi
+> 	movq	%rax, %r8
+50a53
+> 	movq	%r8, %rdi
+52,62c55,60
+< 	movq	%rbx, %rdi
+< 	call	_ZNSolsEj@PLT
+< 	movq	%rax, %rdx
+< 	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rax
+< 	movq	%rax, %rsi
+< 	movq	%rdx, %rdi
+< 	call	_ZNSolsEPFRSoS_E@PLT
+< 	movl	$0, %eax
+< 	movq	-24(%rbp), %rcx
+< 	xorq	%fs:40, %rcx
+< 	je	.L3
+---
+> 	call	_ZNSo9_M_insertImEERSoT_@PLT
+> 	movq	%rax, %rdi
+> 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
+> 	movq	8(%rsp), %rax
+> 	xorq	%fs:40, %rax
+> 	je	.L6
+64c62,63
+< .L3:
+---
+> .L6:
+> 	xorl	%eax, %eax
+66,68c65
+< 	popq	%rbx
+< 	popq	%rbp
+< 	.cfi_def_cfa 7, 8
+---
+> 	.cfi_def_cfa_offset 8
+71c68
+< .LFE1522:
+---
+> .LFE1570:
+73,108c70,72
+< 	.globl	_Z9factorialj
+< 	.type	_Z9factorialj, @function
+< _Z9factorialj:
+< .LFB1523:
+< 	.cfi_startproc
+< 	endbr64
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$32, %rsp
+< 	movl	%edi, -20(%rbp)
+< 	movl	$1, -4(%rbp)
+< 	cmpl	$0, -20(%rbp)
+< 	jne	.L5
+< 	movl	$1, -4(%rbp)
+< 	jmp	.L6
+< .L5:
+< 	movl	-20(%rbp), %eax
+< 	subl	$1, %eax
+< 	movl	%eax, %edi
+< 	call	_Z9factorialj
+< 	imull	-20(%rbp), %eax
+< 	movl	%eax, -4(%rbp)
+< .L6:
+< 	movl	-4(%rbp), %eax
+< 	leave
+< 	.cfi_def_cfa 7, 8
+< 	ret
+< 	.cfi_endproc
+< .LFE1523:
+< 	.size	_Z9factorialj, .-_Z9factorialj
+< 	.type	_Z41__static_initialization_and_destruction_0ii, @function
+< _Z41__static_initialization_and_destruction_0ii:
+< .LFB2015:
+---
+> 	.type	_GLOBAL__sub_I_main, @function
+> _GLOBAL__sub_I_main:
+> .LFB2063:
+111c75
+< 	pushq	%rbp
+---
+> 	pushq	%rax
+113,122d76
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	subq	$16, %rsp
+< 	movl	%edi, -4(%rbp)
+< 	movl	%esi, -8(%rbp)
+< 	cmpl	$1, -4(%rbp)
+< 	jne	.L10
+< 	cmpl	$65535, -8(%rbp)
+< 	jne	.L10
+124a79,81
+> 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rdi
+> 	popq	%rcx
+> 	.cfi_def_cfa_offset 8
+127,134c84
+< 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
+< 	movq	%rax, %rdi
+< 	call	__cxa_atexit@PLT
+< .L10:
+< 	nop
+< 	leave
+< 	.cfi_def_cfa 7, 8
+< 	ret
+---
+> 	jmp	__cxa_atexit@PLT
+136,155c86
+< .LFE2015:
+< 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
+< 	.type	_GLOBAL__sub_I_main, @function
+< _GLOBAL__sub_I_main:
+< .LFB2016:
+< 	.cfi_startproc
+< 	endbr64
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
+< 	movq	%rsp, %rbp
+< 	.cfi_def_cfa_register 6
+< 	movl	$65535, %esi
+< 	movl	$1, %edi
+< 	call	_Z41__static_initialization_and_destruction_0ii
+< 	popq	%rbp
+< 	.cfi_def_cfa 7, 8
+< 	ret
+< 	.cfi_endproc
+< .LFE2016:
+---
+> .LFE2063:
+159a91,92
+> 	.local	_ZStL8__ioinit
+> 	.comm	_ZStL8__ioinit,1,1
