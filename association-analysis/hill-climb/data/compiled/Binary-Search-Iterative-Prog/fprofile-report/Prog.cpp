@@ -12,10 +12,9 @@ int main()
 {
 	const int ArraySize = 90;
 	int Array1[ArraySize];
-	int SearchFor , Result;
-
-	cout << "Enter an integer between 10 and 99 to search for: ";
-	cin >> SearchFor;
+	int Result;
+	int SearchFor = 89;
+	cout << "Enter an integer between 10 and 99 to search for: ";	
 	cout << "\n";
 
 	srand (time(NULL));

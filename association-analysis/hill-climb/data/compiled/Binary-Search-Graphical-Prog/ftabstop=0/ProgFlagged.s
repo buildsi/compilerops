@@ -59,29 +59,26 @@ main:
 	movq	%fs:40, %rax
 	movq	%rax, -8(%rbp)
 	xorl	%eax, %eax
-	movl	$15, -88(%rbp)
-	movl	$0, -92(%rbp)
+	movl	$15, -92(%rbp)
+	movl	$27, -88(%rbp)
+	movl	$0, -96(%rbp)
 .L5:
-	cmpl	$14, -92(%rbp)
+	cmpl	$14, -96(%rbp)
 	jg	.L4
-	movl	-92(%rbp), %eax
+	movl	-96(%rbp), %eax
 	leal	(%rax,%rax), %edx
-	movl	-92(%rbp), %eax
+	movl	-96(%rbp), %eax
 	cltq
 	movl	%edx, -80(%rbp,%rax,4)
-	addl	$1, -92(%rbp)
+	addl	$1, -96(%rbp)
 	jmp	.L5
 .L4:
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	leaq	-96(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERi@PLT
 	movl	$15, %edi
 	call	_Z11printHeaderi
-	movl	-96(%rbp), %esi
+	movl	-88(%rbp), %esi
 	leaq	-80(%rbp), %rax
 	movl	$15, %r8d
 	movl	$14, %ecx
@@ -95,7 +92,7 @@ main:
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@PLT
 	movq	%rax, %rdx
-	movl	-96(%rbp), %eax
+	movl	-88(%rbp), %eax
 	movl	%eax, %esi
 	movq	%rdx, %rdi
 	call	_ZNSolsEi@PLT
@@ -118,7 +115,7 @@ main:
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@PLT
 	movq	%rax, %rdx
-	movl	-96(%rbp), %eax
+	movl	-88(%rbp), %eax
 	movl	%eax, %esi
 	movq	%rdx, %rdi
 	call	_ZNSolsEi@PLT

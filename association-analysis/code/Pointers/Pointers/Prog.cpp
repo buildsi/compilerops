@@ -21,7 +21,6 @@ int main()
 	cout << "The address of VarPoint itself is : " << &VarPoint << endl << endl;
 
 	cout << "Enter a new value for VarPoint : ";
-	cin >> *VarPoint;
 	cout << "The value of Val has become : ";
 	cout << Var << endl;
 

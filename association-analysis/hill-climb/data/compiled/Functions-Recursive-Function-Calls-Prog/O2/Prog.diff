@@ -19,42 +19,28 @@
 < .LFB1522:
 ---
 > .LFB1590:
-25,32d20
+25,30d20
 < 	movq	%rsp, %rbp
 < 	.cfi_def_cfa_register 6
 < 	pushq	%rbx
 < 	subq	$24, %rsp
 < 	.cfi_offset 3, -24
-< 	movq	%fs:40, %rax
-< 	movq	%rax, -24(%rbp)
-< 	xorl	%eax, %eax
-34a23,27
-> 	subq	$16, %rsp
-> 	.cfi_def_cfa_offset 32
-> 	movq	%fs:40, %rax
-> 	movq	%rax, 8(%rsp)
-> 	xorl	%eax, %eax
-36,37c29
-< 	leaq	-32(%rbp), %rax
+< 	movq	$112, -24(%rbp)
+34,35c24
+< 	movq	-24(%rbp), %rax
 < 	movq	%rax, %rsi
 ---
-> 	movq	%rsp, %rsi
-39,41c31,32
-< 	call	_ZNSirsERm@PLT
-< 	movq	-32(%rbp), %rax
-< 	movq	%rax, %rsi
----
-> 	call	_ZNSi10_M_extractImEERSiRT_@PLT
-> 	movq	(%rsp), %rsi
-43c34,35
+> 	movl	$112, %esi
+37c26
 < 	call	_ZNSolsEm@PLT
 ---
 > 	call	_ZNSo9_M_insertImEERSoT_@PLT
+38a28
 > 	movl	$4, %edx
-46,63c38,46
+40,55c30,44
 < 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 < 	movq	%rax, %rbx
-< 	movq	-32(%rbp), %rax
+< 	movq	-24(%rbp), %rax
 < 	movl	%eax, %edi
 < 	call	_Z9factorialj
 < 	movl	%eax, %esi
@@ -66,62 +52,40 @@
 < 	movq	%rdx, %rdi
 < 	call	_ZNSolsEPFRSoS_E@PLT
 < 	movl	$0, %eax
-< 	movq	-24(%rbp), %rcx
-< 	xorq	%fs:40, %rcx
-< 	je	.L3
-< 	call	__stack_chk_fail@PLT
----
-> 	movq	%rax, %rbp
-> 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@PLT
-> 	movq	(%rsp), %rdx
-> 	testl	%edx, %edx
-> 	je	.L5
-> 	movl	%edx, %eax
-> 	movl	$1, %esi
-> 	.p2align 4,,10
-> 	.p2align 3
-65,66c48,62
 < 	addq	$24, %rsp
 < 	popq	%rbx
 ---
+> 	movq	%rax, %rbp
+> 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@PLT
+> 	movl	$1, %esi
+> 	movl	$112, %eax
+> 	.p2align 4,,10
+> 	.p2align 3
+> .L2:
 > 	imull	%eax, %esi
 > 	subl	$1, %eax
-> 	jne	.L3
-> .L2:
+> 	jne	.L2
 > 	movq	%rbp, %rdi
 > 	call	_ZNSo9_M_insertImEERSoT_@PLT
 > 	movq	%rax, %rdi
 > 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
-> 	movq	8(%rsp), %rax
-> 	xorq	%fs:40, %rax
-> 	jne	.L9
-> 	addq	$16, %rsp
-> 	.cfi_remember_state
-> 	.cfi_def_cfa_offset 16
 > 	xorl	%eax, %eax
-68c64
+57c46
 < 	.cfi_def_cfa 7, 8
 ---
 > 	.cfi_def_cfa_offset 8
-69a66,71
-> .L5:
-> 	.cfi_restore_state
-> 	movl	$1, %esi
-> 	jmp	.L2
-> .L9:
-> 	call	__stack_chk_fail@PLT
-71c73
+60c49
 < .LFE1522:
 ---
 > .LFE1590:
-72a75,76
+61a51,52
 > 	.text
 > 	.p2align 4
-76c80
+65c56
 < .LFB1523:
 ---
 > .LFB1591:
-79,101c83,95
+68,90c59,71
 < 	pushq	%rbp
 < 	.cfi_def_cfa_offset 16
 < 	.cfi_offset 6, -16
@@ -131,53 +95,53 @@
 < 	movl	%edi, -20(%rbp)
 < 	movl	$1, -4(%rbp)
 < 	cmpl	$0, -20(%rbp)
-< 	jne	.L5
+< 	jne	.L4
 < 	movl	$1, -4(%rbp)
-< 	jmp	.L6
-< .L5:
+< 	jmp	.L5
+< .L4:
 < 	movl	-20(%rbp), %eax
 < 	subl	$1, %eax
 < 	movl	%eax, %edi
 < 	call	_Z9factorialj
 < 	imull	-20(%rbp), %eax
 < 	movl	%eax, -4(%rbp)
-< .L6:
+< .L5:
 < 	movl	-4(%rbp), %eax
 < 	leave
 < 	.cfi_def_cfa 7, 8
 ---
 > 	movl	$1, %eax
 > 	testl	%edi, %edi
-> 	je	.L13
+> 	je	.L9
 > 	.p2align 4,,10
 > 	.p2align 3
-> .L12:
+> .L8:
 > 	imull	%edi, %eax
 > 	subl	$1, %edi
-> 	jne	.L12
+> 	jne	.L8
 > 	ret
 > 	.p2align 4,,10
 > 	.p2align 3
-> .L13:
-104c98
+> .L9:
+93c74
 < .LFE1523:
 ---
 > .LFE1591:
-106,108c100,104
+95,97c76,80
 < 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 < _Z41__static_initialization_and_destruction_0ii:
-< .LFB2015:
+< .LFB2014:
 ---
 > 	.section	.text.startup
 > 	.p2align 4
 > 	.type	_GLOBAL__sub_I_main, @function
 > _GLOBAL__sub_I_main:
-> .LFB2083:
-111c107
+> .LFB2082:
+100c83
 < 	pushq	%rbp
 ---
 > 	subq	$8, %rsp
-113,122d108
+102,111d84
 < 	.cfi_offset 6, -16
 < 	movq	%rsp, %rbp
 < 	.cfi_def_cfa_register 6
@@ -185,30 +149,28 @@
 < 	movl	%edi, -4(%rbp)
 < 	movl	%esi, -8(%rbp)
 < 	cmpl	$1, -4(%rbp)
-< 	jne	.L10
+< 	jne	.L9
 < 	cmpl	$65535, -8(%rbp)
-< 	jne	.L10
-124a111,113
+< 	jne	.L9
+113a87,89
 > 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rdi
 > 	addq	$8, %rsp
 > 	.cfi_def_cfa_offset 8
-127,134c116
+116,142c92
 < 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 < 	movq	%rax, %rdi
 < 	call	__cxa_atexit@PLT
-< .L10:
+< .L9:
 < 	nop
 < 	leave
 < 	.cfi_def_cfa 7, 8
 < 	ret
----
-> 	jmp	__cxa_atexit@PLT
-136,155c118
-< .LFE2015:
+< 	.cfi_endproc
+< .LFE2014:
 < 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 < 	.type	_GLOBAL__sub_I_main, @function
 < _GLOBAL__sub_I_main:
-< .LFB2016:
+< .LFB2015:
 < 	.cfi_startproc
 < 	endbr64
 < 	pushq	%rbp
@@ -222,10 +184,12 @@
 < 	popq	%rbp
 < 	.cfi_def_cfa 7, 8
 < 	ret
-< 	.cfi_endproc
-< .LFE2016:
 ---
-> .LFE2083:
-159a123,124
+> 	jmp	__cxa_atexit@PLT
+144c94
+< .LFE2015:
+---
+> .LFE2082:
+148a99,100
 > 	.local	_ZStL8__ioinit
 > 	.comm	_ZStL8__ioinit,1,1

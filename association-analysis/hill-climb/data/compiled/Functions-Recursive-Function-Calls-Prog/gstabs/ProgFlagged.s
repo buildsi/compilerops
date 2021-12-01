@@ -1510,102 +1510,102 @@
 	.stabs	"is_error_code_enum:t(0,1074)",128,0,0,0
 	.stabs	"conditional:T(0,1075)=s1;",128,0,0,0
 	.stabs	"conditional:t(0,1075)",128,0,0,0
-	.stabs	"__and_:T(0,1076)=s1__not_:(0,1049),0,64;;",128,0,0,0
+	.stabs	"__and_:T(0,1076)=s1__not_:(0,1070),0,64;;",128,0,0,0
 	.stabs	"__and_:t(0,1076)",128,0,0,0
-	.stabs	"conditional:T(0,1077)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1077)",128,0,0,0
-	.stabs	"__and_:T(0,1078)=s1__not_:(0,1070),0,64;;",128,0,0,0
-	.stabs	"__and_:t(0,1078)",128,0,0,0
-	.stabs	"is_error_code_enum:T(0,1079)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_error_code_enum:t(0,1079)",128,0,0,0
+	.stabs	"is_error_code_enum:T(0,1077)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_error_code_enum:t(0,1077)",128,0,0,0
+	.stabs	"conditional:T(0,1078)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1078)",128,0,0,0
+	.stabs	"__and_:T(0,1079)=s1__not_:(0,1070),0,64;;",128,0,0,0
+	.stabs	"__and_:t(0,1079)",128,0,0,0
 	.stabs	"conditional:T(0,1080)=s1;",128,0,0,0
 	.stabs	"conditional:t(0,1080)",128,0,0,0
 	.stabs	"__and_:T(0,1081)=s1__not_:(0,1070),0,64;;",128,0,0,0
 	.stabs	"__and_:t(0,1081)",128,0,0,0
-	.stabs	"conditional:T(0,1082)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1082)",128,0,0,0
-	.stabs	"__and_:T(0,1083)=s1__not_:(0,1070),0,64;;",128,0,0,0
-	.stabs	"__and_:t(0,1083)",128,0,0,0
-	.stabs	"is_error_code_enum:T(0,1084)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_error_code_enum:t(0,1084)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1085)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1085)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1086)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1086)",128,0,0,0
-	.stabs	"is_same:T(0,1087)=s1integral_constant:(0,146),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1087)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1088)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1088)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1089)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1089)",128,0,0,0
-	.stabs	"is_same:T(0,1090)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1090)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1091)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1091)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1092)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1092)",128,0,0,0
-	.stabs	"is_same:T(0,1093)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1093)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1094)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1094)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1095)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1095)",128,0,0,0
-	.stabs	"is_same:T(0,1096)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1096)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1097)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1097)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1098)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1098)",128,0,0,0
-	.stabs	"is_same:T(0,1099)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1099)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1100)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1100)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1101)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1101)",128,0,0,0
-	.stabs	"is_same:T(0,1102)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1102)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1103)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1103)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1104)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1104)",128,0,0,0
-	.stabs	"is_same:T(0,1105)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1105)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1106)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1106)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1107)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1107)",128,0,0,0
-	.stabs	"is_same:T(0,1108)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_same:t(0,1108)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1109)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1109)",128,0,0,0
-	.stabs	"remove_volatile:T(0,1110)=s1;",128,0,0,0
-	.stabs	"remove_volatile:t(0,1110)",128,0,0,0
-	.stabs	"remove_const:T(0,1111)=s1;",128,0,0,0
-	.stabs	"remove_const:t(0,1111)",128,0,0,0
-	.stabs	"remove_cv:T(0,1112)=s1;",128,0,0,0
-	.stabs	"remove_cv:t(0,1112)",128,0,0,0
-	.stabs	"__is_void_helper:T(0,1113)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"__is_void_helper:t(0,1113)",128,0,0,0
-	.stabs	"is_void:T(0,1114)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1114)",128,0,0,0
+	.stabs	"is_error_code_enum:T(0,1082)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_error_code_enum:t(0,1082)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1083)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1083)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1084)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1084)",128,0,0,0
+	.stabs	"is_same:T(0,1085)=s1integral_constant:(0,146),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1085)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1086)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1086)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1087)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1087)",128,0,0,0
+	.stabs	"is_same:T(0,1088)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1088)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1089)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1089)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1090)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1090)",128,0,0,0
+	.stabs	"is_same:T(0,1091)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1091)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1092)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1092)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1093)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1093)",128,0,0,0
+	.stabs	"is_same:T(0,1094)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1094)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1095)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1095)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1096)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1096)",128,0,0,0
+	.stabs	"is_same:T(0,1097)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1097)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1098)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1098)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1099)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1099)",128,0,0,0
+	.stabs	"is_same:T(0,1100)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1100)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1101)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1101)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1102)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1102)",128,0,0,0
+	.stabs	"is_same:T(0,1103)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1103)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1104)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1104)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1105)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1105)",128,0,0,0
+	.stabs	"is_same:T(0,1106)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_same:t(0,1106)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1107)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1107)",128,0,0,0
+	.stabs	"remove_volatile:T(0,1108)=s1;",128,0,0,0
+	.stabs	"remove_volatile:t(0,1108)",128,0,0,0
+	.stabs	"remove_const:T(0,1109)=s1;",128,0,0,0
+	.stabs	"remove_const:t(0,1109)",128,0,0,0
+	.stabs	"remove_cv:T(0,1110)=s1;",128,0,0,0
+	.stabs	"remove_cv:t(0,1110)",128,0,0,0
+	.stabs	"__is_void_helper:T(0,1111)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"__is_void_helper:t(0,1111)",128,0,0,0
+	.stabs	"is_void:T(0,1112)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1112)",128,0,0,0
+	.stabs	"conditional:T(0,1113)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1113)",128,0,0,0
+	.stabs	"is_function:T(0,1114)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_function:t(0,1114)",128,0,0,0
 	.stabs	"conditional:T(0,1115)=s1;",128,0,0,0
 	.stabs	"conditional:t(0,1115)",128,0,0,0
-	.stabs	"is_function:T(0,1116)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_function:t(0,1116)",128,0,0,0
-	.stabs	"conditional:T(0,1117)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1117)",128,0,0,0
-	.stabs	"is_array:T(0,1118)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_array:t(0,1118)",128,0,0,0
-	.stabs	"__or_:T(0,1119)=s1is_array:(0,1118),0,64;;",128,0,0,0
-	.stabs	"__or_:t(0,1119)",128,0,0,0
-	.stabs	"__or_:T(0,1120)=s1__or_:(0,1119),0,64;;",128,0,0,0
-	.stabs	"__or_:t(0,1120)",128,0,0,0
-	.stabs	"__is_convertible_helper:T(0,1121)=s1;",128,0,0,0
-	.stabs	"__is_convertible_helper:t(0,1121)",128,0,0,0
-	.stabs	"is_convertible:T(0,1122)=s1integral_constant:(0,146),0,64;;",128,0,0,0
-	.stabs	"is_convertible:t(0,1122)",128,0,0,0
-	.stabs	"remove_reference:T(0,1123)=s1;",128,0,0,0
-	.stabs	"remove_reference:t(0,1123)",128,0,0,0
+	.stabs	"is_array:T(0,1116)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_array:t(0,1116)",128,0,0,0
+	.stabs	"__or_:T(0,1117)=s1is_array:(0,1116),0,64;;",128,0,0,0
+	.stabs	"__or_:t(0,1117)",128,0,0,0
+	.stabs	"__or_:T(0,1118)=s1__or_:(0,1117),0,64;;",128,0,0,0
+	.stabs	"__or_:t(0,1118)",128,0,0,0
+	.stabs	"__is_convertible_helper:T(0,1119)=s1;",128,0,0,0
+	.stabs	"__is_convertible_helper:t(0,1119)",128,0,0,0
+	.stabs	"is_convertible:T(0,1120)=s1integral_constant:(0,146),0,64;;",128,0,0,0
+	.stabs	"is_convertible:t(0,1120)",128,0,0,0
+	.stabs	"remove_reference:T(0,1121)=s1;",128,0,0,0
+	.stabs	"remove_reference:t(0,1121)",128,0,0,0
+	.stabs	"_Save_errno:T(0,1122)=s4_M_errno:(0,14),0,32;;",128,0,0,0
+	.stabs	"_Save_errno:t(0,1122)",128,0,0,0
+	.stabs	"_Range_chk:T(0,1123)=s1;",128,0,0,0
+	.stabs	"_Range_chk:t(0,1123)",128,0,0,0
 	.stabs	"_Save_errno:T(0,1124)=s4_M_errno:(0,14),0,32;;",128,0,0,0
 	.stabs	"_Save_errno:t(0,1124)",128,0,0,0
 	.stabs	"_Range_chk:T(0,1125)=s1;",128,0,0,0
@@ -1634,164 +1634,160 @@
 	.stabs	"_Save_errno:t(0,1136)",128,0,0,0
 	.stabs	"_Range_chk:T(0,1137)=s1;",128,0,0,0
 	.stabs	"_Range_chk:t(0,1137)",128,0,0,0
-	.stabs	"_Save_errno:T(0,1138)=s4_M_errno:(0,14),0,32;;",128,0,0,0
-	.stabs	"_Save_errno:t(0,1138)",128,0,0,0
-	.stabs	"_Range_chk:T(0,1139)=s1;",128,0,0,0
-	.stabs	"_Range_chk:t(0,1139)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1140)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1140)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1138)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1138)",128,0,0,0
+	.stabs	"remove_reference:T(0,1139)=s1;",128,0,0,0
+	.stabs	"remove_reference:t(0,1139)",128,0,0,0
+	.stabs	"remove_reference:T(0,1140)=s1;",128,0,0,0
+	.stabs	"remove_reference:t(0,1140)",128,0,0,0
 	.stabs	"remove_reference:T(0,1141)=s1;",128,0,0,0
 	.stabs	"remove_reference:t(0,1141)",128,0,0,0
-	.stabs	"remove_reference:T(0,1142)=s1;",128,0,0,0
-	.stabs	"remove_reference:t(0,1142)",128,0,0,0
-	.stabs	"remove_reference:T(0,1143)=s1;",128,0,0,0
-	.stabs	"remove_reference:t(0,1143)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1144)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1144)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1145)=s8_M_current:(0,71),0,64;;",128,0,0,0
-	.stabs	"__normal_iterator:t(0,1145)",128,0,0,0
-	.stabs	"remove_reference:T(0,1146)=s1;",128,0,0,0
-	.stabs	"remove_reference:t(0,1146)",128,0,0,0
-	.stabs	"remove_volatile:T(0,1147)=s1;",128,0,0,0
-	.stabs	"remove_volatile:t(0,1147)",128,0,0,0
-	.stabs	"remove_const:T(0,1148)=s1;",128,0,0,0
-	.stabs	"remove_const:t(0,1148)",128,0,0,0
-	.stabs	"remove_cv:T(0,1149)=s1;",128,0,0,0
-	.stabs	"remove_cv:t(0,1149)",128,0,0,0
-	.stabs	"__is_void_helper:T(0,1150)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"__is_void_helper:t(0,1150)",128,0,0,0
-	.stabs	"is_void:T(0,1151)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1151)",128,0,0,0
-	.stabs	"conditional:T(0,1152)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1152)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1153)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1153)",128,0,0,0
-	.stabs	"__is_void_helper:T(0,1154)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"__is_void_helper:t(0,1154)",128,0,0,0
-	.stabs	"is_void:T(0,1155)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1155)",128,0,0,0
-	.stabs	"conditional:T(0,1156)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1156)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1157)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1157)",128,0,0,0
-	.stabs	"._10:t(0,1158)=e__value:0,;",128,0,0,0
-	.stabs	"__is_integer:T(0,1159)=s1;",128,0,0,0
-	.stabs	"__is_integer:t(0,1159)",128,0,0,0
-	.stabs	"_Integral:t(0,1160)=(0,1161)=(0,312)",128,0,0,0
-	.stabs	"._10:t(0,1162)=e__value:0,;",128,0,0,0
-	.stabs	"__is_integer:T(0,1163)=s1;",128,0,0,0
-	.stabs	"__is_integer:t(0,1163)",128,0,0,0
-	.stabs	"_Integral:t(0,1164)=(0,1165)=(0,312)",128,0,0,0
-	.stabs	"__is_void_helper:T(0,1166)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"__is_void_helper:t(0,1166)",128,0,0,0
-	.stabs	"is_void:T(0,1167)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1167)",128,0,0,0
-	.stabs	"conditional:T(0,1168)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1168)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1169)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1169)",128,0,0,0
-	.stabs	"._10:t(0,1170)=e__value:0,;",128,0,0,0
-	.stabs	"__is_integer:T(0,1171)=s1;",128,0,0,0
-	.stabs	"__is_integer:t(0,1171)",128,0,0,0
-	.stabs	"_Integral:t(0,1172)=(0,1173)=(0,312)",128,0,0,0
-	.stabs	"__is_void_helper:T(0,1174)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"__is_void_helper:t(0,1174)",128,0,0,0
-	.stabs	"is_void:T(0,1175)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1175)",128,0,0,0
-	.stabs	"conditional:T(0,1176)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1176)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1177)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1177)",128,0,0,0
-	.stabs	"._10:t(0,1178)=e__value:0,;",128,0,0,0
-	.stabs	"__is_integer:T(0,1179)=s1;",128,0,0,0
-	.stabs	"__is_integer:t(0,1179)",128,0,0,0
-	.stabs	"_Integral:t(0,1180)=(0,1181)=(0,312)",128,0,0,0
-	.stabs	"._10:t(0,1182)=e__value:0,;",128,0,0,0
-	.stabs	"__is_integer:T(0,1183)=s1;",128,0,0,0
-	.stabs	"__is_integer:t(0,1183)",128,0,0,0
-	.stabs	"_Integral:t(0,1184)=(0,1185)=(0,312)",128,0,0,0
-	.stabs	"remove_volatile:T(0,1186)=s1;",128,0,0,0
-	.stabs	"remove_volatile:t(0,1186)",128,0,0,0
-	.stabs	"remove_const:T(0,1187)=s1;",128,0,0,0
-	.stabs	"remove_const:t(0,1187)",128,0,0,0
-	.stabs	"remove_cv:T(0,1188)=s1;",128,0,0,0
-	.stabs	"remove_cv:t(0,1188)",128,0,0,0
-	.stabs	"is_void:T(0,1189)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1189)",128,0,0,0
-	.stabs	"conditional:T(0,1190)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1190)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1191)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1191)",128,0,0,0
-	.stabs	"._10:t(0,1192)=e__value:0,;",128,0,0,0
-	.stabs	"__is_integer:T(0,1193)=s1;",128,0,0,0
-	.stabs	"__is_integer:t(0,1193)",128,0,0,0
-	.stabs	"_Integral:t(0,1194)=(0,1195)=(0,312)",128,0,0,0
-	.stabs	"remove_volatile:T(0,1196)=s1;",128,0,0,0
-	.stabs	"remove_volatile:t(0,1196)",128,0,0,0
-	.stabs	"remove_const:T(0,1197)=s1;",128,0,0,0
-	.stabs	"remove_const:t(0,1197)",128,0,0,0
-	.stabs	"remove_cv:T(0,1198)=s1;",128,0,0,0
-	.stabs	"remove_cv:t(0,1198)",128,0,0,0
-	.stabs	"is_void:T(0,1199)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1199)",128,0,0,0
-	.stabs	"conditional:T(0,1200)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1200)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1201)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1201)",128,0,0,0
-	.stabs	"_Tag:t(0,1202)=(0,1203)=(0,393)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1204)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1204)",128,0,0,0
-	.stabs	"_Tag:t(0,1205)=(0,1206)=(0,393)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1207)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1207)",128,0,0,0
-	.stabs	"_Tag:t(0,1208)=(0,1209)=(0,393)",128,0,0,0
-	.stabs	"remove_volatile:T(0,1210)=s1;",128,0,0,0
-	.stabs	"remove_volatile:t(0,1210)",128,0,0,0
-	.stabs	"remove_const:T(0,1211)=s1;",128,0,0,0
-	.stabs	"remove_const:t(0,1211)",128,0,0,0
-	.stabs	"remove_cv:T(0,1212)=s1;",128,0,0,0
-	.stabs	"remove_cv:t(0,1212)",128,0,0,0
-	.stabs	"is_void:T(0,1213)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1213)",128,0,0,0
-	.stabs	"conditional:T(0,1214)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1214)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1215)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1215)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1216)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1216)",128,0,0,0
-	.stabs	"_Tag:t(0,1217)=(0,1218)=(0,393)",128,0,0,0
-	.stabs	"remove_volatile:T(0,1219)=s1;",128,0,0,0
-	.stabs	"remove_volatile:t(0,1219)",128,0,0,0
-	.stabs	"remove_const:T(0,1220)=s1;",128,0,0,0
-	.stabs	"remove_const:t(0,1220)",128,0,0,0
-	.stabs	"remove_cv:T(0,1221)=s1;",128,0,0,0
-	.stabs	"remove_cv:t(0,1221)",128,0,0,0
-	.stabs	"is_void:T(0,1222)=s1integral_constant:(0,148),0,64;;",128,0,0,0
-	.stabs	"is_void:t(0,1222)",128,0,0,0
-	.stabs	"conditional:T(0,1223)=s1;",128,0,0,0
-	.stabs	"conditional:t(0,1223)",128,0,0,0
-	.stabs	"pointer_traits:T(0,1224)=s1;",128,0,0,0
-	.stabs	"pointer_traits:t(0,1224)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1142)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1142)",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1143)=s8_M_current:(0,71),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:t(0,1143)",128,0,0,0
+	.stabs	"remove_reference:T(0,1144)=s1;",128,0,0,0
+	.stabs	"remove_reference:t(0,1144)",128,0,0,0
+	.stabs	"remove_volatile:T(0,1145)=s1;",128,0,0,0
+	.stabs	"remove_volatile:t(0,1145)",128,0,0,0
+	.stabs	"remove_const:T(0,1146)=s1;",128,0,0,0
+	.stabs	"remove_const:t(0,1146)",128,0,0,0
+	.stabs	"remove_cv:T(0,1147)=s1;",128,0,0,0
+	.stabs	"remove_cv:t(0,1147)",128,0,0,0
+	.stabs	"__is_void_helper:T(0,1148)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"__is_void_helper:t(0,1148)",128,0,0,0
+	.stabs	"is_void:T(0,1149)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1149)",128,0,0,0
+	.stabs	"conditional:T(0,1150)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1150)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1151)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1151)",128,0,0,0
+	.stabs	"__is_void_helper:T(0,1152)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"__is_void_helper:t(0,1152)",128,0,0,0
+	.stabs	"is_void:T(0,1153)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1153)",128,0,0,0
+	.stabs	"conditional:T(0,1154)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1154)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1155)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1155)",128,0,0,0
+	.stabs	"._10:t(0,1156)=e__value:0,;",128,0,0,0
+	.stabs	"__is_integer:T(0,1157)=s1;",128,0,0,0
+	.stabs	"__is_integer:t(0,1157)",128,0,0,0
+	.stabs	"_Integral:t(0,1158)=(0,1159)=(0,312)",128,0,0,0
+	.stabs	"._10:t(0,1160)=e__value:0,;",128,0,0,0
+	.stabs	"__is_integer:T(0,1161)=s1;",128,0,0,0
+	.stabs	"__is_integer:t(0,1161)",128,0,0,0
+	.stabs	"_Integral:t(0,1162)=(0,1163)=(0,312)",128,0,0,0
+	.stabs	"__is_void_helper:T(0,1164)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"__is_void_helper:t(0,1164)",128,0,0,0
+	.stabs	"is_void:T(0,1165)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1165)",128,0,0,0
+	.stabs	"conditional:T(0,1166)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1166)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1167)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1167)",128,0,0,0
+	.stabs	"._10:t(0,1168)=e__value:0,;",128,0,0,0
+	.stabs	"__is_integer:T(0,1169)=s1;",128,0,0,0
+	.stabs	"__is_integer:t(0,1169)",128,0,0,0
+	.stabs	"_Integral:t(0,1170)=(0,1171)=(0,312)",128,0,0,0
+	.stabs	"__is_void_helper:T(0,1172)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"__is_void_helper:t(0,1172)",128,0,0,0
+	.stabs	"is_void:T(0,1173)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1173)",128,0,0,0
+	.stabs	"conditional:T(0,1174)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1174)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1175)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1175)",128,0,0,0
+	.stabs	"._10:t(0,1176)=e__value:0,;",128,0,0,0
+	.stabs	"__is_integer:T(0,1177)=s1;",128,0,0,0
+	.stabs	"__is_integer:t(0,1177)",128,0,0,0
+	.stabs	"_Integral:t(0,1178)=(0,1179)=(0,312)",128,0,0,0
+	.stabs	"._10:t(0,1180)=e__value:0,;",128,0,0,0
+	.stabs	"__is_integer:T(0,1181)=s1;",128,0,0,0
+	.stabs	"__is_integer:t(0,1181)",128,0,0,0
+	.stabs	"_Integral:t(0,1182)=(0,1183)=(0,312)",128,0,0,0
+	.stabs	"remove_volatile:T(0,1184)=s1;",128,0,0,0
+	.stabs	"remove_volatile:t(0,1184)",128,0,0,0
+	.stabs	"remove_const:T(0,1185)=s1;",128,0,0,0
+	.stabs	"remove_const:t(0,1185)",128,0,0,0
+	.stabs	"remove_cv:T(0,1186)=s1;",128,0,0,0
+	.stabs	"remove_cv:t(0,1186)",128,0,0,0
+	.stabs	"is_void:T(0,1187)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1187)",128,0,0,0
+	.stabs	"conditional:T(0,1188)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1188)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1189)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1189)",128,0,0,0
+	.stabs	"._10:t(0,1190)=e__value:0,;",128,0,0,0
+	.stabs	"__is_integer:T(0,1191)=s1;",128,0,0,0
+	.stabs	"__is_integer:t(0,1191)",128,0,0,0
+	.stabs	"_Integral:t(0,1192)=(0,1193)=(0,312)",128,0,0,0
+	.stabs	"remove_volatile:T(0,1194)=s1;",128,0,0,0
+	.stabs	"remove_volatile:t(0,1194)",128,0,0,0
+	.stabs	"remove_const:T(0,1195)=s1;",128,0,0,0
+	.stabs	"remove_const:t(0,1195)",128,0,0,0
+	.stabs	"remove_cv:T(0,1196)=s1;",128,0,0,0
+	.stabs	"remove_cv:t(0,1196)",128,0,0,0
+	.stabs	"is_void:T(0,1197)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1197)",128,0,0,0
+	.stabs	"conditional:T(0,1198)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1198)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1199)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1199)",128,0,0,0
+	.stabs	"_Tag:t(0,1200)=(0,1201)=(0,393)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1202)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1202)",128,0,0,0
+	.stabs	"_Tag:t(0,1203)=(0,1204)=(0,393)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1205)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1205)",128,0,0,0
+	.stabs	"_Tag:t(0,1206)=(0,1207)=(0,393)",128,0,0,0
+	.stabs	"remove_volatile:T(0,1208)=s1;",128,0,0,0
+	.stabs	"remove_volatile:t(0,1208)",128,0,0,0
+	.stabs	"remove_const:T(0,1209)=s1;",128,0,0,0
+	.stabs	"remove_const:t(0,1209)",128,0,0,0
+	.stabs	"remove_cv:T(0,1210)=s1;",128,0,0,0
+	.stabs	"remove_cv:t(0,1210)",128,0,0,0
+	.stabs	"is_void:T(0,1211)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1211)",128,0,0,0
+	.stabs	"conditional:T(0,1212)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1212)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1213)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1213)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1214)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1214)",128,0,0,0
+	.stabs	"_Tag:t(0,1215)=(0,1216)=(0,393)",128,0,0,0
+	.stabs	"remove_volatile:T(0,1217)=s1;",128,0,0,0
+	.stabs	"remove_volatile:t(0,1217)",128,0,0,0
+	.stabs	"remove_const:T(0,1218)=s1;",128,0,0,0
+	.stabs	"remove_const:t(0,1218)",128,0,0,0
+	.stabs	"remove_cv:T(0,1219)=s1;",128,0,0,0
+	.stabs	"remove_cv:t(0,1219)",128,0,0,0
+	.stabs	"is_void:T(0,1220)=s1integral_constant:(0,148),0,64;;",128,0,0,0
+	.stabs	"is_void:t(0,1220)",128,0,0,0
+	.stabs	"conditional:T(0,1221)=s1;",128,0,0,0
+	.stabs	"conditional:t(0,1221)",128,0,0,0
+	.stabs	"pointer_traits:T(0,1222)=s1;",128,0,0,0
+	.stabs	"pointer_traits:t(0,1222)",128,0,0,0
+	.stabs	"_Tag:t(0,1223)=(0,1224)=(0,393)",128,0,0,0
 	.stabs	"_Tag:t(0,1225)=(0,1226)=(0,393)",128,0,0,0
-	.stabs	"_Tag:t(0,1227)=(0,1228)=(0,393)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1229)=s8_M_current:(0,469),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1227)=s8_M_current:(0,469),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:t(0,1227)",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1228)=s8_M_current:(0,763),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:t(0,1228)",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1229)=s8_M_current:(0,754),0,64;;",128,0,0,0
 	.stabs	"__normal_iterator:t(0,1229)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1230)=s8_M_current:(0,763),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1230)=s8_M_current:(0,854),0,64;;",128,0,0,0
 	.stabs	"__normal_iterator:t(0,1230)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1231)=s8_M_current:(0,754),0,64;;",128,0,0,0
-	.stabs	"__normal_iterator:t(0,1231)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1232)=s8_M_current:(0,854),0,64;;",128,0,0,0
+	.stabs	"iterator_traits:T(0,1231)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1231)",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1232)=s8_M_current:(0,825),0,64;;",128,0,0,0
 	.stabs	"__normal_iterator:t(0,1232)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1233)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1233)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1234)=s8_M_current:(0,825),0,64;;",128,0,0,0
-	.stabs	"__normal_iterator:t(0,1234)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1235)=s8_M_current:(0,858),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1233)=s8_M_current:(0,858),0,64;;",128,0,0,0
+	.stabs	"__normal_iterator:t(0,1233)",128,0,0,0
+	.stabs	"iterator_traits:T(0,1234)=s1;",128,0,0,0
+	.stabs	"iterator_traits:t(0,1234)",128,0,0,0
+	.stabs	"__normal_iterator:T(0,1235)=s8_M_current:(0,844),0,64;;",128,0,0,0
 	.stabs	"__normal_iterator:t(0,1235)",128,0,0,0
-	.stabs	"iterator_traits:T(0,1236)=s1;",128,0,0,0
-	.stabs	"iterator_traits:t(0,1236)",128,0,0,0
-	.stabs	"__normal_iterator:T(0,1237)=s8_M_current:(0,844),0,64;;",128,0,0,0
-	.stabs	"__normal_iterator:t(0,1237)",128,0,0,0
 	.section	.rodata
 	.type	_ZStL19piecewise_construct, @object
 	.size	_ZStL19piecewise_construct, 1
@@ -1825,61 +1821,46 @@ main:
 	pushq	%rbx
 	subq	$24, %rsp
 	.cfi_offset 3, -24
-	.stabn	68,0,9,.LM1-.LFBB1
+	.stabn	68,0,10,.LM1-.LFBB1
 .LM1:
-	movq	%fs:40, %rax
-	movq	%rax, -24(%rbp)
-	xorl	%eax, %eax
+	movq	$112, -24(%rbp)
 	.stabn	68,0,11,.LM2-.LFBB1
 .LM2:
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	.stabn	68,0,12,.LM3-.LFBB1
+	.stabn	68,0,13,.LM3-.LFBB1
 .LM3:
-	leaq	-32(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERm@PLT
-	.stabn	68,0,14,.LM4-.LFBB1
-.LM4:
-	movq	-32(%rbp), %rax
-	.stabn	68,0,14,.LM5-.LFBB1
-.LM5:
+	movq	-24(%rbp), %rax
 	movq	%rax, %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSolsEm@PLT
-	.stabn	68,0,14,.LM6-.LFBB1
-.LM6:
+	.stabn	68,0,13,.LM4-.LFBB1
+.LM4:
 	leaq	.LC1(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rbx
-	.stabn	68,0,14,.LM7-.LFBB1
-.LM7:
-	movq	-32(%rbp), %rax
+	.stabn	68,0,13,.LM5-.LFBB1
+.LM5:
+	movq	-24(%rbp), %rax
 	movl	%eax, %edi
 	call	_Z9factorialj
 	movl	%eax, %esi
 	movq	%rbx, %rdi
 	call	_ZNSolsEj@PLT
 	movq	%rax, %rdx
-	.stabn	68,0,14,.LM8-.LFBB1
-.LM8:
+	.stabn	68,0,13,.LM6-.LFBB1
+.LM6:
 	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rax
 	movq	%rax, %rsi
 	movq	%rdx, %rdi
 	call	_ZNSolsEPFRSoS_E@PLT
-	.stabn	68,0,16,.LM9-.LFBB1
-.LM9:
+	.stabn	68,0,15,.LM7-.LFBB1
+.LM7:
 	movl	$0, %eax
-	.stabn	68,0,17,.LM10-.LFBB1
-.LM10:
-	movq	-24(%rbp), %rcx
-	xorq	%fs:40, %rcx
-	je	.L3
-	call	__stack_chk_fail@PLT
-.L3:
+	.stabn	68,0,16,.LM8-.LFBB1
+.LM8:
 	addq	$24, %rsp
 	popq	%rbx
 	popq	%rbp
@@ -1888,7 +1869,7 @@ main:
 	.cfi_endproc
 .LFE1522:
 	.size	main, .-main
-	.stabs	"number:(0,16)",128,0,0,-16
+	.stabs	"number:(0,16)",128,0,0,-8
 	.stabn	192,0,0,.LFBB1-.LFBB1
 	.stabn	224,0,0,.Lscope1-.LFBB1
 .Lscope1:
@@ -1897,8 +1878,8 @@ main:
 	.globl	_Z9factorialj
 	.type	_Z9factorialj, @function
 _Z9factorialj:
-	.stabn	68,0,20,.LM11-.LFBB2
-.LM11:
+	.stabn	68,0,19,.LM9-.LFBB2
+.LM9:
 .LFBB2:
 .LFB1523:
 	.cfi_startproc
@@ -1910,36 +1891,36 @@ _Z9factorialj:
 	.cfi_def_cfa_register 6
 	subq	$32, %rsp
 	movl	%edi, -20(%rbp)
+	.stabn	68,0,20,.LM10-.LFBB2
+.LM10:
+	movl	$1, -4(%rbp)
+	.stabn	68,0,21,.LM11-.LFBB2
+.LM11:
+	cmpl	$0, -20(%rbp)
+	jne	.L4
 	.stabn	68,0,21,.LM12-.LFBB2
 .LM12:
 	movl	$1, -4(%rbp)
-	.stabn	68,0,22,.LM13-.LFBB2
+	jmp	.L5
+.L4:
+	.stabn	68,0,21,.LM13-.LFBB2
 .LM13:
-	cmpl	$0, -20(%rbp)
-	jne	.L5
-	.stabn	68,0,22,.LM14-.LFBB2
-.LM14:
-	movl	$1, -4(%rbp)
-	jmp	.L6
-.L5:
-	.stabn	68,0,22,.LM15-.LFBB2
-.LM15:
 	movl	-20(%rbp), %eax
 	subl	$1, %eax
 	movl	%eax, %edi
 	call	_Z9factorialj
+	.stabn	68,0,21,.LM14-.LFBB2
+.LM14:
+	imull	-20(%rbp), %eax
+	.stabn	68,0,21,.LM15-.LFBB2
+.LM15:
+	movl	%eax, -4(%rbp)
+.L5:
 	.stabn	68,0,22,.LM16-.LFBB2
 .LM16:
-	imull	-20(%rbp), %eax
-	.stabn	68,0,22,.LM17-.LFBB2
-.LM17:
-	movl	%eax, -4(%rbp)
-.L6:
-	.stabn	68,0,23,.LM18-.LFBB2
-.LM18:
 	movl	-4(%rbp), %eax
-	.stabn	68,0,24,.LM19-.LFBB2
-.LM19:
+	.stabn	68,0,23,.LM17-.LFBB2
+.LM17:
 	leave
 	.cfi_def_cfa 7, 8
 	ret
@@ -1955,10 +1936,10 @@ _Z9factorialj:
 	.stabs	"__priority:p(0,14)",160,0,0,-8
 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 _Z41__static_initialization_and_destruction_0ii:
-	.stabn	68,0,24,.LM20-.LFBB3
-.LM20:
+	.stabn	68,0,23,.LM18-.LFBB3
+.LM18:
 .LFBB3:
-.LFB2015:
+.LFB2014:
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -1969,18 +1950,18 @@ _Z41__static_initialization_and_destruction_0ii:
 	subq	$16, %rsp
 	movl	%edi, -4(%rbp)
 	movl	%esi, -8(%rbp)
-	.stabn	68,0,24,.LM21-.LFBB3
-.LM21:
+	.stabn	68,0,23,.LM19-.LFBB3
+.LM19:
 	cmpl	$1, -4(%rbp)
-	jne	.L10
-	.stabn	68,0,24,.LM22-.LFBB3
-.LM22:
+	jne	.L9
+	.stabn	68,0,23,.LM20-.LFBB3
+.LM20:
 	cmpl	$65535, -8(%rbp)
-	jne	.L10
+	jne	.L9
 	.stabs	"/usr/include/c++/9/iostream",132,0,0,.Ltext1
 .Ltext1:
-	.stabn	68,0,74,.LM23-.LFBB3
-.LM23:
+	.stabn	68,0,74,.LM21-.LFBB3
+.LM21:
 	leaq	_ZStL8__ioinit(%rip), %rdi
 	call	_ZNSt8ios_base4InitC1Ev@PLT
 	leaq	__dso_handle(%rip), %rdx
@@ -1988,26 +1969,26 @@ _Z41__static_initialization_and_destruction_0ii:
 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 	movq	%rax, %rdi
 	call	__cxa_atexit@PLT
-.L10:
+.L9:
 	.stabs	"Prog.cpp",132,0,0,.Ltext2
 .Ltext2:
-	.stabn	68,0,24,.LM24-.LFBB3
-.LM24:
+	.stabn	68,0,23,.LM22-.LFBB3
+.LM22:
 	nop
 	leave
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE2015:
+.LFE2014:
 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 .Lscope3:
 	.stabs	"_GLOBAL__sub_I_main:f(0,28)",36,0,0,_GLOBAL__sub_I_main
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-	.stabn	68,0,24,.LM25-.LFBB4
-.LM25:
+	.stabn	68,0,23,.LM23-.LFBB4
+.LM23:
 .LFBB4:
-.LFB2016:
+.LFB2015:
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -2015,8 +1996,8 @@ _GLOBAL__sub_I_main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	.stabn	68,0,24,.LM26-.LFBB4
-.LM26:
+	.stabn	68,0,23,.LM24-.LFBB4
+.LM24:
 	movl	$65535, %esi
 	movl	$1, %edi
 	call	_Z41__static_initialization_and_destruction_0ii
@@ -2024,7 +2005,7 @@ _GLOBAL__sub_I_main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE2016:
+.LFE2015:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 .Lscope4:
 	.section	.init_array,"aw"

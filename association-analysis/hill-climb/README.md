@@ -110,6 +110,9 @@ Okay - now we can filter down to a set of flags and scripts that have a bit bett
 $ python explore_assembly.py run data/flags-times-flat.csv
 ```
 
+A basic question we can ask is if the assembly is different for programs that run faster with a flag, and then how.
+
+
 Once I did this I realized there was a cool opportunity here - we not only might be interested in how the assembly differs with/without a flag (and how that maps to performance) but also which flags might have similar influence, or no influence at all. E.g.,
 
  - Generate assembly for the main program without flags, and then across flags

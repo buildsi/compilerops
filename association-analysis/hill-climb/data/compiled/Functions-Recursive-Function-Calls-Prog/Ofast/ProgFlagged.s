@@ -20,55 +20,31 @@ main:
 	.cfi_offset 6, -16
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
-	subq	$16, %rsp
-	.cfi_def_cfa_offset 32
-	movq	%fs:40, %rax
-	movq	%rax, 8(%rsp)
-	xorl	%eax, %eax
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movq	%rsp, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSi10_M_extractImEERSiRT_@PLT
-	movq	(%rsp), %rsi
+	movl	$112, %esi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSo9_M_insertImEERSoT_@PLT
-	movl	$4, %edx
 	leaq	.LC1(%rip), %rsi
+	movl	$4, %edx
 	movq	%rax, %rdi
 	movq	%rax, %rbp
 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@PLT
-	movq	(%rsp), %rdx
-	testl	%edx, %edx
-	je	.L5
-	movl	%edx, %eax
 	movl	$1, %esi
+	movl	$112, %eax
 	.p2align 4,,10
 	.p2align 3
-.L3:
+.L2:
 	imull	%eax, %esi
 	subl	$1, %eax
-	jne	.L3
-.L2:
+	jne	.L2
 	movq	%rbp, %rdi
 	call	_ZNSo9_M_insertImEERSoT_@PLT
 	movq	%rax, %rdi
 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
-	movq	8(%rsp), %rax
-	xorq	%fs:40, %rax
-	jne	.L9
-	addq	$16, %rsp
-	.cfi_remember_state
-	.cfi_def_cfa_offset 16
 	xorl	%eax, %eax
 	popq	%rbp
 	.cfi_def_cfa_offset 8
 	ret
-.L5:
-	.cfi_restore_state
-	movl	$1, %esi
-	jmp	.L2
-.L9:
-	call	__stack_chk_fail@PLT
 	.cfi_endproc
 .LFE1590:
 	.size	main, .-main
@@ -82,17 +58,17 @@ _Z9factorialj:
 	endbr64
 	movl	$1, %eax
 	testl	%edi, %edi
-	je	.L13
+	je	.L9
 	.p2align 4,,10
 	.p2align 3
-.L12:
+.L8:
 	imull	%edi, %eax
 	subl	$1, %edi
-	jne	.L12
+	jne	.L8
 	ret
 	.p2align 4,,10
 	.p2align 3
-.L13:
+.L9:
 	ret
 	.cfi_endproc
 .LFE1591:
@@ -101,7 +77,7 @@ _Z9factorialj:
 	.p2align 4
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-.LFB2083:
+.LFB2082:
 	.cfi_startproc
 	endbr64
 	subq	$8, %rsp
@@ -115,7 +91,7 @@ _GLOBAL__sub_I_main:
 	leaq	_ZStL8__ioinit(%rip), %rsi
 	jmp	__cxa_atexit@PLT
 	.cfi_endproc
-.LFE2083:
+.LFE2082:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 	.section	.init_array,"aw"
 	.align 8

@@ -30,24 +30,18 @@ main:
 .LFB1570:
 	.cfi_startproc
 	endbr64
-	subq	$24, %rsp
-	.cfi_def_cfa_offset 32
+	pushq	%rax
+	.cfi_def_cfa_offset 16
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
-	movq	%fs:40, %rax
-	movq	%rax, 8(%rsp)
-	xorl	%eax, %eax
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movq	%rsp, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERm@PLT
-	movq	(%rsp), %rsi
+	movl	$112, %esi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSo9_M_insertImEERSoT_@PLT
 	leaq	.LC1(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movl	(%rsp), %edi
+	movl	$112, %edi
 	movq	%rax, %r8
 	call	_Z9factorialj
 	movq	%r8, %rdi
@@ -55,13 +49,8 @@ main:
 	call	_ZNSo9_M_insertImEERSoT_@PLT
 	movq	%rax, %rdi
 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
-	movq	8(%rsp), %rax
-	xorq	%fs:40, %rax
-	je	.L6
-	call	__stack_chk_fail@PLT
-.L6:
 	xorl	%eax, %eax
-	addq	$24, %rsp
+	popq	%rdx
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
@@ -69,7 +58,7 @@ main:
 	.size	main, .-main
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-.LFB2063:
+.LFB2062:
 	.cfi_startproc
 	endbr64
 	pushq	%rax
@@ -83,7 +72,7 @@ _GLOBAL__sub_I_main:
 	leaq	_ZStL8__ioinit(%rip), %rsi
 	jmp	__cxa_atexit@PLT
 	.cfi_endproc
-.LFE2063:
+.LFE2062:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 	.section	.init_array,"aw"
 	.align 8

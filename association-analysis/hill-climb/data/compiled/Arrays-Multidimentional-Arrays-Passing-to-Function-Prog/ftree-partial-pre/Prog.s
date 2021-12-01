@@ -83,6 +83,7 @@ main:
 	xorl	%eax, %eax
 	movl	$3, -72(%rbp)
 	movl	$4, -68(%rbp)
+	movl	$1, -84(%rbp)
 	movl	$90, -64(%rbp)
 	movl	$91, -60(%rbp)
 	movl	$92, -56(%rbp)
@@ -155,15 +156,9 @@ main:
 	leaq	.LC3(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	leaq	-84(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERi@PLT
-	movl	-84(%rbp), %eax
-	testl	%eax, %eax
+	cmpl	$0, -84(%rbp)
 	js	.L10
-	movl	-84(%rbp), %eax
-	cmpl	$2, %eax
+	cmpl	$2, -84(%rbp)
 	jle	.L11
 .L10:
 	movl	$0, -84(%rbp)
@@ -172,8 +167,8 @@ main:
 	movq	%rax, %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSolsEPFRSoS_E@PLT
-	movl	-84(%rbp), %edx
 	leaq	-64(%rbp), %rax
+	movl	-84(%rbp), %edx
 	movslq	%edx, %rdx
 	salq	$4, %rdx
 	addq	%rdx, %rax

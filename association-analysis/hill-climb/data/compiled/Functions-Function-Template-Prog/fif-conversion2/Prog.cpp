@@ -16,19 +16,23 @@ MyType maximum (MyType Var1 , MyType Var2 , MyType Var3);
 
 int main()
 {
-	int int1 , int2 , int3;
+	int int1 = 10;
+	int int2 = 10;
+	int int3 = 10;
+
 	cout << "Enter 3 integers : ";
-	cin >> int1 >> int2 >> int3;
 	cout << "The MAX is : " << maximum (int1 , int2 , int3) << endl << endl;
 
-	double d1 , d2 , d3;
+	double d1 = 10;
+	double d2 = 100;
+	double d3 = 10;
 	cout << "Enter 3 doubles : ";
-	cin >> d1 >> d2 >> d3;
 	cout << "The MAX is : " << maximum (d1 , d2 , d3) << endl << endl;
 
-	char char1 , char2 , char3;
+	char char1 = 'a';
+	char char2 = 'b';
+	char char3 = 'c';
 	cout << "Enter 3 characters : ";
-	cin >> char1 >> char2 >> char3;
 	cout << "The MAX is : " << maximum (char1 , char2 , char3) << endl << endl;
 
 	return 0;

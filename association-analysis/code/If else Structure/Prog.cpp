@@ -8,10 +8,9 @@ using namespace std;
 
 int main ()
 {
-	int grade;
+	int grade = 10;
 	
 	cout << "Enter your grade : ";
-	cin >> grade;
 	if (grade >= 90)
 		cout << "A\n";
 	else if (grade >= 80)

@@ -36,14 +36,11 @@ main:
 	movq	%fs:40, %rax
 	movq	%rax, -8(%rbp)
 	xorl	%eax, %eax
-	movl	$90, -376(%rbp)
+	movl	$90, -380(%rbp)
+	movl	$89, -376(%rbp)
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	leaq	-384(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERi@PLT
 	leaq	.LC1(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
@@ -51,9 +48,9 @@ main:
 	call	time@PLT
 	movl	%eax, %edi
 	call	srand@PLT
-	movl	$0, -380(%rbp)
+	movl	$0, -384(%rbp)
 .L3:
-	cmpl	$89, -380(%rbp)
+	cmpl	$89, -384(%rbp)
 	jg	.L2
 	call	rand@PLT
 	movslq	%eax, %rdx
@@ -69,17 +66,17 @@ main:
 	subl	%edx, %eax
 	movl	%eax, %edx
 	addl	$10, %edx
-	movl	-380(%rbp), %eax
+	movl	-384(%rbp), %eax
 	cltq
 	movl	%edx, -368(%rbp,%rax,4)
-	addl	$1, -380(%rbp)
+	addl	$1, -384(%rbp)
 	jmp	.L3
 .L2:
 	leaq	-368(%rbp), %rax
 	movl	$90, %esi
 	movq	%rax, %rdi
 	call	_Z10BubbleSortPii
-	movl	-384(%rbp), %edx
+	movl	-376(%rbp), %edx
 	leaq	-368(%rbp), %rax
 	movl	$89, %r8d
 	movl	$0, %ecx

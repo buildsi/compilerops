@@ -30,51 +30,38 @@ main:
 	pushq	%rbx
 	subq	$24, %rsp
 	.cfi_offset 3, -24
-	.loc 1 9 1
-	movq	%fs:40, %rax
-	movq	%rax, -24(%rbp)
-	xorl	%eax, %eax
+	.loc 1 10 16
+	movq	$112, -24(%rbp)
 	.loc 1 11 10
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	.loc 1 12 9
-	leaq	-32(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERm@PLT
-	.loc 1 14 20
-	movq	-32(%rbp), %rax
-	.loc 1 14 10
+	.loc 1 13 10
+	movq	-24(%rbp), %rax
 	movq	%rax, %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSolsEm@PLT
-	.loc 1 14 20
+	.loc 1 13 20
 	leaq	.LC1(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rbx
-	.loc 1 14 46
-	movq	-32(%rbp), %rax
+	.loc 1 13 46
+	movq	-24(%rbp), %rax
 	movl	%eax, %edi
 	call	_Z9factorialj
 	movl	%eax, %esi
 	movq	%rbx, %rdi
 	call	_ZNSolsEj@PLT
 	movq	%rax, %rdx
-	.loc 1 14 51
+	.loc 1 13 51
 	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rax
 	movq	%rax, %rsi
 	movq	%rdx, %rdi
 	call	_ZNSolsEPFRSoS_E@PLT
-	.loc 1 16 9
+	.loc 1 15 9
 	movl	$0, %eax
-	.loc 1 17 1
-	movq	-24(%rbp), %rcx
-	xorq	%fs:40, %rcx
-	je	.L3
-	call	__stack_chk_fail@PLT
-.L3:
+	.loc 1 16 1
 	addq	$24, %rsp
 	popq	%rbx
 	popq	%rbp
@@ -87,7 +74,7 @@ main:
 	.type	_Z9factorialj, @function
 _Z9factorialj:
 .LFB1523:
-	.loc 1 20 1
+	.loc 1 19 1
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -97,28 +84,28 @@ _Z9factorialj:
 	.cfi_def_cfa_register 6
 	subq	$32, %rsp
 	movl	%edi, -20(%rbp)
-	.loc 1 21 6
+	.loc 1 20 6
 	movl	$1, -4(%rbp)
-	.loc 1 22 8
+	.loc 1 21 8
 	cmpl	$0, -20(%rbp)
-	jne	.L5
-	.loc 1 22 15 discriminator 1
+	jne	.L4
+	.loc 1 21 15 discriminator 1
 	movl	$1, -4(%rbp)
-	jmp	.L6
-.L5:
-	.loc 1 22 41 discriminator 2
+	jmp	.L5
+.L4:
+	.loc 1 21 41 discriminator 2
 	movl	-20(%rbp), %eax
 	subl	$1, %eax
 	movl	%eax, %edi
 	call	_Z9factorialj
-	.loc 1 22 30 discriminator 2
+	.loc 1 21 30 discriminator 2
 	imull	-20(%rbp), %eax
-	.loc 1 22 26 discriminator 2
+	.loc 1 21 26 discriminator 2
 	movl	%eax, -4(%rbp)
-.L6:
-	.loc 1 23 9
+.L5:
+	.loc 1 22 9
 	movl	-4(%rbp), %eax
-	.loc 1 24 1
+	.loc 1 23 1
 	leave
 	.cfi_def_cfa 7, 8
 	ret
@@ -127,8 +114,8 @@ _Z9factorialj:
 	.size	_Z9factorialj, .-_Z9factorialj
 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 _Z41__static_initialization_and_destruction_0ii:
-.LFB2015:
-	.loc 1 24 1
+.LFB2014:
+	.loc 1 23 1
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -139,12 +126,12 @@ _Z41__static_initialization_and_destruction_0ii:
 	subq	$16, %rsp
 	movl	%edi, -4(%rbp)
 	movl	%esi, -8(%rbp)
-	.loc 1 24 1
+	.loc 1 23 1
 	cmpl	$1, -4(%rbp)
-	jne	.L10
-	.loc 1 24 1 is_stmt 0 discriminator 1
+	jne	.L9
+	.loc 1 23 1 is_stmt 0 discriminator 1
 	cmpl	$65535, -8(%rbp)
-	jne	.L10
+	jne	.L9
 	.file 2 "/usr/include/c++/9/iostream"
 	.loc 2 74 25 is_stmt 1
 	leaq	_ZStL8__ioinit(%rip), %rdi
@@ -154,19 +141,19 @@ _Z41__static_initialization_and_destruction_0ii:
 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 	movq	%rax, %rdi
 	call	__cxa_atexit@PLT
-.L10:
-	.loc 1 24 1
+.L9:
+	.loc 1 23 1
 	nop
 	leave
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE2015:
+.LFE2014:
 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-.LFB2016:
-	.loc 1 24 1
+.LFB2015:
+	.loc 1 23 1
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -174,7 +161,7 @@ _GLOBAL__sub_I_main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	.loc 1 24 1
+	.loc 1 23 1
 	movl	$65535, %esi
 	movl	$1, %edi
 	call	_Z41__static_initialization_and_destruction_0ii
@@ -182,7 +169,7 @@ _GLOBAL__sub_I_main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE2016:
+.LFE2015:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 	.section	.init_array,"aw"
 	.align 8
@@ -195,7 +182,7 @@ _GLOBAL__sub_I_main:
 	.quad	.LFB1522
 	.quad	.LFB1523
 	.quad	.LFB2015
-	.quad	.LFB2016
+	.quad	.LFB2014
 	.file 3 "/usr/include/c++/9/cwchar"
 	.file 4 "/usr/include/c++/9/new"
 	.file 5 "/usr/include/c++/9/bits/exception_ptr.h"
@@ -252,14 +239,14 @@ _GLOBAL__sub_I_main:
 	.byte	0x4
 	.uleb128 0xee
 	.uleb128 0x119
-	.byte	0x1a
-	.byte	0x7
-	.byte	0xb9
-	.byte	0xb4
-	.byte	0x26
-	.byte	0x3d
+	.byte	0x78
+	.byte	0x70
+	.byte	0x1c
+	.byte	0x97
+	.byte	0x66
+	.byte	0x1e
 	.byte	0xaa
-	.byte	0x95
+	.byte	0x4e
 	.uleb128 0x2
 	.string	"std"
 	.byte	0x19
@@ -5649,21 +5636,21 @@ _GLOBAL__sub_I_main:
 	.quad	0x7fffffffffffffff
 	.uleb128 0x62
 	.uleb128 0x14
-	.uleb128 0x4
-	.quad	.LFE2016-.LFB2016
+	.uleb128 0x3
+	.quad	.LFE2015-.LFB2015
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x63
 	.uleb128 0x163
-	.uleb128 0x3
-	.quad	.LFE2015-.LFB2015
+	.uleb128 0x4
+	.quad	.LFE2014-.LFB2014
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x26e1
 	.uleb128 0x64
 	.uleb128 0x56
 	.byte	0x1
-	.byte	0x18
+	.byte	0x17
 	.byte	0x1
 	.long	0x116a
 	.uleb128 0x2
@@ -5672,7 +5659,7 @@ _GLOBAL__sub_I_main:
 	.uleb128 0x64
 	.uleb128 0x8b
 	.byte	0x1
-	.byte	0x18
+	.byte	0x17
 	.byte	0x1
 	.long	0x116a
 	.uleb128 0x2
@@ -5682,7 +5669,7 @@ _GLOBAL__sub_I_main:
 	.uleb128 0x65
 	.uleb128 0x10d
 	.byte	0x1
-	.byte	0x13
+	.byte	0x12
 	.byte	0xe
 	.uleb128 0x76
 	.long	0x1100
@@ -5694,7 +5681,7 @@ _GLOBAL__sub_I_main:
 	.uleb128 0x66
 	.string	"n"
 	.byte	0x1
-	.byte	0x13
+	.byte	0x12
 	.byte	0x25
 	.long	0x1100
 	.uleb128 0x2
@@ -5703,7 +5690,7 @@ _GLOBAL__sub_I_main:
 	.uleb128 0x67
 	.uleb128 0x11a
 	.byte	0x1
-	.byte	0x15
+	.byte	0x14
 	.byte	0x6
 	.long	0x116a
 	.uleb128 0x2
@@ -5728,7 +5715,7 @@ _GLOBAL__sub_I_main:
 	.long	0x10c4
 	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -48
+	.sleb128 -40
 	.byte	0
 	.byte	0
 	.section	.debug_info,"",@progbits
@@ -5744,14 +5731,14 @@ _GLOBAL__sub_I_main:
 	.long	.LASF0
 	.long	.LASF1
 	.long	.Ldebug_addr0
-	.byte	0x1a
-	.byte	0x7
-	.byte	0xb9
-	.byte	0xb4
-	.byte	0x26
-	.byte	0x3d
+	.byte	0x78
+	.byte	0x70
+	.byte	0x1c
+	.byte	0x97
+	.byte	0x66
+	.byte	0x1e
 	.byte	0xaa
-	.byte	0x95
+	.byte	0x4e
 	.section	.debug_abbrev,"",@progbits
 .Lskeleton_debug_abbrev0:
 	.uleb128 0x1

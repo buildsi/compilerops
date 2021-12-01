@@ -10,7 +10,7 @@ void PrintRow (int [] , int);
 int main()
 {
 	const int Rows = 3 , Columns = 4;
-	int RowNo;
+	int RowNo = 1;
 	int Array1[Rows][Columns] ={{90,91,92,93},{80,81,82,83},{85,86,87,88}};
 
 	cout << "Here is the array : \n" << endl;
@@ -23,7 +23,6 @@ int main()
 	}
 
 	cout << endl << "Now enter the number of the row you want to be printed : ";
-	cin >> RowNo;
 
 	if ((RowNo < 0) || (RowNo > (Rows - 1)))
 		RowNo = 0;

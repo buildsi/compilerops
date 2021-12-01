@@ -31,7 +31,8 @@ $ ln -s code examples
 ```
 
 Note that two of the scripts have an interactive prompt, and you'll want to delete (or just
-use the files stored here)
+use the files stored here). I also removed a few that were input heavy, and adjusted any with
+cin to use hard coded values.
 
 ```bash
 $ grep -R ENTER

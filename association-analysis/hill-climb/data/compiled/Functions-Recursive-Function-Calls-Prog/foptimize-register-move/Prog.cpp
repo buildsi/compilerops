@@ -7,9 +7,8 @@ unsigned int factorial(unsigned int);
 
 int main()
 {
-	unsigned long number;
+	unsigned long number = 112;
 	cout << "Enter a number to calculate n! : ";
-	cin >> number;
 
 	cout << number << "! = " << factorial(number) << endl;
 

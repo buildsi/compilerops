@@ -7,10 +7,7 @@ _ZStL19piecewise_construct:
 	.zero	1
 	.local	_ZStL8__ioinit
 	.comm	_ZStL8__ioinit,1,1
-	.align 8
 .LC0:
-	.string	"Enter your choice from 0 to 3 : "
-.LC1:
 	.string	"Out of Range!\n"
 	.text
 	.globl	main
@@ -28,7 +25,7 @@ main:
 	movq	%fs:40, %rax
 	movq	%rax, -8(%rbp)
 	xorl	%eax, %eax
-	movl	$4, -52(%rbp)
+	movl	$4, -56(%rbp)
 	leaq	_Z9Function0i(%rip), %rax
 	movq	%rax, -48(%rbp)
 	leaq	_Z9Function1i(%rip), %rax
@@ -37,28 +34,20 @@ main:
 	movq	%rax, -32(%rbp)
 	leaq	_Z9Function3i(%rip), %rax
 	movq	%rax, -24(%rbp)
-	leaq	.LC0(%rip), %rsi
-	leaq	_ZSt4cout(%rip), %rdi
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	leaq	-56(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERi@PLT
-	movl	-56(%rbp), %eax
-	testl	%eax, %eax
+	movl	$1, -52(%rbp)
+	cmpl	$0, -52(%rbp)
 	js	.L2
-	movl	-56(%rbp), %eax
-	cmpl	$3, %eax
+	cmpl	$3, -52(%rbp)
 	jg	.L2
-	movl	-56(%rbp), %eax
+	movl	-52(%rbp), %eax
 	cltq
 	movq	-48(%rbp,%rax,8), %rdx
-	movl	-56(%rbp), %eax
+	movl	-52(%rbp), %eax
 	movl	%eax, %edi
 	call	*%rdx
 	jmp	.L3
 .L2:
-	leaq	.LC1(%rip), %rsi
+	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 .L3:
@@ -75,9 +64,9 @@ main:
 .LFE1522:
 	.size	main, .-main
 	.section	.rodata
-.LC2:
+.LC1:
 	.string	"You entered "
-.LC3:
+.LC2:
 	.string	", so Function0 was called.\n"
 	.text
 	.globl	_Z9Function0i
@@ -93,7 +82,7 @@ _Z9Function0i:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movl	%edi, -4(%rbp)
-	leaq	.LC2(%rip), %rsi
+	leaq	.LC1(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rdx
@@ -101,7 +90,7 @@ _Z9Function0i:
 	movl	%eax, %esi
 	movq	%rdx, %rdi
 	call	_ZNSolsEi@PLT
-	leaq	.LC3(%rip), %rsi
+	leaq	.LC2(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	nop
@@ -112,7 +101,7 @@ _Z9Function0i:
 .LFE1523:
 	.size	_Z9Function0i, .-_Z9Function0i
 	.section	.rodata
-.LC4:
+.LC3:
 	.string	", so Function1 was called.\n"
 	.text
 	.globl	_Z9Function1i
@@ -128,7 +117,7 @@ _Z9Function1i:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movl	%edi, -4(%rbp)
-	leaq	.LC2(%rip), %rsi
+	leaq	.LC1(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rdx
@@ -136,7 +125,7 @@ _Z9Function1i:
 	movl	%eax, %esi
 	movq	%rdx, %rdi
 	call	_ZNSolsEi@PLT
-	leaq	.LC4(%rip), %rsi
+	leaq	.LC3(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	nop
@@ -147,7 +136,7 @@ _Z9Function1i:
 .LFE1524:
 	.size	_Z9Function1i, .-_Z9Function1i
 	.section	.rodata
-.LC5:
+.LC4:
 	.string	", so Function2 was called.\n"
 	.text
 	.globl	_Z9Function2i
@@ -163,7 +152,7 @@ _Z9Function2i:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movl	%edi, -4(%rbp)
-	leaq	.LC2(%rip), %rsi
+	leaq	.LC1(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rdx
@@ -171,7 +160,7 @@ _Z9Function2i:
 	movl	%eax, %esi
 	movq	%rdx, %rdi
 	call	_ZNSolsEi@PLT
-	leaq	.LC5(%rip), %rsi
+	leaq	.LC4(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	nop
@@ -182,7 +171,7 @@ _Z9Function2i:
 .LFE1525:
 	.size	_Z9Function2i, .-_Z9Function2i
 	.section	.rodata
-.LC6:
+.LC5:
 	.string	", so Function3 was called.\n"
 	.text
 	.globl	_Z9Function3i
@@ -198,7 +187,7 @@ _Z9Function3i:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movl	%edi, -4(%rbp)
-	leaq	.LC2(%rip), %rsi
+	leaq	.LC1(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rdx
@@ -206,7 +195,7 @@ _Z9Function3i:
 	movl	%eax, %esi
 	movq	%rdx, %rdi
 	call	_ZNSolsEi@PLT
-	leaq	.LC6(%rip), %rsi
+	leaq	.LC5(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	nop

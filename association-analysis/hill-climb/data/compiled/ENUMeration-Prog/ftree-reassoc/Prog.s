@@ -34,46 +34,40 @@ main:
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
-	movq	%fs:40, %rax
-	movq	%rax, -8(%rbp)
-	xorl	%eax, %eax
+	movl	$2, -4(%rbp)
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	leaq	-16(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERi@PLT
-	movl	-16(%rbp), %eax
-	cmpl	$12, %eax
+	cmpl	$12, -4(%rbp)
 	jg	.L2
-	cmpl	$10, %eax
+	cmpl	$10, -4(%rbp)
 	jge	.L3
-	cmpl	$9, %eax
+	cmpl	$9, -4(%rbp)
 	jg	.L2
-	cmpl	$7, %eax
+	cmpl	$7, -4(%rbp)
 	jge	.L4
-	cmpl	$3, %eax
+	cmpl	$3, -4(%rbp)
 	jg	.L5
-	testl	%eax, %eax
+	cmpl	$0, -4(%rbp)
 	jg	.L6
 	jmp	.L2
 .L5:
+	movl	-4(%rbp), %eax
 	subl	$4, %eax
 	cmpl	$2, %eax
 	ja	.L2
-	jmp	.L17
+	jmp	.L16
 .L6:
-	movl	$1, -12(%rbp)
+	movl	$1, -8(%rbp)
 	jmp	.L8
-.L17:
-	movl	$2, -12(%rbp)
+.L16:
+	movl	$2, -8(%rbp)
 	jmp	.L8
 .L4:
-	movl	$3, -12(%rbp)
+	movl	$3, -8(%rbp)
 	jmp	.L8
 .L3:
-	movl	$4, -12(%rbp)
+	movl	$4, -8(%rbp)
 	jmp	.L8
 .L2:
 	leaq	.LC1(%rip), %rsi
@@ -85,7 +79,7 @@ main:
 	movq	%rdx, %rdi
 	call	_ZNSolsEPFRSoS_E@PLT
 .L8:
-	movl	-12(%rbp), %eax
+	movl	-8(%rbp), %eax
 	cmpl	$4, %eax
 	je	.L9
 	cmpl	$4, %eax
@@ -150,11 +144,6 @@ main:
 	call	_ZNSolsEPFRSoS_E@PLT
 .L14:
 	movl	$0, %eax
-	movq	-8(%rbp), %rcx
-	xorq	%fs:40, %rcx
-	je	.L16
-	call	__stack_chk_fail@PLT
-.L16:
 	leave
 	.cfi_def_cfa 7, 8
 	ret
@@ -175,9 +164,9 @@ _Z41__static_initialization_and_destruction_0ii:
 	movl	%edi, -4(%rbp)
 	movl	%esi, -8(%rbp)
 	cmpl	$1, -4(%rbp)
-	jne	.L20
+	jne	.L19
 	cmpl	$65535, -8(%rbp)
-	jne	.L20
+	jne	.L19
 	leaq	_ZStL8__ioinit(%rip), %rdi
 	call	_ZNSt8ios_base4InitC1Ev@PLT
 	leaq	__dso_handle(%rip), %rdx
@@ -185,7 +174,7 @@ _Z41__static_initialization_and_destruction_0ii:
 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 	movq	%rax, %rdi
 	call	__cxa_atexit@PLT
-.L20:
+.L19:
 	nop
 	leave
 	.cfi_def_cfa 7, 8

@@ -12,10 +12,7 @@ int main( void )
 	void (*F[ArraySize])(int) = {Function0,Function1,Function2,Function3};
 	// F is an array of 4 pointers to functions that each take an int as an argument and 
 	//		return void.
-	int Choice;
-	cout << "Enter your choice from 0 to 3 : ";
-	cin >> Choice;
-
+	int Choice = 1;
 	if (Choice >=0 && Choice < ArraySize)
 		(*F[Choice])(Choice);
 	else

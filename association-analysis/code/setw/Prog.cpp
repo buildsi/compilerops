@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	int BaseNo , ExpoNo;
-	cin >> BaseNo >> ExpoNo;
+	int BaseNo = 10;
+	int ExpoNo = 20;
 	cout << setw(16) << setiosflags(ios::fixed) << pow(BaseNo,ExpoNo) << endl;
 
 	return 0;

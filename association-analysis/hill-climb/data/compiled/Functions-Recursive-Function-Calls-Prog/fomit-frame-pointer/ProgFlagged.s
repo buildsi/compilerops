@@ -24,17 +24,11 @@ main:
 	.cfi_offset 3, -16
 	subq	$16, %rsp
 	.cfi_def_cfa_offset 32
-	movq	%fs:40, %rax
-	movq	%rax, 8(%rsp)
-	xorl	%eax, %eax
+	movq	$112, 8(%rsp)
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movq	%rsp, %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERm@PLT
-	movq	(%rsp), %rax
+	movq	8(%rsp), %rax
 	movq	%rax, %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSolsEm@PLT
@@ -42,7 +36,7 @@ main:
 	movq	%rax, %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 	movq	%rax, %rbx
-	movq	(%rsp), %rax
+	movq	8(%rsp), %rax
 	movl	%eax, %edi
 	call	_Z9factorialj
 	movl	%eax, %esi
@@ -54,11 +48,6 @@ main:
 	movq	%rdx, %rdi
 	call	_ZNSolsEPFRSoS_E@PLT
 	movl	$0, %eax
-	movq	8(%rsp), %rcx
-	xorq	%fs:40, %rcx
-	je	.L3
-	call	__stack_chk_fail@PLT
-.L3:
 	addq	$16, %rsp
 	.cfi_def_cfa_offset 16
 	popq	%rbx
@@ -78,17 +67,17 @@ _Z9factorialj:
 	movl	%edi, 12(%rsp)
 	movl	$1, 28(%rsp)
 	cmpl	$0, 12(%rsp)
-	jne	.L5
+	jne	.L4
 	movl	$1, 28(%rsp)
-	jmp	.L6
-.L5:
+	jmp	.L5
+.L4:
 	movl	12(%rsp), %eax
 	subl	$1, %eax
 	movl	%eax, %edi
 	call	_Z9factorialj
 	imull	12(%rsp), %eax
 	movl	%eax, 28(%rsp)
-.L6:
+.L5:
 	movl	28(%rsp), %eax
 	addq	$40, %rsp
 	.cfi_def_cfa_offset 8
@@ -98,7 +87,7 @@ _Z9factorialj:
 	.size	_Z9factorialj, .-_Z9factorialj
 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 _Z41__static_initialization_and_destruction_0ii:
-.LFB2015:
+.LFB2014:
 	.cfi_startproc
 	endbr64
 	subq	$24, %rsp
@@ -106,9 +95,9 @@ _Z41__static_initialization_and_destruction_0ii:
 	movl	%edi, 12(%rsp)
 	movl	%esi, 8(%rsp)
 	cmpl	$1, 12(%rsp)
-	jne	.L10
+	jne	.L9
 	cmpl	$65535, 8(%rsp)
-	jne	.L10
+	jne	.L9
 	leaq	_ZStL8__ioinit(%rip), %rdi
 	call	_ZNSt8ios_base4InitC1Ev@PLT
 	leaq	__dso_handle(%rip), %rdx
@@ -116,17 +105,17 @@ _Z41__static_initialization_and_destruction_0ii:
 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 	movq	%rax, %rdi
 	call	__cxa_atexit@PLT
-.L10:
+.L9:
 	nop
 	addq	$24, %rsp
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE2015:
+.LFE2014:
 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-.LFB2016:
+.LFB2015:
 	.cfi_startproc
 	endbr64
 	subq	$8, %rsp
@@ -138,7 +127,7 @@ _GLOBAL__sub_I_main:
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE2016:
+.LFE2015:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 	.section	.init_array,"aw"
 	.align 8

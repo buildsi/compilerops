@@ -38,49 +38,39 @@
 < .LFB1522:
 ---
 > .LFB1590:
-25,26d43
+22,26d40
+< 	pushq	%rbp
+< 	.cfi_def_cfa_offset 16
+< 	.cfi_offset 6, -16
 < 	movq	%rsp, %rbp
 < 	.cfi_def_cfa_register 6
-28c45
+28,30c42,43
 < 	subq	$24, %rsp
+< 	.cfi_offset 3, -24
+< 	movq	$112, -24(%rbp)
 ---
-> 	.cfi_def_cfa_offset 24
-30,31c47,51
-< 	movq	%fs:40, %rax
-< 	movq	%rax, -24(%rbp)
----
-> 	subq	$24, %rsp
-> 	.cfi_def_cfa_offset 48
-> 	movl	$40, %ebp
-> 	movq	%fs:0(%rbp), %rax
-> 	movq	%rax, 8(%rsp)
-36,37c56
-< 	leaq	-32(%rbp), %rax
+> 	.cfi_def_cfa_offset 16
+> 	.cfi_offset 3, -16
+34,35c47
+< 	movq	-24(%rbp), %rax
 < 	movq	%rax, %rsi
 ---
-> 	movq	%rsp, %rsi
-39,41c58,59
-< 	call	_ZNSirsERm@PLT
-< 	movq	-32(%rbp), %rax
-< 	movq	%rax, %rsi
----
-> 	call	_ZNSi10_M_extractImEERSiRT_@PLT
-> 	movq	(%rsp), %rsi
-43c61,63
+> 	movl	$112, %esi
+37c49,51
 < 	call	_ZNSolsEm@PLT
 ---
 > 	call	_ZNSo9_M_insertImEERSoT_@PLT
 > 	movq	%rax, %rbx
 > 	movl	$4, %edx
-46,49c66,67
+40,43c54,55
 < 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 < 	movq	%rax, %rbx
-< 	movq	-32(%rbp), %rax
+< 	movq	-24(%rbp), %rax
 < 	movl	%eax, %edi
 ---
 > 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@PLT
-> 	movl	(%rsp), %edi
-53,58c71,76
+> 	movl	$112, %edi
+47,52c59,61
 < 	call	_ZNSolsEj@PLT
 < 	movq	%rax, %rdx
 < 	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rax
@@ -91,33 +81,18 @@
 > 	call	_ZNSo9_M_insertImEERSoT_@PLT
 > 	movq	%rax, %rdi
 > 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
-> 	movq	8(%rsp), %rax
-> 	xorq	%fs:0(%rbp), %rax
-> 	jne	.L12
-60,64d77
-< 	movq	-24(%rbp), %rcx
-< 	xorq	%fs:40, %rcx
-< 	je	.L3
-< 	call	__stack_chk_fail@PLT
-< .L3:
-65a79,80
-> 	.cfi_remember_state
-> 	.cfi_def_cfa_offset 24
-66a82
-> 	.cfi_def_cfa_offset 16
-68c84
+54d62
+< 	addq	$24, %rsp
+56,57c64
+< 	popq	%rbp
 < 	.cfi_def_cfa 7, 8
 ---
 > 	.cfi_def_cfa_offset 8
-69a86,88
-> .L12:
-> 	.cfi_restore_state
-> 	call	__stack_chk_fail@PLT
-71c90
+60c67
 < .LFE1522:
 ---
 > .LFE1590:
-73,108c92,94
+62,97c69,71
 < 	.globl	_Z9factorialj
 < 	.type	_Z9factorialj, @function
 < _Z9factorialj:
@@ -133,17 +108,17 @@
 < 	movl	%edi, -20(%rbp)
 < 	movl	$1, -4(%rbp)
 < 	cmpl	$0, -20(%rbp)
-< 	jne	.L5
+< 	jne	.L4
 < 	movl	$1, -4(%rbp)
-< 	jmp	.L6
-< .L5:
+< 	jmp	.L5
+< .L4:
 < 	movl	-20(%rbp), %eax
 < 	subl	$1, %eax
 < 	movl	%eax, %edi
 < 	call	_Z9factorialj
 < 	imull	-20(%rbp), %eax
 < 	movl	%eax, -4(%rbp)
-< .L6:
+< .L5:
 < 	movl	-4(%rbp), %eax
 < 	leave
 < 	.cfi_def_cfa 7, 8
@@ -153,16 +128,16 @@
 < 	.size	_Z9factorialj, .-_Z9factorialj
 < 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 < _Z41__static_initialization_and_destruction_0ii:
-< .LFB2015:
+< .LFB2014:
 ---
 > 	.type	_GLOBAL__sub_I_main, @function
 > _GLOBAL__sub_I_main:
-> .LFB2083:
-111c97
+> .LFB2082:
+100c74
 < 	pushq	%rbp
 ---
 > 	subq	$8, %rsp
-113,122d98
+102,111d75
 < 	.cfi_offset 6, -16
 < 	movq	%rsp, %rbp
 < 	.cfi_def_cfa_register 6
@@ -170,28 +145,26 @@
 < 	movl	%edi, -4(%rbp)
 < 	movl	%esi, -8(%rbp)
 < 	cmpl	$1, -4(%rbp)
-< 	jne	.L10
+< 	jne	.L9
 < 	cmpl	$65535, -8(%rbp)
-< 	jne	.L10
-127,128c103
+< 	jne	.L9
+116,117c80
 < 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 < 	movq	%rax, %rdi
 ---
 > 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rdi
-130,133c105,106
-< .L10:
+119,141c82,83
+< .L9:
 < 	nop
 < 	leave
 < 	.cfi_def_cfa 7, 8
----
-> 	addq	$8, %rsp
-> 	.cfi_def_cfa_offset 8
-136,155c109
-< .LFE2015:
+< 	ret
+< 	.cfi_endproc
+< .LFE2014:
 < 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 < 	.type	_GLOBAL__sub_I_main, @function
 < _GLOBAL__sub_I_main:
-< .LFB2016:
+< .LFB2015:
 < 	.cfi_startproc
 < 	endbr64
 < 	pushq	%rbp
@@ -204,11 +177,13 @@
 < 	call	_Z41__static_initialization_and_destruction_0ii
 < 	popq	%rbp
 < 	.cfi_def_cfa 7, 8
-< 	ret
-< 	.cfi_endproc
-< .LFE2016:
 ---
-> .LFE2083:
-159a114,115
+> 	addq	$8, %rsp
+> 	.cfi_def_cfa_offset 8
+144c86
+< .LFE2015:
+---
+> .LFE2082:
+148a91,92
 > 	.local	_ZStL8__ioinit
 > 	.comm	_ZStL8__ioinit,1,1

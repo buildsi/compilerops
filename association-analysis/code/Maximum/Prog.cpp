@@ -12,9 +12,10 @@ int maxim (int x , int y , int z)   // both function prototype and definition.(w
 
 int main()
 {
-	int num1,num2,num3;
-	cout << "Enter 3 numbers : ";
-	cin >> num1 >> num2 >> num3;
+	int num1 = 10;
+	int num2 = 20000;
+	int num3 = 54355;
+	cout << "Enter 3 numbers : ";	
 	cout << "Max is " << maxim (num1 , num2 , num3) << endl;
 
 	return 0;

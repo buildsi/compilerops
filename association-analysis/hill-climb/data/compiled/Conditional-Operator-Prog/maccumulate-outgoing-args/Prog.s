@@ -26,18 +26,11 @@ main:
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
-	movq	%fs:40, %rax
-	movq	%rax, -8(%rbp)
-	xorl	%eax, %eax
+	movl	$95, -4(%rbp)
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	leaq	-12(%rbp), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSirsERi@PLT
-	movl	-12(%rbp), %eax
-	cmpl	$59, %eax
+	cmpl	$59, -4(%rbp)
 	jle	.L2
 	leaq	.LC1(%rip), %rax
 	jmp	.L3
@@ -47,8 +40,7 @@ main:
 	movq	%rax, %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movl	-12(%rbp), %eax
-	cmpl	$59, %eax
+	cmpl	$59, -4(%rbp)
 	jle	.L4
 	leaq	.LC1(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
@@ -60,11 +52,6 @@ main:
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
 .L5:
 	movl	$0, %eax
-	movq	-8(%rbp), %rdx
-	xorq	%fs:40, %rdx
-	je	.L7
-	call	__stack_chk_fail@PLT
-.L7:
 	leave
 	.cfi_def_cfa 7, 8
 	ret
@@ -85,9 +72,9 @@ _Z41__static_initialization_and_destruction_0ii:
 	movl	%edi, -4(%rbp)
 	movl	%esi, -8(%rbp)
 	cmpl	$1, -4(%rbp)
-	jne	.L10
+	jne	.L9
 	cmpl	$65535, -8(%rbp)
-	jne	.L10
+	jne	.L9
 	leaq	_ZStL8__ioinit(%rip), %rdi
 	call	_ZNSt8ios_base4InitC1Ev@PLT
 	leaq	__dso_handle(%rip), %rdx
@@ -95,7 +82,7 @@ _Z41__static_initialization_and_destruction_0ii:
 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 	movq	%rax, %rdi
 	call	__cxa_atexit@PLT
-.L10:
+.L9:
 	nop
 	leave
 	.cfi_def_cfa 7, 8

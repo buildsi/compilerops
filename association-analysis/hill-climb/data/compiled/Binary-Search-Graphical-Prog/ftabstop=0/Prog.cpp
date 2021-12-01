@@ -9,13 +9,13 @@ void printRow( int [], int, int, int, int );
 int main()
 {
 	const int arraySize = 15;
-	int a[ arraySize ], key, result;
+	int a[ arraySize ], result;
+	int key = 27;
 
 	for ( int i = 0; i < arraySize; i++ )
 	    a[ i ] = 2 * i;   // place some data in array
 
 	cout << "Enter a number between 0 and 28: ";
-	cin >> key;
 
 	printHeader( arraySize );
 	result = binarySearch( a, key, 0, arraySize - 1, arraySize );

@@ -2,7 +2,7 @@
 	.text
 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 _Z41__static_initialization_and_destruction_0ii:
-.LFB2082:
+.LFB2081:
 	.cfi_startproc
 	cmpl	$1, %edi
 	je	.L7
@@ -23,7 +23,7 @@ _Z41__static_initialization_and_destruction_0ii:
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE2082:
+.LFE2081:
 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 	.globl	_Z9factorialj
 	.type	_Z9factorialj, @function
@@ -63,25 +63,13 @@ main:
 .LFB1590:
 	.cfi_startproc
 	endbr64
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
 	pushq	%rbx
-	.cfi_def_cfa_offset 24
-	.cfi_offset 3, -24
-	subq	$24, %rsp
-	.cfi_def_cfa_offset 48
-	movl	$40, %ebp
-	movq	%fs:0(%rbp), %rax
-	movq	%rax, 8(%rsp)
-	xorl	%eax, %eax
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
 	leaq	.LC0(%rip), %rsi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movq	%rsp, %rsi
-	leaq	_ZSt3cin(%rip), %rdi
-	call	_ZNSi10_M_extractImEERSiRT_@PLT
-	movq	(%rsp), %rsi
+	movl	$112, %esi
 	leaq	_ZSt4cout(%rip), %rdi
 	call	_ZNSo9_M_insertImEERSoT_@PLT
 	movq	%rax, %rbx
@@ -89,34 +77,23 @@ main:
 	leaq	.LC1(%rip), %rsi
 	movq	%rax, %rdi
 	call	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l@PLT
-	movl	(%rsp), %edi
+	movl	$112, %edi
 	call	_Z9factorialj
 	movl	%eax, %esi
 	movq	%rbx, %rdi
 	call	_ZNSo9_M_insertImEERSoT_@PLT
 	movq	%rax, %rdi
 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
-	movq	8(%rsp), %rax
-	xorq	%fs:0(%rbp), %rax
-	jne	.L19
 	movl	$0, %eax
-	addq	$24, %rsp
-	.cfi_remember_state
-	.cfi_def_cfa_offset 24
 	popq	%rbx
-	.cfi_def_cfa_offset 16
-	popq	%rbp
 	.cfi_def_cfa_offset 8
 	ret
-.L19:
-	.cfi_restore_state
-	call	__stack_chk_fail@PLT
 	.cfi_endproc
 .LFE1590:
 	.size	main, .-main
 	.type	_GLOBAL__sub_I_main, @function
 _GLOBAL__sub_I_main:
-.LFB2083:
+.LFB2082:
 	.cfi_startproc
 	endbr64
 	subq	$8, %rsp
@@ -128,7 +105,7 @@ _GLOBAL__sub_I_main:
 	.cfi_def_cfa_offset 8
 	ret
 	.cfi_endproc
-.LFE2083:
+.LFE2082:
 	.size	_GLOBAL__sub_I_main, .-_GLOBAL__sub_I_main
 	.section	.init_array,"aw"
 	.align 8

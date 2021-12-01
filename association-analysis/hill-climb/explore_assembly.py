@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# python explore_assembly.py run data/flags-times-flat.csv
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
@@ -10,6 +12,7 @@ import shlex
 
 import argparse
 from glob import glob
+import fnmatch
 import json
 import os
 import re
@@ -52,12 +55,20 @@ def generate_assembly(df, outdir):
         if not os.path.exists(out_dir):
             os.makedirs(out_dir)
 
+        # Continue if we've done it already
+        filemarker = os.path.join(out_dir, "filename.txt")
+        if os.path.exists(filemarker):
+            continue
+
         # Save filename there
-        with open(os.path.join(out_dir, "filename.txt"), "w") as fd:
+        with open(filemarker, "w") as fd:
             fd.write(filename)
         with open(os.path.join(out_dir, "flag.txt"), "w") as fd:
             fd.write(flag)
-        compile_program(flag, filename, out_dir)
+        try:
+            compile_program(flag, filename, out_dir)
+        except:
+            pass
 
 def read_file(filename):
     with open(filename, 'r') as fd:
@@ -72,9 +83,30 @@ def explore_assembly(df, outdir):
     runtime by this much for this script."
     """
     # Keep a record of token counts and unique tokens
-    unique_tokens = set()
+    unique_tokens = {}
     filenames = set()
     counts = {}
+
+    # Helper function to count
+    def count_tokens(content):
+        tokens = {}
+        for line in content.split('\n'):
+            line = line.replace("\t", " ")
+            for tok in line.split(' '):
+                tok = tok.replace(" ", "")
+                tok = tok.strip('"')
+                if ":" in tok:
+                   tok = tok.split(':')[0]
+                if "0x" in tok:
+                    continue
+                if tok:
+                    if tok not in tokens:
+                        tokens[tok] = 0
+                    tokens[tok] += 1
+                    if tok not in unique_tokens: 
+                        unique_tokens[tok] = 0                    
+                    unique_tokens[tok] +=1
+        return tokens
 
     # For each program and flag we want to compile!
     for _, row in df.iterrows():
@@ -82,68 +114,81 @@ def explore_assembly(df, outdir):
         if not filename.startswith(os.sep):
             filename = os.sep + filename
         out_dir = os.path.join(outdir, program, flag.strip("-").strip("-"))
-
+            
         # Do we have Prog.S and ProgFlagged.S?
         flagged = os.path.join(out_dir, "ProgFlagged.s")
         prog = os.path.join(out_dir, "Prog.s")
-
-        # Helper function to count
-        def count_tokens(content):
-            tokens = {}
-            for line in content.split('\n'):
-                line = line.replace("\t", " ")
-                for tok in line.split(' '):
-                    tok = tok.replace(" ", "")
-                    tok = tok.strip('"')
-                    if ":" in tok:
-                        tok = tok.split(':')[0]
-                    if "0x" in tok:
-                        continue
-                    if tok:
-                        if tok not in tokens:
-                            tokens[tok] = 0
-                        tokens[tok] += 1
-                        unique_tokens.add(tok)
-            return tokens
         
         if os.path.exists(flagged) and os.path.exists(prog):
             filenames.add(flagged)
             filenames.add(prog)
-            counts[flagged] = count_tokens(read_file(flagged))
-            counts[prog] = count_tokens(read_file(prog))
+            try:
+                counts[flagged] = count_tokens(read_file(flagged))
+                counts[prog] = count_tokens(read_file(prog))
+            except:
+                pass
             
-    tokens = pandas.DataFrame(0, columns=list(unique_tokens), index=list(filenames))
+    # We have to filter the tokens otherwise the data frame is too big!
+    keepers = set()    
+    counts = {}
+    for tok, count in unique_tokens.items():
+        if count >= 1000:
+            keepers.add(tok)
+
+    # Save to plot
+    tokens = pandas.DataFrame(0, columns=list(keepers), index=list(filenames))
     for filename, toks in counts.items():
         for token_name, count in toks.items():
+            if token_name not in keepers:
+                continue
             tokens.loc[filename, token_name] += 1
 
-    # Save tokens to file
-    tokens.to_csv("data/faster-assembly-tokens.csv")
 
-    # For each one, look at differences
+    # Save tokens to file
+    tokens.to_csv("data/assembly-tokens.csv")
+
+    # For each one, look at differences (plot)
     prefixes = set([os.path.dirname(x) for x in filenames])    
     for prefix in prefixes:
         flagged = os.path.join(prefix, "ProgFlagged.s")
-        prog = os.path.join(prefix, "Prog.s")
- 
-        # Find the column names where they aren't 0 or the same
-        flagged_zeros = set(tokens.columns[tokens.loc[flagged] == 0])
-        prog_zeros = set(tokens.columns[tokens.loc[flagged] == 0])
-        to_remove = flagged_zeros.intersection(prog_zeros)
+        prog = os.path.join(prefix, "Prog.s") 
+        changed_columns = tokens.loc[[prog]].values != tokens.loc[[flagged]].values
+        df_filtered = tokens.loc[[prog, flagged], changed_columns[0]]
+        if df_filtered.shape[1] == 0:
+            continue
 
-        # find where they are the same
-        to_remove = to_remove.intersection(set(tokens.columns[tokens.loc[flagged] == tokens.loc[prog]]))
-        to_keep = [x for x in tokens.columns if x not in to_remove]
-        subset = pandas.DataFrame(index=[flagged, prog], columns=to_keep)
-        subset.loc[flagged, to_keep] = tokens.loc[flagged, to_keep]
-        subset.loc[prog, to_keep] = tokens.loc[prog, to_keep]
+        labels = list(df_filtered.columns)
+        x = np.arange(len(labels))  # the label locations
+        diff = df_filtered.loc[flagged] - df_filtered.loc[prog]
 
-        diff = tokens.loc[flagged] tokens.loc[prog]
-        newdf = pandas.DataFrame(columns)
-        # TODO figure out what was added
+        # sort based on value
+        diff = diff.sort_values()
+
+        values_pos = diff.values.copy()
+        values_neg = diff.values.copy()
+        values_pos[values_pos < 0] = 0
+        values_neg[values_neg > 0] = 0
+        fig, ax = plt.subplots()
+        width = 0.35
+        rects_pos = ax.bar(x - width/2, values_pos, width, label='Additions')
+        rects_neg = ax.bar(x - width/2, values_neg, width, label='Subtractions')
         
-    import IPython
-    IPython.embed()
+        # Add some text for labels, title and custom x-axis tick labels, etc.
+        ax.set_ylabel('Difference in Count')
+        ax.set_title('Change in program adding the flag for %s' % prefix)
+        ax.set_xticks(x)
+        ax.set_xticklabels(labels, rotation=90)
+        ax.legend()
+        plt.savefig(os.path.join(prefix, "diffs.png"))
+        plt.close()
+
+    # Useful for the next function - the code is terrible yes! It's ok.
+    return filenames
+
+def recursive_find(base, pattern="*"):
+    for root, _, filenames in os.walk(base):
+        for filename in fnmatch.filter(filenames, pattern):
+            yield os.path.join(root, filename)
 
 def run_command(cmd):
     """
@@ -180,6 +225,79 @@ def compile_program(flag, filename, out_dir):
 
     os.chdir(here)
 
+def color_by_different_assembly(df, filenames):
+
+    # For each diff performed, figure out if the assembly is actually different.
+    folders = list(set([os.path.dirname(x) for x in filenames]))
+    diffs = pandas.DataFrame(0, index=folders, columns=['is_different'])
+    for diff in recursive_find("data/compiled", "Prog.diff"):
+       stat = os.stat(diff)
+       if stat.st_size > 0:
+           diffs.loc[os.path.dirname(diff), "is_different"] = 1
+
+    diffs.to_csv("data/assembly-is-different.csv")
+
+    # Create a colored manhatten plot based on this
+    # Add a row for the same "is it different" value
+    df["is_different"] = np.zeros(df.shape[0])
+    missing = 0
+    found = 0
+    for idx, row in df.iterrows():
+        flag, program, value, filename, _ = row
+        if not filename.startswith(os.sep):
+            filename = os.sep + filename
+        out_dir = os.path.join(outdir, program, flag.strip("-").strip("-"))
+        if out_dir in diffs.index:
+            df.loc[idx, "is_different"] = diffs.loc[out_dir, "is_different"]
+            found +=1
+        else:
+            missing += 1
+            print("%s not in index" % out_dir)
+
+    df.to_csv("data/flag-times-flag-with-diffs.csv")
+
+    df.loc[:, "ind"] = range(len(df))
+    df_grouped = df.groupby(("flag"))
+
+    # manhattan plot
+    fig = plt.figure(figsize=(20, 10))  # Set the figure size
+    ax = fig.add_subplot(111)
+
+    # Create vector of colors
+    colors = []
+    for x in df.iterrows():
+        if x[1].is_different == 0:
+            colors.append("darkblue")
+        else:
+            colors.append("gold")
+    df['colors'] = colors        
+
+    x_labels = []
+    x_labels_pos = []
+    for num, (name, group) in enumerate(df_grouped):
+        if group.empty:
+            continue
+        group.plot(
+            kind="scatter", x="ind", y="value", color=group["colors"], ax=ax
+        )
+        x_labels.append(name)
+        x_labels_pos.append(
+            (group["ind"].iloc[-1] - (group["ind"].iloc[-1] - group["ind"].iloc[0]) / 2)
+        )
+    ax.set_xticks(x_labels_pos)
+    #ax.set_xticklabels(x_labels, rotation=45)
+
+    # set axis limits
+    ax.set_xlim([0, len(df)])
+    ax.set_ylim([0, 3])
+
+    # x axis label
+    ax.set_xlabel("Flag")
+
+    # show the graph
+    plt.savefig("data/manhattan-flags-by-diff.pdf")
+    plt.savefig("data/manhattan-flags-by-diff.png")
+
 
 def main():
     parser = get_parser()
@@ -203,11 +321,17 @@ def main():
 
     df = pandas.read_csv(args.csv, index_col=0)
 
-    # Filter to values >= 1.3
-    df = df[df.value >= 1.3]
+    import IPython
+    IPython.embed()
 
-    #generate_assembly(df, outdir)
-    explore_assembly(df, outdir)
+    # Try coloring by different assembly
+    generate_assembly(df, outdir)
+    filenames = explore_assembly(df, outdir)    
+    color_by_different_assembly(df, filenames)
+    # Filter to values >= 1.3
+    #df = df[df.value >= 1.3]
+
+
 
 if __name__ == "__main__":
     main()

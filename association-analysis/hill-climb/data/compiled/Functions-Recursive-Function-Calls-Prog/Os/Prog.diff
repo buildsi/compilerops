@@ -35,48 +35,37 @@
 < .LFB1522:
 ---
 > .LFB1570:
-22,27d32
+22c33
 < 	pushq	%rbp
-< 	.cfi_def_cfa_offset 16
+---
+> 	pushq	%rax
+24,30d34
 < 	.cfi_offset 6, -16
 < 	movq	%rsp, %rbp
 < 	.cfi_def_cfa_register 6
 < 	pushq	%rbx
-29,32c34
+< 	subq	$24, %rsp
 < 	.cfi_offset 3, -24
-< 	movq	%fs:40, %rax
-< 	movq	%rax, -24(%rbp)
-< 	xorl	%eax, %eax
----
-> 	.cfi_def_cfa_offset 32
-34a37,39
-> 	movq	%fs:40, %rax
-> 	movq	%rax, 8(%rsp)
-> 	xorl	%eax, %eax
-36,37c41
-< 	leaq	-32(%rbp), %rax
+< 	movq	$112, -24(%rbp)
+34,35c38
+< 	movq	-24(%rbp), %rax
 < 	movq	%rax, %rsi
 ---
-> 	movq	%rsp, %rsi
-40,41c44
-< 	movq	-32(%rbp), %rax
-< 	movq	%rax, %rsi
----
-> 	movq	(%rsp), %rsi
-43c46
+> 	movl	$112, %esi
+37c40
 < 	call	_ZNSolsEm@PLT
 ---
 > 	call	_ZNSo9_M_insertImEERSoT_@PLT
-47,49c50,51
+41,43c44,45
 < 	movq	%rax, %rbx
-< 	movq	-32(%rbp), %rax
+< 	movq	-24(%rbp), %rax
 < 	movl	%eax, %edi
 ---
-> 	movl	(%rsp), %edi
+> 	movl	$112, %edi
 > 	movq	%rax, %r8
-50a53
+44a47
 > 	movq	%r8, %rdi
-52,62c55,60
+46,57c49,54
 < 	movq	%rbx, %rdi
 < 	call	_ZNSolsEj@PLT
 < 	movq	%rax, %rdx
@@ -85,32 +74,22 @@
 < 	movq	%rdx, %rdi
 < 	call	_ZNSolsEPFRSoS_E@PLT
 < 	movl	$0, %eax
-< 	movq	-24(%rbp), %rcx
-< 	xorq	%fs:40, %rcx
-< 	je	.L3
----
-> 	call	_ZNSo9_M_insertImEERSoT_@PLT
-> 	movq	%rax, %rdi
-> 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
-> 	movq	8(%rsp), %rax
-> 	xorq	%fs:40, %rax
-> 	je	.L6
-64c62,63
-< .L3:
----
-> .L6:
-> 	xorl	%eax, %eax
-66,68c65
+< 	addq	$24, %rsp
 < 	popq	%rbx
 < 	popq	%rbp
 < 	.cfi_def_cfa 7, 8
 ---
+> 	call	_ZNSo9_M_insertImEERSoT_@PLT
+> 	movq	%rax, %rdi
+> 	call	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@PLT
+> 	xorl	%eax, %eax
+> 	popq	%rdx
 > 	.cfi_def_cfa_offset 8
-71c68
+60c57
 < .LFE1522:
 ---
 > .LFE1570:
-73,108c70,72
+62,97c59,61
 < 	.globl	_Z9factorialj
 < 	.type	_Z9factorialj, @function
 < _Z9factorialj:
@@ -126,17 +105,17 @@
 < 	movl	%edi, -20(%rbp)
 < 	movl	$1, -4(%rbp)
 < 	cmpl	$0, -20(%rbp)
-< 	jne	.L5
+< 	jne	.L4
 < 	movl	$1, -4(%rbp)
-< 	jmp	.L6
-< .L5:
+< 	jmp	.L5
+< .L4:
 < 	movl	-20(%rbp), %eax
 < 	subl	$1, %eax
 < 	movl	%eax, %edi
 < 	call	_Z9factorialj
 < 	imull	-20(%rbp), %eax
 < 	movl	%eax, -4(%rbp)
-< .L6:
+< .L5:
 < 	movl	-4(%rbp), %eax
 < 	leave
 < 	.cfi_def_cfa 7, 8
@@ -146,16 +125,16 @@
 < 	.size	_Z9factorialj, .-_Z9factorialj
 < 	.type	_Z41__static_initialization_and_destruction_0ii, @function
 < _Z41__static_initialization_and_destruction_0ii:
-< .LFB2015:
+< .LFB2014:
 ---
 > 	.type	_GLOBAL__sub_I_main, @function
 > _GLOBAL__sub_I_main:
-> .LFB2063:
-111c75
+> .LFB2062:
+100c64
 < 	pushq	%rbp
 ---
 > 	pushq	%rax
-113,122d76
+102,111d65
 < 	.cfi_offset 6, -16
 < 	movq	%rsp, %rbp
 < 	.cfi_def_cfa_register 6
@@ -163,30 +142,30 @@
 < 	movl	%edi, -4(%rbp)
 < 	movl	%esi, -8(%rbp)
 < 	cmpl	$1, -4(%rbp)
-< 	jne	.L10
+< 	jne	.L9
 < 	cmpl	$65535, -8(%rbp)
-< 	jne	.L10
-124a79,81
+< 	jne	.L9
+113a68,70
 > 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rdi
 > 	popq	%rcx
 > 	.cfi_def_cfa_offset 8
-127,134c84
+116,123c73
 < 	movq	_ZNSt8ios_base4InitD1Ev@GOTPCREL(%rip), %rax
 < 	movq	%rax, %rdi
 < 	call	__cxa_atexit@PLT
-< .L10:
+< .L9:
 < 	nop
 < 	leave
 < 	.cfi_def_cfa 7, 8
 < 	ret
 ---
 > 	jmp	__cxa_atexit@PLT
-136,155c86
-< .LFE2015:
+125,144c75
+< .LFE2014:
 < 	.size	_Z41__static_initialization_and_destruction_0ii, .-_Z41__static_initialization_and_destruction_0ii
 < 	.type	_GLOBAL__sub_I_main, @function
 < _GLOBAL__sub_I_main:
-< .LFB2016:
+< .LFB2015:
 < 	.cfi_startproc
 < 	endbr64
 < 	pushq	%rbp
@@ -201,9 +180,9 @@
 < 	.cfi_def_cfa 7, 8
 < 	ret
 < 	.cfi_endproc
-< .LFE2016:
+< .LFE2015:
 ---
-> .LFE2063:
-159a91,92
+> .LFE2062:
+148a80,81
 > 	.local	_ZStL8__ioinit
 > 	.comm	_ZStL8__ioinit,1,1

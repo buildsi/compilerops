@@ -23,8 +23,8 @@ int main()
 		FCounter = 0;
 	cout << "Enter Letter Grades (A, B, C, D, or F) and Press EOF (Ctrl+Z) or (Ctrl+D) to finish. " << endl;
 
-	while ((Grade = cin.get()) != EOF)
-	{
+	std::string str = "ABCDFAAAAFFFFDDDDDDDDDDDDD";
+	for(char& Grade : str) {
 		switch (Grade)
 		{
 			case 'a' :
